@@ -1,0 +1,304 @@
+body.x-diadospais-2022 {
+    main {
+        overflow-x: hidden;
+        min-height: 100vh;
+
+        .banner-full {
+            width: 100%;
+
+            &__img {
+                width: 100%;
+            }
+        }
+
+        .text-banner {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin: 3rem 0;
+
+            &__description {
+                text-align: center;
+                max-width: 55.625rem;
+                font-size: 28px;
+                font-weight: bold;
+                color: #333333;
+                @media screen and(max-width: 767px) {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .banner-middle {
+            display: flex;
+            justify-content: center;
+            video{
+                max-width: 1289px;
+                width: 90%;
+            }
+            .box-banner{
+                img {
+                    max-width: 60rem;
+                    @media screen and(max-width: 767px) {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+
+        .button__banner {
+            width: 100%;
+
+            &__button {
+                width: 161px;
+                height: 33px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #000;
+                margin: 40px auto;
+                text-decoration: none;
+                color: #fff;
+                &--white{
+                    color: #000;
+                    border: 1px solid #bbb;
+                    padding: 10px;
+                    width: 362px;
+                    height: 64px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: 'Gotham';
+                    font-size: 24px;
+                    margin-bottom: 104px;
+                    margin-top: 24px;
+
+                    @media screen and(max-width: 767px) {
+                        width: 160px;
+                        height: 34px;
+                        font-size: 10px;
+                        line-height: 12px;
+                        margin-bottom: 70px;
+
+                    }
+
+                }
+            }
+
+            &__img {
+                margin-right: 10px;
+            }
+        }
+
+        .collection {
+            &__img {
+                max-height: 27.125rem;
+                min-width: 100%;
+                width: 100%;
+            }
+        }
+
+        .button-bottom{
+            width: 100%;
+            margin-top: 120px;
+            margin-bottom: 64px;
+            p{
+                letter-spacing: 0.7px;
+                color: #000000;
+                font-family: 'Gotham Medium';
+                text-align: center;
+                font-size: 28px;
+                margin-bottom: 61px;
+
+            }
+
+            @media screen and(max-width: 767px) {
+                margin-bottom: 48px;
+                margin-top: 70px;
+
+
+                p{
+                    font-size: 13px;
+                    line-height: 18px;
+                    max-width: 200px;
+                    margin: 0 auto;
+                    margin-bottom: 24px;
+                }
+
+
+
+            }
+        }
+        .text-button {
+            margin-top: 2rem;
+            text-align: center;
+        }
+        .button__video{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .videos{
+            &__container{
+                padding: 0 3rem ;
+                .videos__title{
+                    display: flex;
+                    justify-content: center;
+                   h3{
+                    width: 100%;
+                    font-family: 'Gotham Medium';
+                    font-size: 24px;
+                    line-height: 46px;
+                    text-align: center;
+                    width: 90%;
+                    margin-bottom: 24px;
+                    @media screen and(max-width: 767px) {
+                        font-size: 13px;
+                        line-height: 18px;
+
+                    }
+                   }
+                }
+                .videos__content{
+                    .videos__content--container.slick-slide[aria-hidden="true"]{
+                        position: relative;
+                        right: 338px;
+                    }
+                    iframe{
+                        width: 854px;
+                        height: 480px;
+                    }
+                    &--container{
+                        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+                        margin-right: 2rem;
+                    }
+
+                    &--description{
+                        width: 854px;
+                        h3{
+                            strong{
+                                font-family: 'Gotham Medium';
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .slick-prev{
+        width: 42px;
+        height: 42px;
+        background: transparent;
+        position: absolute;
+        left: -42px;
+        top: calc(50% - 3rem);
+        font-size: 0;
+        cursor: pointer;
+        &::before{
+            content: "";
+        width: 42px;
+        height: 42px;
+        left: -42px;
+        background: url(/arquivos/arrow-left-slide-pais.png) no-repeat;
+        background-size: contain;
+        display: inline-block;
+        }
+
+    }
+
+    .slick-next{
+        width: 94vw;
+        text-align: right;
+        height: 42px;
+        left: 0px;
+        background: transparent;
+        position: absolute;
+        top: calc(50% - 3rem);
+        font-size: 0;
+        cursor: pointer;
+        &::before{
+            content: "";
+        width: 42px;
+        height: 42px;
+        background: url(/arquivos/arrow-right-slide-pais.png) no-repeat;
+        background-size: contain;
+        display: inline-block;
+        }
+
+    }
+}
+
+.x{
+    &-video-text{
+        max-width: 1289px;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 32px;
+        text-align: center;
+        p{
+            color: #333333;
+            letter-spacing: 0.6px;
+            font-family: 'Gotham';
+            font-size: 24px;
+            line-height: 46px;
+        }
+
+        span{
+            font-family: 'Gotham';
+            font-size: 16px;
+            letter-spacing: 0.4px;
+            color: #333333;
+            margin-top: 12px;
+            display: block;
+        }
+        a{
+            margin-top: 35px;
+            margin-bottom: 64px;
+        }
+
+        @media screen and(max-width: 767px) {
+           p{
+            font-size: 14px;
+            line-height: 20px;
+           }
+           span{
+            font-size: 8px;
+            line-height: 20px;
+           }
+           a{
+
+           }
+        }
+    }
+
+    &-button-yellow{
+        width: 296px;
+        height: 64px;
+        background: #FFCF31;
+        letter-spacing: 2.4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000;
+        font-family: 'Gotham Medium';
+        font-size: 28px;
+        margin: 0 auto;
+        letter-spacing: 2.4px;
+
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+
+        @media screen and(max-width: 767px) {
+            width: 160px;
+            height: 32px;
+            letter-spacing: 1.1px;
+            font-size: 11px;
+        }
+
+    }
+
+
+}

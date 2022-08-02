@@ -1,0 +1,147 @@
+@import '../../assets/stylesheets/breakpoint';
+@import '../../assets/stylesheets/fonts';
+
+#shipping-data {
+    padding: 10px;
+
+    .accordion-group {
+      border: 0;
+
+      .accordion-heading {
+        position: relative;
+
+        span {
+          padding: 0px;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 15px;
+          font-weight: 700;
+          letter-spacing: 2px;
+          background: transparent !important;
+        }
+
+        &::before {
+          content: "";
+          top: 20px;
+          left: 10px;
+          position: absolute;
+          // @include sprite($delivery-icon);
+        }
+      }
+
+      .accordion-inner {
+        @include breakpoint("desktop") {
+          border: 1px solid #eee;
+        }
+
+        font-family: 'Montserrat', sans-serif;
+
+        .box-step {
+          .address-form-placeholder {
+            .address-data {
+              .ship-postal-code {
+                #ship-postal-code {
+                  width: 90%;
+                  max-width: 90%;
+                  margin-left: 5%;
+                  margin-bottom: 5px;
+                  margin-top: 5px;
+                }
+              }
+            }
+          }
+
+          .address-list-placeholder {
+            .address-edit,
+            .address-create {
+              a {
+                padding: 10px 0;
+                font-family: 'Montserrat', sans-serif;
+                border: 1px solid #000;
+                border-radius: 0;
+                font-weight: 900;
+                font-size: 12px;
+                color: #000;
+                text-transform: uppercase;
+              }
+            }
+          }
+
+          .btn-submit-wrapper {
+            .btn-go-to-payment {
+              font-family: 'Merriweather', serif;
+              font-size: 13px;
+              font-weight: 900;
+              position: relative;
+              height: 32px;
+              padding: 0 20px;
+              border-radius: 0px;
+              box-shadow: none;
+              color: #fff;
+              font-size: 12px;
+              font-weight: 500;
+              line-height: 30px;
+              text-shadow: none;
+              text-transform: uppercase;
+              background: #000;
+              outline: none;
+
+              &:hover,
+              &:active,
+              &:focus {
+                background: #666;
+              }
+
+              &:before {
+                content: "";
+                position: absolute;
+                top: 15px;
+                left: 15px;
+              //   @include sprite($checkout-icon-locker);
+              }
+            }
+          }
+        }
+
+        .shipping-summary-placeholder {
+          color: #000;
+          font-weight: 100;
+
+          .shipping-options {
+            font-weight: 100;
+
+            .shipping-selected-sla {
+              @include breakpoint("mobile") {
+                border-top: 0;
+              }
+
+              @include breakpoint("tablet") {
+                border-top: 0;
+              }
+
+              color: #000;
+              font-size: 12px;
+              font-weight: 100;
+            }
+
+            // .shipping-selected-sla => END
+          }
+
+          // .shipping-options => END
+
+          .change-other-shipping-option {
+            border: 1px solid #000;
+          }
+
+          // .change-other-shipping-option => END
+        }
+
+        // .shipping-summary-placeholder => END
+
+        .box-step {
+          color: #000;
+        }
+      }
+
+      //  .accordion-inner => END
+    }
+}

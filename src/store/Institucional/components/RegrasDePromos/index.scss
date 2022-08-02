@@ -1,0 +1,118 @@
+body.x-regras-de-promos {
+    .shelf-title {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 50px;
+    }
+
+    .prateleira {
+        margin-top: 50px;
+
+        .x-off-flag {
+            display: none;
+        }
+
+        h2 {
+            margin-bottom: 45px;
+        }
+
+        ul {
+            width: 100%;
+            height: 300px;
+            margin-right: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+
+            @media (min-width: 1700px) {
+                height: 400px; 
+            }
+
+            li {
+                width: 20%;
+                padding: 10px;
+                position: relative;
+                cursor: pointer;
+
+                .x-btn-wishlist {
+                    background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FtYWRhXzEiIGRhdGEtbmFtZT0iQ2FtYWRhIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDMwIDMwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiLz48cGF0aCBkPSJNMjUuNDgsMTIuMjJjLS4wNi4zNS0uMS43MS0uMTgsMWE4LjA4LDguMDgsMCwwLDEtMS41MSwzLjA1LDIzLjQ2LDIzLjQ2LDAsMCwxLTMuMzcsMy40NmMtMS42NCwxLjQzLTMuMywyLjg1LTUsNC4yOGEuNjMuNjMsMCwwLDEtLjg5LDBjLTIuMDctMS44LTQuMTQtMy41OS02LjE5LTUuNDFhMTUuMTMsMTUuMTMsMCwwLDEtMi42MS0zLDYuODgsNi44OCwwLDAsMS0xLjIyLTQuNjMsNiw2LDAsMCwxLDIuMjMtNC4yLDUuMTcsNS4xNywwLDAsMSwzLjgxLTEuMSw1LjMyLDUuMzIsMCwwLDEsMy45MywyLjQ4Yy4xNi4yMy4zLjQ4LjQ3Ljc1bC4xNy0uMjlhNi4xMiw2LjEyLDAsMCwxLDIuNS0yLjQ0LDQuOTQsNC45NCwwLDAsMSw0LS4yMSw1LjU4LDUuNTgsMCwwLDEsMy41OSw0LjIzYy4wOC4zMy4xMS42OC4xNywxWk0xNSwyMi44M2wuMDgsMGMxLjg1LTEuNjIsMy43My0zLjIyLDUuNTYtNC44NmExNCwxNCwwLDAsMCwyLjc5LTMuMjUsNS40NSw1LjQ1LDAsMCwwLC43MS00LjA3QTQuMzYsNC4zNiwwLDAsMCwyMS4zLDcuMjJhMy43NywzLjc3LDAsMCwwLTMuMjQuMjUsNC45NCw0Ljk0LDAsMCwwLTEuOTUsMi4xYy0uMjEuMzktLjM2LjgyLS41NSwxLjIzYS41Ny41NywwLDAsMS0uNTYuMzcuNTguNTgsMCwwLDEtLjU2LS4zN2MwLS4wOC0uMDYtLjE2LS4xLS4yNUE2LjYsNi42LDAsMCwwLDEyLjcxLDhhNCw0LDAsMCwwLTUuNDguMTEsNSw1LDAsMCwwLTEuMTQsNS40OSw3LjM1LDcuMzUsMCwwLDAsMS43NywyLjc1Yy44NC44OSwxLjcxLDEuNzQsMi42MiwyLjU2QzEyLDIwLjI1LDEzLjQ3LDIxLjUzLDE1LDIyLjgzWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwKSIvPjwvc3ZnPg==");
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    right: 2px;
+                    width: 25px;
+                    height: 25px;
+                    cursor: pointer;
+                    transition: none;
+                    z-index: 1;
+
+                    &.x-active {
+                      background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FtYWRhXzEiIGRhdGEtbmFtZT0iQ2FtYWRhIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDMwIDMwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6I2ZmY2U0NDt9PC9zdHlsZT48L2RlZnM+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0yNS4zMSwxMC4zYTUuNTIsNS41MiwwLDAsMC0zLjYtNC4yMyw0Ljk0LDQuOTQsMCwwLDAtNC4wNS4yMSw2LjE3LDYuMTcsMCwwLDAtMi41LDIuNDZMMTUsOWExNy43NiwxNy43NiwwLDAsMC0xLjE4LTEuNTNBNSw1LDAsMCwwLDguMzgsNmE1LjQ0LDUuNDQsMCwwLDAtMy42NSw0LjFjLS4xLjM5LS4xNC43OS0uMjEsMS4xOHYuOWEuNTMuNTMsMCwwLDEsMCwuMTIsNy4xOCw3LjE4LDAsMCwwLDEuMjYsMy40MSwxNS42MywxNS42MywwLDAsMCwyLjYzLDNjMiwxLjgsNC4wOSwzLjU3LDYuMTQsNS4zNmEuNjEuNjEsMCwwLDAsLjg4LDBDMTcuMjUsMjIuNTIsMTksMjEsMjAuODEsMTkuNDNhMTkuMTIsMTkuMTIsMCwwLDAsMy40MS0zLjcyQTYuNzYsNi43NiwwLDAsMCwyNS4zMSwxMC4zWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwKSIvPjwvc3ZnPg==");
+                    }
+                }
+
+                .product-image {
+                    position: relative;
+
+                    img {
+                        width: 100%;
+                        max-width: 300px;
+                        height: auto;
+                    }
+                }
+
+                .product-name {
+                    font-size: 12px;
+                    font-family: "Gotham-Book";
+                    margin: 45px 0 15px;
+                }
+
+                .price {
+                    font-size: 14px;
+
+                    .old-price {
+                        color: #757575;
+                        text-decoration: line-through;
+                        margin-right: 10px;
+                    }
+
+                    .best-price {
+                        font-weight: bold;
+                    }
+                }
+
+                .buy-button {
+                    display: none;
+                }
+
+                a {
+                    color: #000;
+                }
+
+                &:hover {
+                    
+                    .buy-button {
+                        display: block;
+                        position: absolute;
+                        top: 50%;
+                        right: 50%;
+                        transform: translate(50%, -50%);
+                        width: 90%;
+                        padding: 10px;
+                        font-family: "Gotham-Book";
+                        text-transform: uppercase;
+                        text-align: center;
+                        background: #000;
+                        color: #FFF;
+                        z-index: 3;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1183 @@
+body.x-roupas {
+    &.is--product {
+        .x-main {
+            margin: 45px 0;
+            padding: 0 20px;
+
+            .bread-crumb {
+                clear: both;
+                margin: 20px 0;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #000;
+            
+                ul {
+                    display: flex;
+            
+                    li {
+                        font-size: 12px;
+                        margin-right: 3px;
+                        position: relative;
+                        display: inline-flex;
+            
+                        &:last-child:after {
+                            display: none;
+                        }
+            
+                        &:after {
+                            content: '/';
+                            color: #000;
+                            display: flex;
+                            margin-left: 3px
+                        }
+            
+                        a {
+                            color: #000;
+                            font-size: 12px
+                        }
+                    }
+                }
+            }
+
+            .x-total-product {
+                outline: 1px solid red;
+            }
+
+            .product-main {
+                max-width: 1400px;
+
+                .product-main__middle {
+                    display: flex;
+    
+                    &--image {
+                        width: 60%;
+                        padding: 0;
+                        position: relative;
+    
+                        ul {
+                            display: grid;
+                            grid-template-columns: 50% 50%;
+    
+                            li {
+                                cursor: pointer;
+                                padding: 7px 8px;
+                                position: relative;
+                                text-align: center;
+    
+                                &::after {
+                                    top: 20px;
+                                    width: 70px;
+                                    right: 20px;
+                                    height: 70px;
+                                    content: '+';
+                                    color: #000;
+                                    display: block;
+                                    font-size: 42px;
+                                    font-weight: 100;
+                                    line-height: 77px;
+                                    position: absolute;
+                                    text-align: center;
+                                    border-radius: 50%;
+                                    background-color: #f9f9f9;
+                                }
+    
+                                img {
+                                    width: 100%;
+                                    height: auto;
+                                }
+    
+                                video {
+                                    width: 100% !important;
+                                    max-height: 100% !important;
+                                }
+                            }
+                        }
+    
+                        iframe {
+                            width: 100%;
+                            min-height: 375px;
+                        }
+                    }
+    
+                    &--buyBox {
+                        width: 40%;
+                        margin: 20px 0;
+                        padding: 0 40px;
+                        position: relative;
+    
+                        .product-main__top--share {
+                            margin: 20px 0;
+    
+                            ul {
+                                top: 0;
+                                right: 0;
+                                margin: 0;
+                                position: absolute;
+                                background-color: #fff;
+                                padding: 20px 0 20px 20px;
+    
+                                li {
+                                    margin-bottom: 15px;
+    
+                                    svg {
+                                        height: 24px;
+                                        cursor: pointer;
+                                        max-width: 24px;
+                                    }
+    
+                                    &.product-main__top--share-share {
+                                        position: relative;
+    
+                                        .modal-share {
+                                            left: auto;
+                                            right: 0;
+                                            top: 40px;
+                                            z-index: 9;
+                                            width: 300px;
+                                            display: none;
+                                            padding: 10px 0;
+                                            text-align: center;
+                                            position: absolute;
+                                            background-color: #fff;
+                                            border: 1px solid #ccc;
+                                            cursor: pointer;
+                                        
+                                            &.active {
+                                                display: block;
+                                            }
+                                        }
+                                    
+                                        .modal-share-close {
+                                            top: -21px;
+                                            width: 20px;
+                                            right: -1px;
+                                            height: 20px;
+                                            display: block;
+                                            line-height: 20px;
+                                            font-weight: bold;
+                                            position: absolute;
+                                            background-color: #eaeaea
+                                        }
+                                    }
+                                }
+                            }
+                        }
+    
+                        &--name {
+                            margin-bottom: 20px;
+    
+                            .productName {
+                                font-size: 18px;
+                                line-height: 32px;
+                                font-weight: bold;
+                                text-transform: none;
+                            }
+                        }
+    
+                        #yv-review-quickreview .yv-bootstrap {
+                            background: none !important;
+                        }
+    
+                        &--price {
+                            .descricao-preco {
+                                align-items: center;
+                                display: flex;
+    
+                                .price-best-price {
+                                    // font-size: 0;
+                                    margin-left: 15px;
+    
+                                    strong {
+                                        font-size: 16px;
+                                        margin-right: 10px;
+                                    }
+                                }
+    
+                                .skuBestInstallmentValue {
+                                    align-items: center;
+                                    font-weight: normal;
+                                    display: inline-flex;
+    
+                                    &::after {
+                                        display: flex;
+                                        font-size: 16px;
+                                        margin-left: 3px;
+                                        content: 'sem juros';
+                                        font-family: "Montserrat",sans-serif;
+                                    }
+                                }
+                            }
+    
+                            .preco-a-vista {
+                                display: none !important;
+                            }
+                        }
+    
+                        &--ame {
+                            .cashbackMessage {
+                                strong {
+                                    text-transform: uppercase;
+                                }
+                            }
+                            
+                        }
+    
+                        &--skuSelection {
+                            margin: 20px 0;
+    
+                            ul {
+                                width: 100%;
+                                margin: 20px 0;
+    
+                                li {
+                                    margin-right: 10px;
+    
+                                    input {
+                                        display: none;
+                                    }
+    
+                                    &.specification {
+                                        font-weight: bold;
+                                        display: inline-flex;
+                                        text-transform: uppercase;
+    
+                                        &::after {
+                                            content: ':';
+                                            display: flex;
+                                            font-size: 16px;
+                                            margin-left: 3px;
+                                        }
+                                    }
+                                }
+    
+                                &.Cores {
+                                    display: flex;
+    
+                                    li {
+                                        &:last-child {
+                                            text-transform: lowercase;
+                                        }
+                                    }
+                                }
+    
+                                &.Tamanho {
+                                    .specification {
+                                        margin-bottom: 10px;
+                                    }
+    
+                                    .item-dimension-Tamanho {
+                                        label {
+                                            cursor: pointer;
+                                            font-size: 12px;
+                                            text-transform: uppercase;
+                                            align-items: center;
+                                            color: #666;
+                                            border: 1px solid #eaeaea;
+                                            width: 55px;
+                                            height: 55px;
+                                            margin-right: 5px;
+                                            margin-bottom: 5px;
+                                            padding: 15px 15px;
+                                            display: inline-flex;
+                                            justify-content: center;
+                                            
+                                            &.sku-picked {
+                                                color: #fff;
+                                                background-color: #000;
+                                            }
+                                            
+                                            &.disabled{
+                                                position: relative;
+                                                color: #ccc;
+                                                border: 1px solid #ccc;
+        
+                                                span {
+                                                    display: none !important;
+                                                }
+        
+                                                &:before {
+                                                    content: '';
+                                                    position: absolute;
+                                                    display: block;
+                                                    top: 24px;
+                                                    left: 2px;
+                                                    width: 50px;
+                                                    height: 1px;
+                                                    background-color: #ccc;
+                                                    transform: rotate(-46deg);
+                                                }
+        
+                                                &:hover {
+                                                    color: #ccc;
+                                                    background: transparent;
+                                                }
+                                            }
+                                            
+                                        }
+                                    }
+                                }
+                            }
+                        }
+    
+                        &--tamanhos {
+                            margin-bottom: 20px;
+    
+                            .product-main__middle--buyBox--tamanhos__btn {
+                                font-size: 14px;
+                                cursor: pointer;
+                                text-decoration: underline;
+                            }
+                        }
+    
+                        &--buttonArea {
+                            width: 100%;
+                            z-index: 99999;
+                            background-color: #fff;
+    
+                            .buy-button {
+                                width: 100%;
+                                color: #fff;
+                                margin: 0 auto;
+                                display: block;
+                                padding: 15px 0;
+                                text-align: center;
+                                background-color: #ccc;
+    
+                                &.active {
+                                    font-weight: bold;
+                                    background-color: #000;
+                                }
+                            }
+                            .portal-notify-me-ref {
+                                // display: none !important;
+    
+                                .notifyme-title-div {
+                                    text-transform: uppercase;
+                                    font-size: 12px;
+    
+                                    h3 {
+                                        display: none;
+                                    }
+                                }
+    
+                                form {
+                                    .notifyme-form {
+                                        margin-bottom: 30px;
+    
+                                        > p {
+                                            font-size: 12px;
+                                            text-transform: uppercase;
+                                            font-weight: 300;
+                                            line-height: 1.5;
+                                            margin: 10px 0 20px;
+                                            font-family: 'Gotham';
+                                        }
+    
+                                        input[type='text'] {
+                                            float: left;
+                                            background-color: transparent;
+                                            border-bottom: 1px solid #a6a6a6;
+                                            height: 35px;
+                                            line-height: 35px;
+                                            width: 45%;
+                                            margin: 0 6px;
+                                            font-size: 10px;
+                                            // text-transform: uppercase;
+                                            // font-style: italic;
+                                            font-family: 'Gotham';
+                                            margin-bottom: 5px;
+                                            text-align: center;
+                                        }
+    
+                                        .btn-ok {
+                                            width: 0;
+                                            height: 0;
+                                            margin: 0;
+                                        }
+    
+                                        .fake-sender {
+                                            float: left;
+                                            width: 100%;
+                                            height: 35px;
+                                            line-height: 35px;
+                                            border: 1px solid #000;
+                                            background-color: transparent;
+                                            text-align: center;
+                                            color: #000;
+                                            margin-top: 18px;
+                                            font-size: 16px;
+                                            font-weight: bold;
+                                            text-transform: uppercase;
+                                            cursor: pointer;
+                                            font-family: 'Gotham';
+    
+                                            &:hover {
+                                                background-color: #000;
+                                                color: #fff;
+                                            }
+                                        }
+                                    }
+                                }
+    
+                                .success {
+                                    .sku-notifyme-success {
+                                        text-transform: uppercase;
+                                        font-size: 12px;
+                                        display: block;
+                                        margin-top: 15px;
+                                        margin-bottom: 15px;
+                                        line-height: 1.6;
+                                        color: #347901;
+                                        font-weight: bold;
+                                    }
+                                }
+    
+                                .error {
+                                    .sku-notifyme-error {
+                                        text-transform: uppercase;
+                                        font-size: 12px;
+                                        display: block;
+                                        margin-bottom: 15px;
+                                    }
+                                }
+                            }
+    
+                            #formNotifyMe {
+                                margin-bottom: 30px;
+    
+                                .sku-notifyme-form > p {
+                                    font-size: 12px;
+                                    text-transform: uppercase;
+                                    font-weight: 300;
+                                    line-height: 1.5;
+                                    margin: 10px 0 20px;
+                                    font-family: 'Merriweather', serif;
+                                }
+    
+                                input[type='text'] {
+                                    float: left;
+                                    background-color: transparent;
+                                    border-bottom: 1px solid #a6a6a6;
+                                    text-align: center;
+                                    height: 35px;
+                                    line-height: 35px;
+                                    width: 50%;
+                                    padding-left: 10px;
+                                    font-size: 10px;
+                                    text-transform: uppercase;
+                                    font-style: italic;
+                                    font-family: 'Gotham';
+                                }
+    
+                                #notifymeOK {
+                                    float: left;
+                                    width: 100%;
+                                    height: 35px;
+                                    line-height: 35px;
+                                    border: 1px solid #000;
+                                    background-color: transparent;
+                                    text-align: center;
+                                    color: #000;
+                                    margin-top: 18px;
+                                    font-size: 16px;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    font-family: 'Merriweather', serif;
+                                    cursor: pointer;
+    
+                                    &:hover {
+                                        background-color: #000;
+                                        color: #fff;
+                                    }
+                                }
+                            }
+    
+                            .x-notsuccess {
+                                display: none;
+    
+                                .sku-notifyme-success {
+                                    text-transform: uppercase;
+                                    font-size: 12px;
+                                    display: block;
+                                    margin-top: 15px;
+                                    margin-bottom: 15px;
+                                    line-height: 1.6;
+                                    color: #347901;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+    
+                        &--extraInfos {
+                            margin: 20px 0;
+    
+                            &--list {
+                                display: flex;
+    
+                                &__item {
+                                    width: 50%;
+                                    display: flex;
+                                    margin-right: 5px;
+                                    padding: 10px 20px;
+                                    align-items: center;
+                                    background-color: #eaeaea;
+    
+                                    svg {
+                                        height: 44px;
+                                        max-width: 44px;
+                                        margin-right: 10px;
+                                    }
+    
+                                    span {
+                                        font-size: 13px;
+                                        font-weight: bold;
+                                        line-height: 15px;
+                                        text-align: center;
+                                    }
+    
+                                    &:last-child {
+                                        margin-right: 0;
+                                        position: relative;
+                                    }
+                                }
+                            }
+    
+                            &__btn-verify {
+                                color: #ffce44;
+                                border: 1px solid #ffce44;
+                                top: 7px;
+                                right: 0;
+                                width: 18px;
+                                height: 18px;
+                                bottom: 10px;
+                                padding: 5px;
+                                font-size: 8px;
+                                display: block;
+                                cursor: pointer;
+                                line-height: 7px;
+                                border-radius: 50%;
+                                position: absolute;
+                                background-color: #fff;
+    
+                                &:hover {
+                                    &::after {
+                                        padding: 5px;
+                                        width: 150px;
+                                        color: #000;
+                                        display: block;
+                                        font-size: 9px;
+                                        text-align: center;
+                                        line-height: 13px;
+                                        position: absolute;
+                                        font-weight: normal;
+                                        border: 1px solid #ccc;
+                                        background-color: #eaeaea;
+                                        font-family: 'Montserrat', sans-serif;
+                                        content: 'Verifique a disponibilidade para o seu CEP';
+                                        top: 22px;
+                                        right: -60px;
+                                    }
+                                }
+                            }
+                        }
+    
+                        .x-produtos-similares {
+                            h2 {
+                                font-weight: bold;
+                                margin-bottom: 20px;
+                                text-transform: uppercase;
+                            }
+    
+                            li {
+                                a {
+                                    display: block;
+    
+                                    img {
+                                        height: auto;
+                                        max-width: 100px;
+                                    }
+                                }
+                            }
+                        }
+    
+                        &--shipping-value {
+                            margin: 20px 0;
+    
+                            a {
+                                color: #000;
+                                display: block;
+                                font-size: 14px;
+                                line-height: 20px;
+                                margin-bottom: 15px;
+                            }
+    
+                            #calculoFrete {
+    
+                                .quantity, .header, .close {
+                                    display: none;
+                                }
+    
+                                fieldset {
+                                    display: flex;
+                                    align-items: center;
+    
+                                    .prefixo {
+                                        width: 40%;
+                                        font-size: 0;
+    
+                                        input {
+                                            width: 100%;
+                                            height: 36px;
+                                            font-size: 12px;
+                                            padding: 10px 10px;
+                                            border: 1px solid #000;
+                                        }
+                                    }
+                                }
+    
+                                .frete-calcular {
+                                    .freight-btn {
+                                        height: 36px;
+                                        color: #fff;
+                                        cursor: pointer;
+                                        font-size: 11px;
+                                        font-weight: bold;
+                                        padding: 10px 25px;
+                                        background-color: #000;
+                                    }
+                                }
+    
+                                .cep-busca {
+                                    margin-left: 10px;
+    
+                                    a {
+                                        font-size: 10px;
+                                        margin-bottom: 0;
+                                        text-decoration: underline;
+                                    }
+                                }
+    
+                                .freight-values {
+                                    table {
+                                        margin: 20px 0;
+                                        background-color: #f9f9f9;
+    
+                                        thead {
+                                            display: none;
+                                        }
+    
+                                        td {
+                                            padding: 10px;
+                                            font-size: 11px;
+                                            line-height: 16px;
+                                            border: 1px solid #eaeaea;
+    
+                                            &:empty {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+    
+                        &--navs {
+    
+                            &__material {
+                                display: none;
+                            }
+    
+                            .Filtros th {
+                                display: none;
+                            }
+
+                            .name-field.Material,
+                            .value-field.Material {
+                                display: none;
+                            }
+    
+                            h4 {
+                                display: none;
+                            }
+    
+                            .main-navs {
+                                border-bottom: 1px solid #ccc;
+    
+                                h3 {
+                                    padding: 15px 0 5px;
+                                    align-items: center;
+                                    display: inline-flex;
+                                    text-transform: uppercase;
+                                    cursor: pointer;
+    
+                                    &::after {
+                                        content: '+';
+                                        display: flex;
+                                        font-size: 21px;
+                                        margin-left: 5px;
+                                        font-family: 'Montserrat', sans-serif;
+                                    }
+                                }
+    
+                                .productDescription {
+                                    display: none;
+                                    font-size: 12px;
+                                    line-height: 17px;
+                                    padding-bottom: 18px;
+                                }
+    
+                                table.Filtros {
+                                    width: 100%;
+                                }
+    
+                                .Video iframe {
+                                    width: 100%;
+                                    min-width: 300px;
+                                }
+    
+                                #caracteristicas {
+                                    display: none;
+                                    padding-bottom: 18px;
+    
+                                    td.value-field.Medidas {
+                                        font-size: 12px;
+                                        line-height: 17px;
+                                    }
+                                }
+    
+                                &.active {
+                                    h3 {
+                                        width: 120px;
+                                        border-bottom: solid 5px #FFCE44;
+                                        padding: 0 !important;
+                                        margin-bottom: 5px;
+                                        margin-top: 15px;
+    
+                                        &::after {
+                                            content: '-';
+                                        }
+                                    }
+    
+                                    #caracteristicas,
+                                    .productDescription {
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                    &--takeCare {
+                        margin: 20px 0;
+    
+                        &__btn {
+                            width: 100%;
+                            display: block;
+                            cursor: pointer;
+                            font-size: 11px;
+                            line-height: 18px;
+                            font-weight: bold;
+                            padding: 15px 8px;
+                            text-align: center;
+                            background-color: #eaeaea;
+                        }
+                    }
+                }
+    
+                .product-main__catinfo {
+                    margin-bottom: 80px;
+                    padding: 40px 0 80px;
+                    border-top: 1px solid #ccc;
+                    border-bottom: 1px solid #ccc;
+    
+                    &--top {
+                        margin: 10px 0 40px;
+                        text-align: center;
+    
+                        h3 {
+                            color: #666;
+                            font-size: 50px;
+                            font-weight: bold;
+                            margin-bottom: 40px;
+                        }
+    
+                        p {
+                            font-weight: 100;
+                            line-height: 30px;
+                        }
+                    }
+    
+                    &--banner {
+                        margin-bottom: 80px;
+    
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+    
+                    &--middle, &--bottom {
+                        &.flex-cat {
+                            display: flex;
+    
+                            div {
+                                width: 50%;
+    
+                                img {
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+        
+                            h3 {
+                                color: #666;
+                                font-size: 22px;
+                                margin-bottom: 2px;
+                            }
+        
+                            h4 {
+                                font-size: 34px;
+                                font-weight: bold;
+                                margin-bottom: 20px;
+                                color: #ffce44;
+                            }
+        
+                            p {
+                                margin: 20px 0;
+                                font-weight: 100;
+                            }
+        
+                            ul {
+                                li {
+                                    width: 100%;
+                                    font-weight: 100;
+                                    align-items: center;
+                                    margin-bottom: 20px;
+                                    display: inline-flex;
+    
+                                    &:last-child {
+                                        margin-bottom: 0;
+                                    }
+                                    &::before {
+                                        display: inline-flex;
+                                        margin-right: 10px;
+                                        content: '';
+                                        width: 5px;
+                                        height: 5px;
+                                        border-radius: 50%;
+                                        background-color: #ffce44;
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                    &--middle {
+                        margin-bottom: 80px;
+                        
+                        div {
+                            &:first-of-type {
+                                padding: 80px 160px;
+                            }
+                        }
+                    }
+    
+                    &--bottom {
+                        div {
+                            &:last-of-type {
+                                padding: 80px 160px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .modal-box {
+                display: none;
+                
+                &.active {
+                    z-index: 999 !important;
+                    display: block;
+                    left: 0;
+                    top: 108px;
+                    z-index: 9;
+                    width: 100%;
+                    height: 100%;
+                    padding: 30px;
+                    position: fixed;
+                    overflow: scroll;
+                    background-color: #f7f7f7;
+    
+                    .modal-opacity {
+                        top:0;
+                        left: 0;
+                        z-index: 5;
+                        position: absolute;
+                        border: 1px solid #e1e1e1;
+                        width: 100%;
+                        height: 170%;
+                        opacity: 0.8;
+                        background-color: #f7f7f7;
+                    }
+        
+                    .modal-content {
+                        width: 100%;
+                        padding: 20px;
+                        overflow-x: auto;
+                        min-width: 320px;
+                        margin: 20px auto;
+        
+                        .modal-content-header {
+                            display: flex;
+                            padding: 20px;
+                            position: relative;
+                            background-color: #eaeaea;
+            
+                            h3 {
+                                color: #000;
+                                font-size: 13px;
+                                text-align: left;
+                                font-weight: normal;
+                            }
+            
+                            .modal-close {
+                                top: 10px;
+                                right: 10px;
+                                font-size: 30px;
+                                position: absolute;
+                                font-weight: normal;
+                            }
+                        }
+                    }
+        
+                    .modal-container {
+                        background-color: #f7f7f7;
+                        text-transform: uppercase;
+                        font-family: "Gotham-Book", sans-serif;
+                        padding: 30px;
+                        width: 1080px;
+                        height: 676px;
+                        position: fixed;
+                        z-index: 9;
+                        left: 50%;
+                        margin-left: -540px;
+                    }
+                }
+    
+                &.guia-de-tamanhos {
+                    &.active {
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+        
+                        .modal-container {
+                            position: absolute;
+                        }
+        
+                        .modal-close {
+                            z-index: 9;
+                            width: 30px;
+                            height: 30px;
+                            cursor: pointer;
+                            position: relative;
+                        }
+                    }
+                }
+    
+                &.take-care-modal {
+                    &.active {
+                        top: 0;
+                        background: none;
+    
+                        .modal-close {
+                            background: none;
+                            border: none;
+                            left: 50%;
+                            top: 45px;
+                            z-index: 800;
+                            margin-left: 480px;
+                            position: fixed;
+                            width: 50px;
+                            right: 10px;
+                            height: 50px;
+                            display: block;
+                            cursor: pointer;
+                            line-height: 50px;
+                            text-align: center;
+                        }
+    
+                        .modal-opacity {
+                            height: 100%;
+                        }
+    
+                        .modal-container {
+                            position: absolute;
+                        }
+    
+                        .x-main-howcare {
+    
+                            .x-icon-popup {
+                                display: flex;
+                                align-items: center;
+    
+                                ul {
+                                    display: flex;
+                                    justify-content: center;
+                                    list-style: none;
+                                    width: 100%;
+    
+                                    li {
+                                        display: flex;
+                                        flex-direction: column;
+                                        list-style: none;
+                                        align-items: center;
+                                        width: 100%;
+                                        margin: 15px 0;
+                                        letter-spacing: 1px;
+                                        font-size: 8px;
+    
+                                        span {
+                                            display: flex;
+                                            flex-direction: column;
+                                            list-style: none;
+                                            align-items: center;
+                                            width: 169px;
+                                            text-align: center;
+                                            font-size: 8px;
+                                            line-height: 15px;
+                                            padding-right: 6.5px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+    
+                        .x-column-text-medium {
+                            float: left;
+                            width: 100%;
+                            margin-bottom: 35px;
+                        }
+    
+                        p {
+                            font-size: 8px;
+                            line-height: 31px;
+                            letter-spacing: 1px;
+                        }
+    
+                        .x-column-text-mini {
+                            float: left;
+                            width: 100%;
+                            padding-top: 20px;
+                            position: relative;
+    
+                            h5 {
+                                font-size: 16px !important;
+                                font-weight: bold;
+                                margin-bottom: 12px;
+                                text-transform: uppercase;
+                            }
+    
+                            p {
+                                font-size: 8px !important;
+                                line-height: 1.5;
+                                margin-bottom: 20px;
+                                letter-spacing: 1px;
+                            }
+                        }
+    
+                        .x-link-how-care {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            text-align: center;
+                            width: 100%;
+    
+                            a {
+                                color: #000;
+                                font-size: 14px;
+                                line-height: 20px;
+                                font-weight: bold;
+                                text-transform: uppercase;
+                                text-decoration: underline;
+                                position: relative;
+    
+                                &::after {
+                                    position: absolute;
+                                    top: 5px;
+                                    content: '';
+                                    border: solid #000;
+                                    border-width: 2px 2px 0 0;
+                                    width: 8px;
+                                    height: 8px;
+                                    transform: rotate(45deg);
+                                    margin-left: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                &.zoom-images {
+                    &.active {
+                        top: 0;
+                        padding: 0;
+                        overflow: hidden;
+                        background-color: #fff;
+    
+                        .modal-close {
+                            width: 100%;
+                            z-index: 999;
+                            text-align: right;
+                            padding: 20px 40px;
+                            position: relative;
+                        }
+    
+                        .modal-content {
+                            margin: 0;
+                            padding: 0;
+                        }
+    
+                        .modal-container {
+                            top: 0;
+                            padding: 0;
+                            z-index: 9;
+                            width: 100%;
+                            height: 100%;
+                            margin-left: -50%;
+                            overflow-y: scroll;
+    
+                            span.prev-slick,
+                            span.next-slick {
+                                top: 50%;
+                                cursor: pointer;
+                                position: fixed;
+                            }
+    
+                            span.next-slick {
+                                right: 0;
+                            }
+    
+                            li {
+                                display: none;
+                                &:first-child {
+                                    display: block;
+        
+                                    img {
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                            }
+    
+                            video {
+                                position: relative;
+                                width: 100% !important;
+                                min-height: 1500px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

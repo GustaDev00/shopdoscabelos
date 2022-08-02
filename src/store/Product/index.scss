@@ -1,0 +1,1840 @@
+@keyframes pulse {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+body.x-produto {
+    overflow-x: hidden;
+
+    .x-main {
+        padding-top: 20px;
+        padding-bottom: 45px;
+    }
+
+    .x-product-top-main {
+        width: 100%;
+        padding: 0 27px;
+
+        .bread-crumb {
+            float: left;
+            left: 0;
+            right: 0;
+            padding: 0 0 40px 30px;
+            position: absolute;
+            z-index: 2;
+
+            ul {
+                display: block;
+                width: auto;
+                overflow: auto;
+
+                li {
+                    display: block;
+                    float: left;
+                    position: relative;
+                    margin-right: 20px;
+                    margin-left: 13px;
+                    line-height: 20px;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    padding-left: 20px;
+                    display: block;
+
+                    a {
+                        color: #000;
+                    }
+
+                    &:first-child {
+                        margin-left: 0;
+
+                        a {
+                            padding-left: 0;
+                        }
+                    }
+
+                    &:after {
+                        content: "";
+                        border-style: solid;
+                        border-width: 4px 0 4px 4px;
+                        border-color: transparent transparent transparent #000000;
+                        position: absolute;
+                        left: -11px;
+                        top: 6px;
+                    }
+                }
+            }
+        }
+
+        .section-left {
+            width: 60%;
+            display: inline-block;
+            vertical-align: top;
+
+            .x-photo-product {
+                // float: left;
+                // width: 60%;
+                overflow: hidden;
+                // position: relative;
+
+                @media only screen and (min-width: 761px) and (max-width: 1080px) {
+                    width: 50%;
+                }
+
+                .x-images {
+                    // float: left;
+                    // width: 100%;
+
+                    * {
+                        transition: none;
+                    }
+
+                    #include {
+                        // float: left;
+                        // width: 100%;
+                        text-align: center;
+                        margin-top: 30px;
+                        display: none;
+
+                        img {
+                            width: 80%;
+                            height: auto;
+                            mix-blend-mode: multiply;
+
+                            @media only screen and (min-width: 761px) {
+                                width: 100%;
+                            }
+                        }
+
+                        .zoomPad {
+                            position: relative;
+                            cursor: crosshair;
+                            border: none !important;
+                            padding: 0px !important;
+                            width: 48%;
+                            margin-left: 26%;
+                            overflow: hidden;
+
+                            @media only screen and (min-width: 761px) {
+                                width: 100%;
+                            }
+
+                            .zoomPup {
+                                overflow: hidden;
+                                -moz-opacity: 0.6;
+                                opacity: 0.6;
+                                filter: alpha(opacity=60);
+                                position: absolute;
+                                cursor: crosshair;
+                            }
+
+                            .zoomWindow {
+                                left: 0% !important;
+                                width: 100% !important;
+                                height: 100% !important;
+                                margin-left: 5%;
+
+                                .zoomWrapper {
+                                    position: relative;
+                                    width: 100% !important;
+                                    height: 100% !important;
+                                    background: #fff;
+
+                                    .zoomWrapperImage {
+                                        display: block;
+                                        position: relative;
+                                        overflow: hidden;
+                                        width: 100% !important;
+                                        height: 100% !important;
+                                        box-sizing: border-box;
+
+                                        img {
+                                            width: 100%;
+                                            height: auto;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .thumbs {
+                        float: left;
+                        width: 100%;
+                        margin: 35px 0;
+                        position: relative;
+                        z-index: 2;
+
+                        img {
+                            mix-blend-mode: multiply;
+                        }
+
+                        .slick-list {
+                            float: right;
+                            width: 90%;
+                            overflow: hidden;
+
+                            li {
+                                float: left;
+                                width: 700px;
+                                text-align: center;
+                            }
+
+                            div.container-video {
+                                width: 100%;
+
+                                video {
+                                    width: 80%;
+                                    margin: 0 10%;
+                                }
+
+                                iframe {
+                                    width: 80%;
+                                    margin: 80px 0px 0px 40px;
+                                }
+
+                                @media screen and (min-width: 1400px) {
+                                    iframe {
+                                        margin: 0 auto;
+                                    }
+                                }
+                            }
+
+                            a {
+                                display: block;
+                            }
+
+                            img {
+                                mix-blend-mode: multiply;
+                                width: 50%;
+                            }
+
+                            @media only screen and (min-width: 761px) and (max-width: 1080px) {
+                                float: left;
+                                width: 100%;
+
+                                img {
+                                    width: 60%;
+                                }
+                            }
+                        }
+
+                        .slick-arrow {
+                            position: absolute;
+                            top: 50%;
+                            margin-top: -28px;
+                            border: 0;
+                            background-color: transparent;
+                            text-indent: -9999px;
+                            z-index: 1;
+                            cursor: pointer;
+
+                            &.slick-disabled {
+                                display: none !important;
+                            }
+
+                            @media only screen and (min-width: 761px) and (max-width: 1080px) {
+                                margin-top: -58px;
+                            }
+                        }
+
+                        .slick-prev {
+                            left: 11%;
+                            margin-left: 15px;
+                            right: 10px;
+                            background: url(/arquivos/product-arrow-icon.png?v=1234) center no-repeat;
+                            height: 98px;
+                            width: 54px;
+                            background-size: 80% 80%;
+                            transform: rotate(180deg);
+                        }
+
+                        .slick-next {
+                            right: 10px;
+                            background: url(/arquivos/product-arrow-icon.png?v=1234) center no-repeat;
+                            height: 98px;
+                            width: 54px;
+                            background-size: 80% 80%;
+                        }
+
+                        &.x-loading {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+
+                            &:before {
+                                content: "";
+                                display: block;
+                                background: url("/arquivos/loading-thumbs-colors.gif") no-repeat center;
+                                width: 32px;
+                                height: 32px;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                margin-top: -16px;
+                                margin-left: -16px;
+                                z-index: 2;
+                            }
+
+                            &:after {
+                                content: "";
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                background-color: rgba(255, 255, 255, 0.6);
+                                z-index: 2;
+                            }
+                        }
+                    }
+
+                    .slick-dots {
+                        float: left;
+                        width: 10%;
+                        padding-left: 30px;
+
+                        li {
+                            display: block;
+                            margin-bottom: 15px;
+                            position: relative;
+
+                            button {
+                                background: none;
+                                cursor: pointer;
+                                color: transparent;
+                                font-size: 0;
+
+                                img {
+                                    width: 100%;
+                                    mix-blend-mode: multiply;
+                                }
+
+                                .icon-play-2 {
+                                    content: "";
+                                    background: url("https://mrcatstore.vteximg.com.br/arquivos/botao-de-reproducao-de-video.png") center no-repeat;
+                                    font-size: 12px;
+                                    display: block;
+                                    margin: 0 auto;
+                                    width: 25px;
+                                    height: 25px;
+                                    background-size: 100%;
+                                    position: absolute;
+                                    left: 0;
+                                    right: 0;
+                                    top: 50%;
+                                    bottom: 15px;
+                                    transform: translateY(-50%);
+
+                                    @media (max-width: 1300px) {
+                                        height: 20px;
+                                        width: 20px;
+                                    }
+                                }
+                            }
+                        }
+
+                        @media only screen and (min-width: 761px) and (max-width: 1080px) {
+                            float: left;
+                            width: 100%;
+                            margin-top: 20px;
+                            text-align: center;
+
+                            li {
+                                display: inline-block;
+                                margin-right: 20px;
+
+                                button {
+                                    display: inline-block;
+                                    width: 10px;
+                                    height: 10px;
+                                    background-color: transparent;
+                                    border: 1px solid #000;
+                                    text-indent: -9999px;
+                                    -webkit-border-radius: 50%;
+                                    -moz-border-radius: 50%;
+                                    border-radius: 50%;
+                                }
+
+                                &.slick-active {
+                                    button {
+                                        background-color: #000;
+                                    }
+                                }
+                            }
+                        }
+
+                        .x-product_video {
+                            width: 100%;
+                            top: 0;
+                            height: 60px;
+                            background-image: url(/arquivos/thumb-video.png);
+                            left: 0;
+                            position: relative;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            cursor: pointer;
+
+                            .x-icone-video {
+                                font-size: 0;
+                            }
+                        }
+                    }
+                }
+
+                .x-btn-wishlist {
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 49px;
+                    right: 90px;
+                    z-index: 3;
+                    background: #FFF;
+                    border-color: #f2f2f2;
+
+                    &:hover {
+                        right: 95px;
+                        border: 1px solid #f2f2f2;
+
+                        .label {
+                            width: 90px;
+                        }
+
+                        .arrow {
+                            width: 14px;
+                        }
+                    }
+                }
+
+                .x-icon-wishlist {
+                    padding: 0 10px;
+                    min-width: 25px;
+                    height: 25px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    border: none;
+                    max-width: 100%;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+
+                    &::before {
+                        content: '';
+                        width: 25px;
+                        height: 25px;
+                        overflow: hidden;
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FtYWRhXzEiIGRhdGEtbmFtZT0iQ2FtYWRhIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDMwIDMwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiLz48cGF0aCBkPSJNMjUuNDgsMTIuMjJjLS4wNi4zNS0uMS43MS0uMTgsMWE4LjA4LDguMDgsMCwwLDEtMS41MSwzLjA1LDIzLjQ2LDIzLjQ2LDAsMCwxLTMuMzcsMy40NmMtMS42NCwxLjQzLTMuMywyLjg1LTUsNC4yOGEuNjMuNjMsMCwwLDEtLjg5LDBjLTIuMDctMS44LTQuMTQtMy41OS02LjE5LTUuNDFhMTUuMTMsMTUuMTMsMCwwLDEtMi42MS0zLDYuODgsNi44OCwwLDAsMS0xLjIyLTQuNjMsNiw2LDAsMCwxLDIuMjMtNC4yLDUuMTcsNS4xNywwLDAsMSwzLjgxLTEuMSw1LjMyLDUuMzIsMCwwLDEsMy45MywyLjQ4Yy4xNi4yMy4zLjQ4LjQ3Ljc1bC4xNy0uMjlhNi4xMiw2LjEyLDAsMCwxLDIuNS0yLjQ0LDQuOTQsNC45NCwwLDAsMSw0LS4yMSw1LjU4LDUuNTgsMCwwLDEsMy41OSw0LjIzYy4wOC4zMy4xMS42OC4xNywxWk0xNSwyMi44M2wuMDgsMGMxLjg1LTEuNjIsMy43My0zLjIyLDUuNTYtNC44NmExNCwxNCwwLDAsMCwyLjc5LTMuMjUsNS40NSw1LjQ1LDAsMCwwLC43MS00LjA3QTQuMzYsNC4zNiwwLDAsMCwyMS4zLDcuMjJhMy43NywzLjc3LDAsMCwwLTMuMjQuMjUsNC45NCw0Ljk0LDAsMCwwLTEuOTUsMi4xYy0uMjEuMzktLjM2LjgyLS41NSwxLjIzYS41Ny41NywwLDAsMS0uNTYuMzcuNTguNTgsMCwwLDEtLjU2LS4zN2MwLS4wOC0uMDYtLjE2LS4xLS4yNUE2LjYsNi42LDAsMCwwLDEyLjcxLDhhNCw0LDAsMCwwLTUuNDguMTEsNSw1LDAsMCwwLTEuMTQsNS40OSw3LjM1LDcuMzUsMCwwLDAsMS43NywyLjc1Yy44NC44OSwxLjcxLDEuNzQsMi42MiwyLjU2QzEyLDIwLjI1LDEzLjQ3LDIxLjUzLDE1LDIyLjgzWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwKSIvPjwvc3ZnPg==");
+                    }
+
+                    .label {
+                        font-size: 10px;
+                        text-align: center;
+                        width: 0;
+                        overflow: hidden;
+                        text-transform: none;
+                        transition: all .3s ease-in-out;
+                    }
+
+                    .arrow {
+                        overflow: hidden;
+                        width: 0;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        &::after {
+                            content: '';
+                            display: block;
+                            width: 6px;
+                            height: 6px;
+                            border-left: 1px solid black;
+                            border-bottom: 1px solid black;
+                            transform: rotate(-45deg);
+                            margin-bottom: 3px;
+                        }
+                    }
+
+                    &.x-active {
+                        &::before {
+                            background-size: 100%;
+                            background-repeat: no-repeat;
+                            background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FtYWRhXzEiIGRhdGEtbmFtZT0iQ2FtYWRhIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDMwIDMwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6I2ZmY2U0NDt9PC9zdHlsZT48L2RlZnM+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0yNS4zMSwxMC4zYTUuNTIsNS41MiwwLDAsMC0zLjYtNC4yMyw0Ljk0LDQuOTQsMCwwLDAtNC4wNS4yMSw2LjE3LDYuMTcsMCwwLDAtMi41LDIuNDZMMTUsOWExNy43NiwxNy43NiwwLDAsMC0xLjE4LTEuNTNBNSw1LDAsMCwwLDguMzgsNmE1LjQ0LDUuNDQsMCwwLDAtMy42NSw0LjFjLS4xLjM5LS4xNC43OS0uMjEsMS4xOHYuOWEuNTMuNTMsMCwwLDEsMCwuMTIsNy4xOCw3LjE4LDAsMCwwLDEuMjYsMy40MSwxNS42MywxNS42MywwLDAsMCwyLjYzLDNjMiwxLjgsNC4wOSwzLjU3LDYuMTQsNS4zNmEuNjEuNjEsMCwwLDAsLjg4LDBDMTcuMjUsMjIuNTIsMTksMjEsMjAuODEsMTkuNDNhMTkuMTIsMTkuMTIsMCwwLDAsMy40MS0zLjcyQTYuNzYsNi43NiwwLDAsMCwyNS4zMSwxMC4zWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwKSIvPjwvc3ZnPg==");
+                        }
+                    }
+                }
+            }
+
+            .x-product-descriptions {
+                // display: none;
+                width: 100%;
+                padding: 20px 0 40px 0;
+                cursor: pointer;
+                background: #F8F8F8;
+
+                ul.tabs {
+                    margin: 0px;
+                    padding: 0px;
+                    list-style: none;
+                    border-bottom: 1px solid #ccc;
+                    margin-bottom: 30px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                ul.tabs li {
+                    background: none;
+                    color: #222;
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 10px 15px;
+                    cursor: pointer;
+                    text-transform: uppercase;
+
+                    .x-icon-arrow {
+                        &::after {
+                            content: "+";
+                            display: inline-block;
+                            vertical-align: sub;
+                            font-size: 30px;
+                            margin-left: 18px;
+                            -webkit-transition: ease all 0.2s;
+                            -moz-transition: ease all 0.2s;
+                            transition: ease all 0.2s;
+                        }
+                    }
+                }
+
+                ul.tabs li.current {
+                    color: #222;
+                    border-bottom: 4px solid #000;
+                    font-weight: bold;
+
+                    .x-icon-arrow {
+                        &::after {
+                            content: "-";
+                            display: inline-block;
+                            vertical-align: sub;
+                            font-size: 30px;
+                            margin-left: 18px;
+                            -webkit-transition: ease all 0.2s;
+                            -moz-transition: ease all 0.2s;
+                            transition: ease all 0.2s;
+                        }
+                    }
+                }
+
+                #caracteristicas {
+                    h4.group.Filtros {
+                        display: none;
+                    }
+
+                    >table {
+
+                        .name-field.Medidas,
+                        .name-field.Video,
+                        .value-field.Video,
+                        .name-field.Material,
+                        .value-field.Material {
+                            display: none;
+                        }
+                    }
+                }
+
+                .tab-content {
+                    display: none;
+                    padding: 15px;
+                    font-size: 14px;
+                    font-family: "Gotham";
+                    line-height: 24px;
+                }
+
+                .tab-content.current {
+                    display: inherit;
+                }
+            }
+        }
+
+        .section-right {
+            width: 40%;
+            display: inline-block;
+            vertical-align: top;
+
+            .x-info-product {
+                // float: right;
+                // width: 40%;
+                padding: 50px 30px;
+                position: relative;
+                z-index: 3;
+                text-align: left;
+
+                @media only screen and (min-width: 761px) and (max-width: 1080px) {
+                    width: 50%;
+                    padding: 40px 30px;
+                }
+
+                #yv-review-quickreview {
+                    margin: 0;
+                }
+
+                .productName {
+                    text-align-last: left;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    margin-bottom: 20px;
+                    padding-right: 25px;
+                    position: relative;
+                }
+
+                .x-price-group {
+                    margin-bottom: 15px;
+                    letter-spacing: 2px;
+
+                    .plugin-preco {
+                        .valor-por {
+                            font-size: 0;
+                            display: inline-grid !important;
+
+                            strong {
+                                font-family: "Gotham";
+                                font-size: 22px;
+                                font-weight: 900;
+                            }
+                        }
+
+                        .valor-dividido {
+                            display: block !important;
+
+                            * {
+                                font-family: "Gotham";
+                                font-weight: normal;
+                                font-size: 12px;
+                            }
+                        }
+
+                        .preco-a-vista {
+                            display: none !important;
+                        }
+
+                        .valor-de {
+                            font-family: "Gotham";
+                            font-weight: normal;
+                            font-size: 12px;
+                            text-transform: lowercase;
+
+                            strong {
+                                font-weight: normal;
+                                text-transform: uppercase;
+                            }
+                        }
+
+                        .economia-de {
+                            display: none;
+                        }
+
+                        .cashbackMessage {
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin-top: 20px;
+                            text-transform: uppercase;
+                            font-size: 14px;
+                            line-height: 19px;
+                            letter-spacing: -0.5px;
+                            font-family: "Gotham";
+
+                            span {
+                                display: inline-block;
+                                vertical-align: text-top;
+                                background: url("/arquivos/logo-ame-produto.png?v=12345") center no-repeat;
+                                background-size: 100% 100%;
+                                width: 59px;
+                                height: 15px;
+                            }
+                        }
+                    }
+                }
+
+                .x-skus-group {
+                    margin-bottom: 20px;
+
+                    .sku-selector-container {
+                        .Tamanho {
+                            position: relative;
+
+                            .specification {
+                                font-size: 14px;
+                                text-transform: uppercase;
+                                margin: 10px 17px 15px 0;
+                                text-align: left;
+                            }
+
+                            .item-dimension-Tamanho {
+                                display: inline-block;
+
+                                input[type="radio"] {
+                                    position: absolute;
+                                    top: 0;
+                                    left: -9999px;
+                                }
+
+                                label {
+                                    font-family: "Open Sans", sans-serif;
+                                    display: inline-block;
+                                    position: relative;
+                                    width: 50px;
+                                    height: 50px;
+                                    line-height: 50px;
+                                    font-size: 13px;
+                                    text-align: center;
+                                    border: 1px solid #444;
+                                    margin-right: 12px;
+                                    margin-bottom: 10px;
+                                    cursor: pointer;
+
+                                    .aviso-estoque {
+                                        display: none;
+                                    }
+
+                                    &:hover {
+                                        .aviso-estoque {
+                                            display: block;
+                                            color: #ffce44;
+                                            font-size: 12px;
+                                            position: absolute;
+                                            bottom: -40px;
+                                            right: -50px;
+                                            text-align: center;
+                                            text-transform: uppercase;
+                                            width: 140px;
+
+                                            &::before {
+                                                content: "";
+                                                position: relative;
+                                                top: 2px;
+                                                left: 40%;
+                                                width: 0;
+                                                height: 0;
+                                                border-left: 5px solid #0000;
+                                                border-right: 5px solid #0000;
+                                                border-top: 10px solid #ffce44;
+                                            }
+                                        }
+                                    }
+
+                                    &[rel-stock="1"] {
+                                        &:hover {
+                                            .aviso-estoque {
+                                                &::before {
+                                                    left: 34%;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    &:hover {
+                                        background-color: #000;
+                                        color: #fff;
+                                    }
+
+                                    &.checked {
+                                        background-color: #000;
+                                        color: #fff;
+                                    }
+
+                                    &.disabled {
+                                        color: #ccc;
+                                        border: 1px solid #ccc;
+
+                                        span {
+                                            display: none !important;
+                                        }
+
+                                        &:before {
+                                            content: "";
+                                            position: absolute;
+                                            display: block;
+                                            top: 24px;
+                                            left: 0;
+                                            width: 50px;
+                                            height: 1px;
+                                            background-color: #ccc;
+                                            transform: rotate(-46deg);
+                                        }
+
+                                        &:hover {
+                                            color: #ccc;
+                                            background: transparent;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .Cores {
+                            position: relative;
+                            margin-bottom: 15px;
+
+                            .specification {
+                                display: inline-block;
+                                font-size: 0;
+                                text-transform: uppercase;
+                                margin: 10px 4px 10px 0;
+                                text-align: left;
+                                font-family: "Gotham";
+
+                                &::after {
+                                    content: "COR:";
+                                    font-size: 12px;
+                                }
+                            }
+
+                            .item-dimension-Cores {
+                                display: inline-block;
+                                margin: auto;
+                                vertical-align: middle;
+                                margin-top: 2px;
+
+                                input[type="radio"] {
+                                    position: absolute;
+                                    top: 0;
+                                    left: -9999px;
+                                }
+
+                                label {
+                                    display: inline-block;
+                                    font-size: 12px;
+                                    text-align: center;
+                                    // border: 1px solid transparent;
+                                    margin-right: 17px;
+                                    cursor: pointer;
+                                    position: relative;
+                                    overflow: hidden;
+
+                                    img {
+                                        position: absolute;
+                                        top: 10%;
+                                        left: 10%;
+                                        width: 80%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .portal-notify-me-ref {
+                        .notifyme-form {
+                            >p {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                .x-call-to-action {
+                    .x-buy-group {
+                        .portal-notify-me-ref {
+                            // display: none !important;
+
+                            .notifyme-title-div {
+                                text-transform: uppercase;
+                                font-size: 12px;
+
+                                h3 {
+                                    display: none;
+                                }
+                            }
+
+                            form {
+                                .notifyme-form {
+                                    margin-bottom: 30px;
+
+                                    >p {
+                                        font-size: 12px;
+                                        text-transform: uppercase;
+                                        font-weight: 300;
+                                        line-height: 1.5;
+                                        margin: 10px 0 20px;
+                                        font-family: "Gotham";
+                                    }
+
+                                    input[type="text"] {
+                                        float: left;
+                                        background-color: transparent;
+                                        border-bottom: 1px solid #a6a6a6;
+                                        height: 35px;
+                                        line-height: 35px;
+                                        width: 45%;
+                                        margin: 0 6px;
+                                        font-size: 10px;
+                                        // text-transform: uppercase;
+                                        // font-style: italic;
+                                        font-family: "Gotham";
+                                        margin-bottom: 5px;
+                                        text-align: center;
+                                    }
+
+                                    .btn-ok {
+                                        width: 0;
+                                        height: 0;
+                                        margin: 0;
+                                    }
+
+                                    .fake-sender {
+                                        float: left;
+                                        width: 100%;
+                                        height: 35px;
+                                        line-height: 35px;
+                                        border: 1px solid #000;
+                                        background-color: transparent;
+                                        text-align: center;
+                                        color: #000;
+                                        margin-top: 18px;
+                                        font-size: 16px;
+                                        font-weight: bold;
+                                        text-transform: uppercase;
+                                        cursor: pointer;
+                                        font-family: "Gotham";
+
+                                        &:hover {
+                                            background-color: #000;
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .success {
+                                .sku-notifyme-success {
+                                    text-transform: uppercase;
+                                    font-size: 12px;
+                                    display: block;
+                                    margin-top: 15px;
+                                    margin-bottom: 15px;
+                                    line-height: 1.6;
+                                    color: #347901;
+                                    font-weight: bold;
+                                }
+                            }
+
+                            .error {
+                                .sku-notifyme-error {
+                                    text-transform: uppercase;
+                                    font-size: 12px;
+                                    display: block;
+                                    margin-bottom: 15px;
+                                }
+                            }
+                        }
+
+                        #formNotifyMe {
+                            margin-bottom: 30px;
+
+                            .sku-notifyme-form>p {
+                                font-size: 12px;
+                                text-transform: uppercase;
+                                font-weight: 300;
+                                line-height: 1.5;
+                                margin: 10px 0 20px;
+                                font-family: "Merriweather", serif;
+                            }
+
+                            input[type="text"] {
+                                float: left;
+                                background-color: transparent;
+                                border-bottom: 1px solid #a6a6a6;
+                                text-align: center;
+                                height: 35px;
+                                line-height: 35px;
+                                width: 50%;
+                                padding-left: 10px;
+                                font-size: 10px;
+                                text-transform: uppercase;
+                                font-style: italic;
+                                font-family: "Gotham";
+                            }
+
+                            #notifymeOK {
+                                float: left;
+                                width: 100%;
+                                height: 35px;
+                                line-height: 35px;
+                                border: 1px solid #000;
+                                background-color: transparent;
+                                text-align: center;
+                                color: #000;
+                                margin-top: 18px;
+                                font-size: 16px;
+                                font-weight: bold;
+                                text-transform: uppercase;
+                                font-family: "Merriweather", serif;
+                                cursor: pointer;
+
+                                &:hover {
+                                    background-color: #000;
+                                    color: #fff;
+                                }
+                            }
+                        }
+
+                        .x-notsuccess {
+                            display: none;
+
+                            .sku-notifyme-success {
+                                text-transform: uppercase;
+                                font-size: 12px;
+                                display: block;
+                                margin-top: 15px;
+                                margin-bottom: 15px;
+                                line-height: 1.6;
+                                color: #347901;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+
+                    .x-produtos-similares {
+                        display: block;
+                        margin-bottom: 38px;
+
+                        .prateleira-cores {
+                            position: relative;
+
+                            h2 {
+                                font-family: "Gotham";
+                                font-size: 12px;
+                                text-transform: uppercase;
+                            }
+
+                            a {
+                                height: 0;
+                                padding: 0;
+                            }
+
+                            ul {
+                                display: inline-block;
+                                vertical-align: middle;
+                                padding: 0 20px;
+                                width: 100%;
+
+                                .slick-prev {
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 0;
+                                    z-index: 999;
+                                    font-size: 0;
+                                    background: url(/arquivos/product-arrow-icon-similar.png?v=123);
+                                    width: 11px;
+                                    height: 23px;
+                                    background-size: 100% 100%;
+                                    display: inline-block;
+                                    transform: rotate(180deg);
+                                    vertical-align: middle;
+                                }
+
+                                .slick-next {
+                                    position: absolute;
+                                    top: 50%;
+                                    right: 0;
+                                    font-size: 0;
+                                    background: url(/arquivos/product-arrow-icon-similar.png?v=123);
+                                    width: 11px;
+                                    height: 23px;
+                                    background-size: 100% 100%;
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                }
+                            }
+                        }
+                    }
+
+                    .shipping-info-box {
+                        background: #000;
+                        position: relative;
+
+                        .img-truck {
+                            display: inline-block;
+                            padding: 8px 17px 8px 15px;
+                            vertical-align: sub;
+                        }
+
+                        .texts {
+                            display: inline-block;
+                            padding: 8px 17px 8px 0px;
+
+                            .title-time {
+                                p {
+                                    display: inline-block;
+                                    font-family: "Gotham";
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 14px;
+                                    line-height: 12px;
+                                    text-transform: uppercase;
+                                    color: #ffffff;
+                                    margin-bottom: 8px;
+                                }
+
+                                .exclamation {
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    cursor: pointer;
+                                    margin-left: 16px;
+
+                                    .box-exclamation {
+                                        display: none;
+                                        background: #f2f2f2;
+                                        position: absolute;
+                                        top: -9px;
+                                        left: 279px;
+                                        max-width: 144px;
+                                        max-height: 32px;
+                                        border-radius: 3px;
+                                        border: 0.5px solid #c4c4c4;
+
+                                        p {
+                                            font-family: "Gotham";
+                                            font-style: normal;
+                                            font-weight: normal;
+                                            font-size: 10px;
+                                            line-height: 12px;
+                                            color: #000000;
+                                            text-transform: inherit;
+                                            padding: 4px;
+                                        }
+
+                                        &:after {
+                                            content: "";
+                                            position: absolute;
+                                            right: 100%;
+                                            top: 16px;
+                                            border: 6px solid transparent;
+                                            border-right-color: #f2f2f2;
+                                        }
+                                    }
+
+                                    &:hover {
+                                        .box-exclamation {
+                                            display: block;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .info-time {
+                                p {
+                                    font-family: "Gotham";
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 14px;
+                                    line-height: 12px;
+                                    color: #ffffff;
+                                }
+                            }
+                        }
+                    }
+
+                    #postalCode-region {
+                        margin: 20px 0;
+
+                        .cepteste {
+                            display: block;
+                            display: none;
+                            font-size: 12px;
+                            // font-weight: bold;
+                            line-height: 19px;
+                            margin-bottom: 8px;
+
+                            strong {
+                                text-decoration: underline;
+                                font-size: 16px;
+                            }
+                        }
+
+                        .postalCode-field {
+                            .regionShippingMsg {
+                                display: block;
+                                font-size: 12px;
+                                // font-weight: bold;
+                                line-height: 19px;
+                                margin-bottom: 8px;
+                            }
+
+                            #postalCode-input {
+                                display: inline-block;
+                                height: 32px;
+                                vertical-align: middle;
+                                border-radius: 0;
+                                border: 1px solid #000;
+                                box-shadow: none;
+                                outline: none;
+                                width: 140px;
+                                padding-left: 8px;
+                            }
+
+                            #submit-button {
+                                display: inline-block;
+                                vertical-align: middle;
+                                width: 108px;
+                                height: 32px;
+                                padding: 0 20px;
+                                border-radius: 0px;
+                                box-shadow: none;
+                                color: #fff;
+                                font-size: 12px;
+                                font-weight: 500;
+                                line-height: 30px;
+                                text-shadow: none;
+                                text-transform: uppercase;
+                                background: #000;
+                                outline: none;
+                                cursor: pointer;
+
+                                &.is-disable {
+                                    pointer-events: none;
+                                    opacity: 0.7;
+                                    font-size: 10px;
+                                }
+                            }
+
+                            a {
+                                padding: 0;
+                                height: auto;
+                                text-decoration: underline;
+                                margin-left: 4px;
+                                font-size: 12px;
+                                font-weight: normal;
+                                background: transparent;
+                                color: #000;
+                                text-transform: inherit;
+                                line-height: 0;
+
+                                span {
+                                    margin-left: 4px;
+                                }
+                            }
+
+                            .cepError {
+                                color: #f00;
+                                font-weight: 600;
+                                font-size: 12px;
+                                margin-top: 8px;
+                                animation: pulse 1s;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+
+                    .x-tab-info-product {
+                        display: none;
+                    }
+
+                    .buy-button {
+                        display: inline-block;
+                        height: 50px;
+                        line-height: 50px;
+                        background-color: #000;
+                        color: #fff;
+                        text-align: center;
+                        padding: 0 70px;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        font-weight: bold;
+                        letter-spacing: 1px;
+                    }
+
+                    .exchange-info {
+                        font-family: "Gotham";
+                        font-size: 12px;
+                        line-height: 24px;
+                        margin: 16px 0 32px;
+
+                        a {
+                            text-decoration: underline;
+                            font-weight: bold;
+                            color: #000;
+                        }
+                    }
+                }
+
+                .section-shipping {
+                    #popupCalculoFreteWrapper {
+                        display: none;
+                        visibility: hidden;
+                    }
+
+                    #calculoFrete {
+
+                        .quantity,
+                        .footer,
+                        .header {
+                            display: none;
+                            visibility: hidden;
+                        }
+
+                        fieldset {
+                            display: none;
+                            max-width: 350px;
+                            text-align: left;
+                        }
+
+                        .prefixo {
+                            font-size: 14px;
+                            // color: $color-third--dark;
+                            text-transform: uppercase;
+                            line-height: 17px;
+
+                            &::before {
+                                display: inline-block;
+                                vertical-align: middle;
+                                width: 30px;
+                                height: 30px;
+                                margin-right: 10px;
+                                // background: url('../../../assets/images/ico-frete.svg') no-repeat center;
+                                content: "";
+                            }
+
+                            #txtCep {
+                                max-width: 240px;
+                                width: 100%;
+                                height: 48px;
+                                margin: 0;
+                                margin-top: 10px;
+                                padding-left: 15px;
+                                border: none;
+                                border-radius: 6px;
+                                background: transparent;
+                                background-color: #f3f3f3;
+                                font-size: 16px;
+                                font-weight: 400;
+                                color: #808080;
+                                line-height: 15px;
+
+                                @media screen and (max-width: 380px) {
+                                    max-width: 180px;
+                                }
+                            }
+                        }
+
+                        .frete-calcular {
+                            #btnFreteSimulacao {
+                                display: inline-block;
+                                vertical-align: bottom;
+                                width: 70px;
+                                height: 48px;
+                                padding: 7px 0px;
+                                border: 1px solid #f2f2f2;
+                                border-radius: 3px;
+                                background: #fff;
+                                font-size: 16px;
+                                color: #f2f2f2;
+                                text-transform: uppercase;
+                                transition: all 0.1s ease;
+                                cursor: pointer;
+
+                                &:hover {
+                                    border: 1px solid #f2f2f2;
+                                    background: #f2f2f2;
+                                    color: #fff;
+                                }
+                            }
+                        }
+
+                        .cep-busca {
+                            display: none;
+                        }
+
+                        .freight-values {
+                            padding-bottom: 20px;
+
+                            &::after {
+                                content: "Os valores podem ser alterados de acordo com a quantidade de produtos na sacola de compras";
+                                margin-top: 8px;
+                                font-size: 13px;
+                                font-weight: normal;
+                                font-family: "Gotham";
+                            }
+
+                            table {
+                                position: relative;
+                                max-width: 100%;
+                                margin-top: 10px;
+                                border-collapse: collapse;
+                                border-spacing: 0;
+                                background-color: transparent;
+
+                                thead {
+                                    display: none;
+                                }
+
+                                tbody {
+                                    tr {
+                                        border-bottom: 0;
+                                        font-size: 12px;
+
+                                        &:nth-child(odd) {
+                                            background: #f2f2f2;
+                                        }
+
+                                        td {
+                                            padding: 10px 0 10px 15px;
+                                            font-family: "Gotham";
+
+                                            &:first-child {
+                                                font-weight: 900;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .section-share {
+                    display: flex;
+
+                    .img-wpp {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 50%;
+                        height: 76px;
+                        border: 1px solid #000;
+                        margin-right: 10px;
+                        padding: 0 8px;
+                        cursor: pointer;
+
+                        span {
+                            background: url(/arquivos/product-wpp-icon.png);
+                            height: 33px;
+                            width: 52px;
+                            background-size: 100% 100%;
+                            margin-right: 8px;
+                        }
+
+                        svg {
+                            width: 52px;
+                            margin-right: 8px;
+                        }
+
+                        p {
+                            font-size: 12px;
+                            font-family: "Gotham";
+                        }
+                    }
+
+                    .img-share {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 76px;
+                        border: 1px solid #000;
+                        width: 50%;
+                        margin-left: 10px;
+                        padding: 0 8px;
+                        cursor: pointer;
+
+                        span {
+                            background: url(/arquivos/product-share-icon.png);
+                            height: 29px;
+                            width: 32px;
+                            background-size: 100% 100%;
+                            margin-right: 8px;
+                        }
+
+                        p {
+                            font-size: 12px;
+                            font-family: "Gotham";
+                        }
+                    }
+                }
+            }
+
+            .x-locator-product {
+                display: block;
+            }
+        }
+    }
+
+    .x-popup-how-care {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99999;
+        display: none;
+
+        .x-how-care-fixed {
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+            width: 90%;
+            // height: 80%;
+            z-index: 600;
+            padding: 40px;
+            overflow-x: auto;
+            background-color: #f7f7f7;
+            text-transform: uppercase;
+
+            .x-column-text-medium {
+                width: 100%;
+                margin-bottom: 25px;
+
+                h4 {
+                    font-weight: bold;
+                    font-size: 14px;
+                    margin-bottom: 30px;
+                    line-height: 1.4;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    font-size: 11px;
+                    line-height: 1.4;
+                    margin-bottom: 10px;
+                }
+
+                &:first-child h4 {
+                    padding-right: 40px;
+                }
+            }
+
+            .x-column-text-mini {
+                float: left;
+                width: 100%;
+                position: relative;
+                padding-top: 20px;
+
+                h5 {
+                    font-weight: bold;
+                    font-size: 10px;
+                    margin-bottom: 12px;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    font-size: 11px;
+                    line-height: 1.5;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .x-link-how-care {
+                a {
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 1.4;
+                    text-transform: uppercase;
+                    color: #000;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .x-icon-close {
+            width: 50px;
+            height: 50px;
+            display: block;
+            position: fixed;
+            top: 0;
+            right: 0;
+            cursor: pointer;
+            z-index: 800;
+            margin-left: -1px;
+            background: #fff;
+            border: 1px solid #ccc;
+            text-align: center;
+
+            svg {
+                width: 13px !important;
+                margin-top: 18px;
+            }
+        }
+
+        .x-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1000%;
+            background-color: #000;
+            opacity: 0.95;
+            z-index: 500;
+        }
+    }
+
+    .swal2-container {
+        .swal2-popup.swal2-modal.swal2-show {
+            border-radius: 0;
+
+            .swal2-actions {
+                button {
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+
+    .x-video {
+        span {
+            display: none;
+        }
+
+        iframe {
+            margin-top: 90px;
+        }
+    }
+
+    .zoomContainer {
+        z-index: 2;
+
+        @media only screen and (min-width: 761px) and (max-width: 1080px) {
+            display: none !important;
+        }
+
+        .zoomWindowContainer {
+            .zoomWindow {
+                background-blend-mode: multiply;
+            }
+        }
+    }
+
+    #biggy-one {
+        width: 100%;
+        // float: left;
+        padding: 0 40px;
+
+        div[biggy-order="1"] {
+            display: none;
+        }
+    }
+
+    .modal-overlay {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5;
+        z-index: 9999;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.5);
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal-video {
+            top: calc(50% - 200px);
+            left: calc(50% - 350px);
+            width: 700px;
+            height: 400px;
+            position: absolute;
+            background-color: #fff;
+
+            .modal-close {
+                top: -35px;
+                color: #fff;
+                right: 0;
+                cursor: pointer;
+                font-size: 30px;
+                position: absolute;
+                font-weight: lighter;
+            }
+
+            iframe {
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
+        }
+    }
+
+    #shareAPIPolyfill-backdrop {
+        z-index: 999;
+    }
+
+    #shareAPIPolyfill-container {
+        z-index: 999999;
+        position: fixed !important;
+        bottom: 20% !important;
+
+        .shareAPIPolyfill-body {
+            .shareAPIPolyfill-footer {
+                background: #000 !important;
+                color: #fff !important;
+                font-weight: bold !important;
+                text-transform: uppercase !important;
+                font-family: "Gotham" !important;
+                opacity: 1 !important;
+            }
+        }
+    }
+
+    .modalWishlist {
+        font-family: "Gotham";
+
+        .swal2-title {
+            font-size: 20px;
+            color: #000;
+            margin-bottom: 24px;
+        }
+
+        .swal2-content {
+            font-weight: initial;
+            color: #000;
+
+            #swal2-content {
+                font-size: 18px;
+                color: #000;
+            }
+        }
+
+        .swal2-actions {
+            button {
+                border-radius: 0;
+                outline: none;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: bold;
+
+                &.swal2-confirm {
+                    background-color: #000;
+                }
+
+                &.swal2-cancel {
+                    background-color: #eee;
+                    color: #000;
+                    font-weight: normal;
+                }
+
+                &:focus {
+                    box-shadow: none !important;
+                }
+            }
+        }
+    }
+
+    #x-popup-product {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.7);
+        top: 0;
+        left: 0;
+        z-index: 9999;
+
+        .x-close-all {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            top: 0;
+            left: 0;
+        }
+
+        .x-quickView-iframe {
+            width: 750px;
+            height: 502px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin-top: -250px;
+            margin-left: -375px;
+            background-color: #f2f2f2;
+            border: 1px solid #c2c2c2;
+            z-index: 2;
+
+            .x-close-popup {
+                // @include sprite($icon-close-search);
+                display: block;
+                position: absolute;
+                top: -23px;
+                right: -23px;
+                text-indent: -9999px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .hide-product {
+        display: none;
+    }
+
+    .section-left .x-photo-product {
+        position: relative !important;
+    }
+
+    .yv-box {
+        padding: 0;
+    }
+
+    .product-kit {
+        margin-top: 20px;
+    }
+
+    .product-kit h2 {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+
+    .product-kit h3 {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .product-kit h3 strong {
+        color: red;
+    }
+
+    .product-kit h3 strong:first-of-type {
+        text-decoration: line-through;
+    }
+
+    .product-kit li {
+        width: 33.3%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .product-kit img {
+        width: 75%;
+    }
+
+    .product-kit h4 {
+        color: #000;
+        padding: 0 5px;
+        margin-top: 10px;
+        letter-spacing: 1px;
+        font-size: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 14px;
+    }
+}

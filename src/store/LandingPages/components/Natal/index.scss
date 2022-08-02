@@ -1,0 +1,675 @@
+body.x-natal {
+    .x-main {
+      
+        a{
+          color: #000;
+      
+          &:hover{
+            color: #fff;
+          }
+        }
+      
+        .section-video {
+          margin-bottom: 131px;
+      
+          video {
+            object-fit: fill;
+          }
+        }
+      
+        .setcion-header {
+          text-align: center;
+          margin-bottom: 78px;
+      
+          .header-logo {
+            margin: 0 auto 78px;
+            width: 337px;
+      
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+      
+          .header-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+      
+            .header-content--img {
+              margin: 0 88px;
+            }
+      
+            .header-content--text {
+              text-align: center;
+      
+              p {
+                font-size: 18px;
+                font-family: 'Gotham';
+                font-weight: lighter;
+                line-height: 25px;
+      
+              }
+            }
+      
+          }
+      
+      
+        }
+      
+        .section-gift {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 138px;
+      
+          .gitf-box-banner {
+            width: 33%;
+      
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+      
+        .section-wppbuy {
+          background: #ffbf37;
+          margin-bottom: 90px;
+          display: flex;
+          height: 323px;
+          align-items: flex-end;
+      
+          .wppbuy-duck {
+            margin-left: -80px;
+            margin-bottom: -10px;
+          }
+      
+          .wppbuy-info {
+            display: flex;
+            margin: 0 auto;
+      
+            .wppbuy-info--left {
+              margin-bottom: -2px;
+              margin-left: 50px;
+            }
+      
+            .wpbuy-info--right {
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+      
+              .info-right--text {
+                .right-text--title {
+                  display: flex;
+      
+                  .text-title--content {
+                    .title-content--text {
+                      font-size: 30px;
+                      font-family: "freightbig_bold";
+                      font-weight: bold;
+                      margin-left: 19px;
+                      line-height: 29px;
+                      margin-bottom: 57px;
+                    }
+                  }
+      
+                }
+      
+                .right-text--description {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+      
+                  p {
+                    font-size: 18px;
+                    font-family: "Gotham";
+                    font-weight: lighter;
+                    line-height: 25px;
+                    letter-spacing: 0.4px;
+                    margin-right: 157px;
+      
+                    @media screen and (max-width: 1366px) {
+                      margin-right: 77px;
+                    }
+                  }
+      
+                  a {
+                    color: rgb(255, 255, 255);
+                    background: rgb(0, 0, 0);
+                    border-radius: 25px;
+                    padding: 15px 24px;
+                    font-size: 13px;
+                    text-align: left;
+                  }
+                }
+              }
+      
+            }
+          }
+      
+      
+        }
+      
+        .container {
+          display: block;
+          max-width: 1475px;
+          margin: 0 auto;
+          padding: 0 15px;
+      
+          .choose-gender {
+            text-align: center;
+            margin-bottom: 108px;
+            h1{
+              font-family: "freightbig_medium";
+              font-size: 22px;
+              margin-bottom: 15px;
+            }
+            p {
+              font-family: "freightbig_medium";
+              font-size: 22px;
+              margin-bottom: 29px;
+            }
+      
+            .choose-gender--links {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+      
+              a {
+                font-family: 'Gotham';
+                background: #000;
+                font-size: 13px;
+                margin: 0 20px;
+                color: #fff;
+                border-radius: 25px;
+                padding: 15px 54px;
+              }
+            }
+          }
+      
+          .female-category {
+            display: flex;
+            margin-bottom: 105px;
+      
+            img {
+              width: 100%;
+              height: auto;
+            }
+      
+            .female-category--left {
+              margin-right: 45px;
+      
+              .category-left--top {
+                display: flex;
+                margin-bottom: 19px;
+      
+                .left-top--content {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+      
+                  .top-content--title {
+                    font-size: 54px;
+                    font-family: 'freightbig_bold';
+                    font-weight: bold;
+                    margin-left: 46px;
+                  }
+      
+                  .top-content--link {
+                    text-align: right;
+      
+                    h2 {
+                      font-family: 'freightbig_medium';
+                      font-size: 30px;
+                      margin-bottom: 21px;
+                    }
+      
+                    p {
+                      font-family: 'Gotham';
+                      font-size: 18px;
+                      font-weight: lighter;
+                      line-height: 25px;
+                      margin-bottom: 35px;
+                    }
+      
+                    a {
+                      color: #fff;
+                      background: #000000;
+                      border-radius: 25px;
+                      font-size: 18px;
+                      padding: 10px 15px;
+                    }
+      
+      
+                  }
+                }
+              }
+      
+              .category-left--bottom {
+                display: flex;
+      
+                .left-bottom--content {
+      
+                  .bottom-content--link {
+                    text-align: left;
+      
+                    h2 {
+                      font-family: 'freightbig_medium';
+                      font-size: 30px;
+                      margin-bottom: 21px;
+                    }
+      
+                    p {
+                      font-family: 'Gotham';
+                      font-size: 18px;
+                      font-weight: lighter;
+                      line-height: 25px;
+                      margin-bottom: 35px;
+                    }
+      
+                    a {
+                      color: #fff;
+                      background: #000000;
+                      border-radius: 25px;
+                      font-size: 18px;
+                      padding: 10px 15px;
+                    }
+                  }
+      
+                }
+      
+                .left-bottom--img {
+                  margin-left: 77px;
+                  margin-top: 22px;
+                }
+              }
+            }
+      
+            .female-category--right {
+              .right-content {
+                margin-top: 175px;
+      
+                .right-content--link {
+      
+                  h2 {
+                    font-family: 'freightbig_medium';
+                    font-size: 30px;
+                    margin-bottom: 21px;
+                  }
+      
+                  p {
+                    font-family: 'Gotham';
+                    font-size: 18px;
+                    font-weight: lighter;
+                    line-height: 25px;
+                    margin-bottom: 35px;
+                  }
+      
+                  a {
+                    color: #fff;
+                    background: #000000;
+                    border-radius: 25px;
+                    font-size: 18px;
+                    padding: 10px 15px;
+                  }
+      
+                }
+              }
+            }
+      
+          }
+      
+          .section-look {
+            text-align: center;
+      
+            h2 {
+              font-family: 'freightbig_medium';
+              font-size: 30px;
+              margin-bottom: 23px;
+            }
+      
+            p {
+              font-family: 'Gotham';
+              font-size: 18px;
+              font-weight: lighter;
+              line-height: 25px;
+              margin-bottom: 10px;
+            }
+      
+            .section-look--images {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-top: 60px;
+              margin-bottom: 169px;
+      
+              .look-images--left {
+                margin-right: 14px;
+      
+                .images-left--img {
+                  margin-bottom: 21px;
+                }
+      
+                a {
+                  color: #fff;
+                  background: #000000;
+                  border-radius: 25px;
+                  font-size: 13px;
+                  font-weight: lighter;
+                  padding: 10px 15px;
+                }
+              }
+      
+              .look-images--right {
+                margin-left: 14px;
+      
+                .images-right--img {
+                  margin-bottom: 21px;
+                }
+      
+                a {
+                  color: #fff;
+                  background: #000000;
+                  border-radius: 25px;
+                  font-size: 13px;
+                  font-weight: lighter;
+                  padding: 10px 15px;
+                }
+              }
+            }
+      
+          }
+      
+        }
+      
+        .female-search--size {
+          display: flex;
+          margin-bottom: 167px;
+      
+          img {
+            width: 100%;
+            height: auto;
+          }
+      
+          .search-size--left {
+            margin-right: 20px;
+      
+            .size-left--top {
+              margin-bottom: 21px;
+              margin-left: 190px;
+            }
+      
+            .size-left--bottom {
+              margin-top: 21px;
+      
+            }
+          }
+      
+          .search-size--right {
+            margin-left: 20px;
+      
+            .size-right--text {
+              margin-left: 24px;
+              margin-top: 120px;
+      
+              h2 {
+                font-family: 'freightbig_medium';
+                font-size: 30px;
+                margin-bottom: 21px;
+              }
+      
+              p {
+                font-family: 'Gotham';
+                font-size: 18px;
+                font-weight: lighter;
+                line-height: 25px;
+                margin-bottom: 20px;
+              }
+            }
+          }
+      
+        }
+      
+        .female-sizeguide {
+          text-align: center;
+          margin-bottom: 167px;
+      
+          p {
+            margin-bottom: 61px;
+            font-size: 30px;
+            font-family: 'freightbig_medium';
+          }
+      
+          div {
+            text-align: center;
+      
+            ul {
+              display: flex;
+              justify-content: center;
+      
+              li {
+                width: 135px;
+                height: 135px;
+                border: 1px solid;
+                line-height: 135px;
+                margin: 0 10px;
+                font-size: 26px;
+                transition: all .2s ease-in-out;
+                cursor: pointer;
+      
+                &:hover {
+                  background: #000000;
+                  color: #fff;
+                }
+              }
+      
+            }
+          }
+        }
+      
+        .male-category {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 110px;
+      
+          img {
+            width: 100%;
+            height: auto;
+          }
+      
+          h2 {
+            font-family: 'freightbig_medium';
+            font-size: 30px;
+            margin-bottom: 21px;
+          }
+      
+          p {
+            font-family: 'Gotham';
+            font-size: 18px;
+            font-weight: lighter;
+            line-height: 25px;
+            margin-bottom: 35px;
+          }
+      
+          a.link-btn {
+            color: #fff;
+            background: #000000;
+            border-radius: 25px;
+            font-size: 18px;
+            padding: 10px 15px;
+          }
+      
+          .male-category--left {
+            margin-top: -5%;
+            margin-right: 60px;
+      
+            .category-left--top {
+              display: flex;
+              margin-bottom: 85px;
+      
+              .left-top--img {
+                margin-right: 37px;
+              }
+      
+              .left-top--content {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+      
+                .top-content--title {
+                  font-size: 54px;
+                  font-family: 'freightbig_bold';
+                  font-weight: bold;
+                }
+              }
+            }
+      
+            .category-left--bottom {
+              display: flex;
+              align-items: flex-end;
+              float: right;
+      
+              .left-bottom--content {
+                margin-left: 37px;
+                text-align: right;
+              }
+      
+              .left-bottom--img {
+                margin-left: 37px;
+              }
+            }
+          }
+      
+          .male-category--right {
+            .right-content {
+              margin-top: 31px;
+            }
+          }
+      
+      
+        }
+      
+        .male-accessories {
+          text-align: center;
+          margin-bottom: 182px;
+      
+          h2 {
+            font-family: 'freightbig_medium';
+            font-size: 30px;
+            margin-bottom: 23px;
+          }
+      
+          p {
+            font-family: 'Gotham';
+            font-size: 18px;
+            font-weight: lighter;
+            line-height: 25px;
+            margin-bottom: 34px;
+          }
+      
+          a {
+            color: #fff;
+            background: #000000;
+            border-radius: 25px;
+            font-size: 13px;
+            font-weight: lighter;
+            padding: 10px 15px;
+            margin-bottom: 59px;
+          }
+      
+          .male-accessories--img {
+            margin: 59px auto 0;
+            width: 80%;
+            max-width: 1226px;
+            display: block;
+      
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+      
+        .male-search--size {
+          display: flex;
+          margin-bottom: 167px;
+      
+          img {
+            width: 100%;
+            height: auto;
+          }
+      
+          .search-size--left {
+            margin-right: 18px;
+      
+            .size-left--text {
+              width: max-content;
+              margin: 50px 0 0 auto;
+      
+              h2 {
+                font-family: 'freightbig_medium';
+                font-size: 30px;
+                margin-bottom: 21px;
+              }
+      
+              p {
+                font-family: 'Gotham';
+                font-size: 18px;
+                font-weight: lighter;
+                line-height: 25px;
+                margin-bottom: 20px;
+              }
+      
+            }
+          }
+      
+          .search-size--right {
+            margin-left: 18px;
+      
+            .size-right--imgOne {
+              margin-bottom: 42px;
+              max-width: 707px;
+              width: 90%;
+            }
+          }
+        }
+      
+        .male-sizeguide {
+          text-align: center;
+          margin-bottom: 167px;
+      
+          p {
+            margin-bottom: 61px;
+            font-size: 30px;
+            font-family: 'freightbig_medium';
+          }
+      
+          div {
+            text-align: center;
+      
+            ul {
+              display: flex;
+              justify-content: center;
+      
+              li {
+                width: 135px;
+                height: 135px;
+                border: 1px solid;
+                line-height: 135px;
+                margin: 0 10px;
+                font-size: 26px;
+                transition: all .2s ease-in-out;
+                cursor: pointer;
+      
+                &:hover {
+                  background: #000000;
+                  color: #fff;
+                }
+              }
+      
+            }
+          }
+        }
+    }
+}

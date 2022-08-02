@@ -1,0 +1,49 @@
+body.x-politicas {
+    .x-main {
+        .conteudo-group {
+
+            .title {
+                font-weight: bold;
+                color: #000;
+                font-size: 20px;
+                font-family: "Gotham";
+                margin-bottom: 30px;
+            }
+
+            .container {
+                line-height: 25px;
+                border-top: double;
+                padding-top: 20px;
+        
+                h2, h3 {
+                    font-weight: bold;
+                    margin: 10px 0;
+                }
+
+                .tab {
+                    margin-left: 20px;
+                }
+    
+                .underline {
+                    text-decoration: underline;
+                }
+    
+                b {
+                    font-weight: bold;
+                }
+
+                p {
+                    padding: 10px 0; 
+                }
+        
+                ul {
+                    margin-left: 20px;
+        
+                    li {
+                        padding: 5px 0;
+                    }
+                }
+            }
+        }
+    }
+}

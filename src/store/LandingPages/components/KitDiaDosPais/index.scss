@@ -1,0 +1,576 @@
+body.x-kit-dia-dos-pais {
+    .x-main {
+        .section-header {
+            margin-bottom: 100px;
+      
+            .salesforcebar {
+              font-family: 'Gotham';
+              background: #FDCB46;
+              text-align: center;
+              font-size: 16px;
+              line-height: 50px;
+              text-transform: uppercase;
+              height: 50px;
+              font-weight: bold;
+            }
+      
+            .section-images {
+              display: flex;
+              justify-content: space-between;
+      
+              .box-img {
+                width: 33%;
+      
+                img {
+                  width: 100%;
+                  height: auto;
+                }
+              }
+      
+            }
+        }
+      
+        .section-kits {
+            background: #FDCB46;
+            margin-bottom: 100px;
+      
+            .wrapper {
+              position: relative;
+      
+              .img-kits--slick {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                height: 550PX;
+      
+                .section-text {
+                  width: 30%;
+      
+                  .section-text--title {
+                    font-family: 'Gotham Condensed';
+                    text-transform: uppercase;
+                    font-size: 32px;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                    padding-left: 200px;
+      
+                    @media screen and (min-width: 1920px) {
+                      .section-text--title {
+                        padding-left: 150px;
+                      }
+                    }
+      
+                  }
+      
+                  .section-text--content {
+                    font-size: 16px;
+                    line-height: 22px;
+                    font-family: 'Gotham Book';
+                    padding-left: 200px;
+      
+                    @media screen and (min-width: 1920px) {
+                      padding-left: 150px;
+                      width: 60%;
+                    }
+                  }
+                }
+      
+                .section-img {
+                  width: 30%;
+      
+                  img {
+                    width: 100%;
+                    height: auto;
+                  }
+                }
+      
+                .section-kits--information {
+                  width: 30%;
+      
+                  .kits-title {
+                    font-family: 'Gotham Condensed';
+                    font-size: 32px;
+                    font-weight: bold;
+                    margin-bottom: 16px;
+                    text-transform: uppercase;
+      
+                    span {
+                      font-family: 'Gotham Condensed';
+                      font-size: 16px;
+                      font-weight: normal;
+      
+                    }
+      
+                  }
+      
+                  .section-oldPrice {
+                    font-family: 'Gotham Condensed';
+                    font-size: 16px;
+                    margin-bottom: 16px;
+                  }
+      
+                  .section-newPrice {
+                    font-family: 'Gotham Condensed';
+                    font-weight: bold;
+                    margin-bottom: 32px;
+      
+                    span {
+                      font-size: 12px;
+                      margin-right: 12px;
+                    }
+      
+                    .priceText {
+                      font-family: 'Gotham Condensed';
+                      display: inline-block;
+                      font-size: 32px;
+                    }
+      
+                  }
+      
+                  .btnBuy {
+                    padding: 15px 100px;
+                    background: #000;
+                    color: #fff;
+                    text-align: center;
+                    font-size: 12px;
+                  }
+      
+                }
+              }
+      
+              .slick-dots {
+                position: absolute;
+                right: 7%;
+                top: 30%;
+      
+                li {
+                  margin-bottom: 12px;
+      
+                  button {
+                    height: 8px;
+                    width: 8px;
+                    background: #000;
+                    color: transparent;
+                    font-size: 0;
+                    cursor: pointer;
+                  }
+      
+                  &.slick-active {
+      
+                    button {
+                      background: #fff;
+                    }
+      
+                  }
+      
+                }
+              }
+      
+            }
+      
+        }
+      
+        .container {
+            min-width: 300px;
+            max-width: 1540px;
+            width: 95%;
+            margin: 0 auto;
+            padding: 0 10px;
+      
+            .section-products {
+      
+              .section-products--title {
+                font-family: 'Gotham Condensed';
+                text-align: center;
+                margin-bottom: 60px;
+      
+                .section-products--title--one {
+                  font-family: 'Gotham Condensed';
+                  text-transform: uppercase;
+                  font-size: 40px;
+                  margin-bottom: 20px;
+                  font-weight: bold;
+      
+                }
+      
+                .section-products--title--two {
+                  font-family: 'Gotham Book';
+                  font-size: 18px;
+                }
+              }
+      
+              .section-productOne {
+                display: flex;
+                justify-content: center;
+                max-height: 700px;
+                margin-bottom: 20px;
+      
+                @media screen and (min-width: 1920px) {
+                  margin-bottom: 100px;
+                  max-height: 760px;
+                }
+      
+                .section-productOne--left {
+                  width: 40%;
+      
+                  img {
+                    width: 88%;
+                    height: auto;
+      
+                    &:hover {
+                      cursor: pointer;
+                      transform: scale(1.05);
+                    }
+                  }
+      
+                }
+      
+                .section-produtctOne--right {
+                  width: 40%;
+      
+                  .section-price {
+                    margin-left: 50px;
+      
+                    .price-text {
+                      font-family: 'Gotham Condensed';
+                      font-size: 16px;
+                      margin-bottom: 16px;
+                    }
+      
+                    .oldPrice {
+                      font-family: 'Gotham Condensed';
+                      font-weight: 700;
+                      font-size: 44px;
+      
+                      span {
+                        font-size: 12px;
+                      }
+                    }
+                  }
+      
+                  .section-product {
+                    img {
+                      width: 100%;
+                      height: auto;
+      
+                      &:hover {
+                        cursor: pointer;
+                        transform: scale(1.05);
+                      }
+                    }
+                  }
+      
+                }
+              }
+      
+              .section-productTwo {
+      
+                .section-productTwo--price {
+                  margin-bottom: 20px;
+      
+                  .section-price {
+                    text-align: center;
+      
+                    .price-text {
+                      font-family: 'Gotham Condensed';
+                      font-size: 16px;
+                      margin-bottom: 16px;
+                    }
+      
+                    .oldPrice {
+                      font-family: 'Gotham Condensed';
+                      font-weight: 700;
+                      font-size: 44px;
+      
+                      span {
+                        font-size: 12px;
+                      }
+                    }
+                  }
+                }
+      
+                .section-productTwo--imgs {
+                  text-align: center;
+                  margin-bottom: 100px;
+      
+                  .section-img--one {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 25%;
+                    margin-right: 4px;
+                    margin-top: 200px;
+      
+                    img {
+                      width: 100%;
+                      height: auto;
+      
+                      &:hover {
+                        cursor: pointer;
+                        transform: scale(1.05);
+                      }
+                    }
+                  }
+      
+                  .section-img--two {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 30%;
+                    margin-left: 8px;
+                    margin-right: 8px;
+                    margin-top: 100px;
+      
+                    img {
+                      width: 100%;
+                      height: auto;
+      
+                      &:hover {
+                        cursor: pointer;
+                        transform: scale(1.05);
+                      }
+                    }
+                  }
+      
+                  .section-img--three {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 25%;
+                    margin-left: 4px;
+      
+                    img {
+                      width: 100%;
+                      height: auto;
+      
+                      &:hover {
+                        cursor: pointer;
+                        transform: scale(1.05);
+                      }
+                    }
+                  }
+      
+                }
+              }
+      
+              .section-productThree {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 100px;
+      
+                .section-productThree--left {
+                  z-index: 2;
+                  width: 45%;
+                  margin-right: 4px;
+      
+                  img {
+                    width: 100%;
+                    height: auto;
+      
+                    &:hover {
+                      cursor: pointer;
+                      transform: scale(1.01);
+                    }
+                  }
+                }
+      
+                .section-productThree--right {
+                  z-index: 2;
+                  width: 45%;
+                  margin-left: 4px;
+      
+                  .section-price {
+                    margin-left: 20%;
+                    margin-top: 10%;
+                    margin-bottom: 21%;
+      
+                    .price-text {
+                      font-family: 'Gotham Condensed';
+                      font-size: 16px;
+                      margin-bottom: 16px;
+                    }
+      
+                    .oldPrice {
+                      font-family: 'Gotham Condensed';
+                      font-weight: 700;
+                      font-size: 44px;
+      
+                      span {
+                        font-size: 12px;
+                      }
+                    }
+                  }
+      
+                  .section-product {
+                    img {
+                      width: 100%;
+                      height: auto;
+      
+                      &:hover {
+                        cursor: pointer;
+                        transform: scale(1.01);
+                      }
+                    }
+                  }
+                }
+      
+                .section-yellowSquare {
+                  position: absolute;
+                  right: 45%;
+                  bottom: -5%;
+                  height: 150px;
+                  width: 150px;
+                  z-index: 1;
+                  background: #FDCB46;
+                }
+              }
+      
+            }
+      
+            .section-category {
+              margin-bottom: 100px;
+      
+              .section-category--title {
+                font-family: 'Gotham Condensed';
+                text-align: center;
+                margin-bottom: 60px;
+      
+                .section-category--title--one {
+                  font-family: 'Gotham Condensed';
+                  font-size: 40px;
+                  text-transform: uppercase;
+                  margin-bottom: 20px;
+                  font-weight: bold;
+                }
+      
+                .section-category--title--two {
+                  font-family: 'Gotham Book';
+                  font-size: 18px;
+                }
+              }
+      
+              .section-category--images {
+                margin-bottom: 20px;
+      
+                .section-images {
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: center;
+      
+                  .imgs-container {
+                    width: 30%;
+                    margin: 4px;
+                    position: relative;
+      
+                    &:hover {
+      
+                      img {
+                        filter: brightness(50%);
+                        cursor: pointer;
+                      }
+      
+                      .text-over {
+                        display: block;
+                      }
+      
+                    }
+      
+                    img {
+                      width: 100%;
+                      height: auto;
+                    }
+      
+                    .text-over {
+                      display: none;
+                      position: absolute;
+                      top: 50%;
+                      left: 50%;
+                      transform: translate(-50%, -50%);
+                      color: #fff;
+                      font-weight: bold;
+                      font-size: 24px;
+                      text-transform: uppercase;
+                    }
+      
+                  }
+      
+                }
+              }
+      
+              a {
+                color: #fff;
+                text-decoration: none;
+      
+                .seeAll {
+                  text-align: center;
+                  background: #000;
+                  color: #fff;
+                  margin: 0 auto;
+                  height: 50px;
+                  width: 250px;
+                  line-height: 50px;
+      
+                  &:hover {
+                    transform: scale(1.05);
+                  }
+      
+                }
+              }
+      
+            }
+        }
+      
+        .section-video {
+            margin-bottom: 100px;
+      
+            .section-video--title {
+              text-align: center;
+              margin-bottom: 60px;
+      
+              .section-video--title--one {
+                font-family: 'Gotham Condensed';
+                text-transform: uppercase;
+                font-size: 40px;
+                margin-bottom: 20px;
+                font-weight: bold;
+              }
+      
+              .section-video--title--two {
+                font-family: 'Gotham Book';
+                font-size: 18px;
+              }
+            }
+        }
+      
+        .section-numbers {
+            text-align: center;
+      
+            .section-numbers--title {
+              text-transform: uppercase;
+              font-size: 40px;
+              margin-bottom: 64px;
+              font-weight: bold;
+            }
+      
+            .section-nmbers--numbers {
+              display: flex;
+              justify-content: center;
+      
+              .section-numbers--box {
+                height: 120px;
+                width: 120px;
+                border: 1px solid #000;
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 120px;
+                margin-right: 44px;
+                color: #000;
+                text-decoration: none;
+      
+                &:hover {
+                  background: #000000;
+                  color: #fff;
+                }
+              }
+            }
+        }
+    }
+}

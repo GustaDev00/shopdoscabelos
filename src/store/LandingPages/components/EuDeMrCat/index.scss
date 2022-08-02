@@ -1,0 +1,103 @@
+body.x-eu-de-mrcat {
+    margin-top: 0;
+    
+    // hide header and footer
+    header,
+    footer {
+        display: none;
+    }
+
+    .x-main {
+
+        #x-insta-controller {
+            height: 50vw;
+            overflow: hidden;
+        }
+
+        .x-insta {
+            &__content {
+                background: #000;
+                color: #fff;
+                font-size: 35px;
+                padding: 35px 5%;
+                text-align: center;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+        
+                img{
+                    width: 20%;
+                    height: auto;
+                }
+                span {
+                    display: block;
+                    font-family: 'Gotham Light' !important;
+                    margin-bottom: 20px;
+                }
+                p {
+                    font-size: 20px;
+                }
+            }
+            &__photos {
+                position: relative;
+                margin: 2vw;
+            //     display: flex;
+            //     flex-wrap: wrap;
+            //     height: calc(100vh - 50px);
+            //     justify-content: center;
+            //     overflow: hidden;
+            //     width: 100%;
+                .slick-arrow {
+                    background: #5e4336 url(/arquivos/arrows-catalogo.png) no-repeat -8px center;
+                    cursor: pointer;
+                    font-size: 0;
+                    height: 96px;
+                    overflow: hidden;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 25px;
+                    z-index: 1;
+                    &.slick-next {
+                        background-position: -48px center;
+                        right: -.6vw;
+                    }
+                    &.slick-prev {
+                        left: -.6vw;
+                    }
+                    &.slick-disabled {
+                        display: none!important;
+                    }
+                }
+            }
+            &__column {
+            //     align-items: center;
+            //     display: flex!important;
+            //     flex-direction: column;
+            //     height: 100%!important;
+            //     justify-content: space-between;
+            //     width: 23%!important;
+                .x-flex {
+                    align-items: flex-end;
+                    display: flex;
+                    height: 20vw;
+                    margin: 0 auto .5vw;
+                    overflow: hidden;
+                    width: 22vw;
+                    iframe {
+                        min-width: 0!important;
+                        width: 100%!important;
+                        height: 100% !important;
+        
+                    }
+                }
+            }
+            &__footer {
+                margin: 0 auto;
+                width: 60%;
+                text-align: center;
+                font-size: 13px;   
+            }
+        }
+    }
+}

@@ -1,0 +1,227 @@
+body.x-leve-o-bem {
+    .x-main {
+        
+    .section-banner {
+        margin-bottom: 80px;
+
+        .box-banner {
+        img {
+            width: 100%;
+            height: auto;
+        }
+        }
+    }
+
+    .section-textOne {
+        margin-bottom: 100px;
+
+        .section-textOne--title {
+        text-align: center;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 1.5;
+        letter-spacing: 2px;
+
+        h1{
+            margin-bottom: 20px;
+        }
+        
+        h2{
+            margin-bottom: 40px;
+        }
+        }
+
+
+        .section-textOne--content {
+        display: block;
+        margin: 0 auto;
+        font-size: 12px;
+        line-height: 1.5;
+        text-transform: uppercase;
+        padding: 8px 33%;
+
+        span {
+            background: #ffce44;
+        }
+        }
+    }
+
+    .section-info {
+        background: #aea8a7;
+        position: relative;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+
+        .section-info--2019 {
+        position: absolute;
+        top: -56px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 180px;
+        height: 100px;
+        font-size: 112px;
+        color: #ffce44;
+        }
+
+        .section-info--video {
+        display: block;
+        margin: 0 auto;
+        width: max-content;
+        padding-top: 112px;
+        margin-bottom: 60px;
+        }
+
+        p {
+        color: #fff;
+        font-size: 24px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        letter-spacing: 5px;
+        }
+
+        .section-info--shoesDonations,
+        .section-info--institutionalPartner,
+        .section-info--stores {
+        font-weight: bold;
+        font-size: 112px;
+        margin-bottom: 16px;
+        
+
+        span {
+            color: #ffce44;
+        }
+
+        }
+    }
+
+    .section-textTwo {
+        margin-bottom: 80px;
+
+        .section-textTwo--phrase {
+        font-weight: bold;
+        width: 50%;
+        margin: 0 5% 80px;
+
+        img{
+            width: 40px;
+            height: auto;
+            
+            &.aspas--one{
+            margin-right: 4px;
+            display: inline-block;
+            vertical-align: top;
+            }
+            
+            &.aspas--two{
+            margin-left: 4px;
+            display: inline-block;
+            vertical-align: bottom;
+            }
+        }
+
+        p {
+            font-size: 36px;
+            background-color: #aea8a7;
+            color: #fff;
+            margin: 5px 0;
+            width: max-content;
+            display: inline-block;
+        }
+
+        .section-textTwo--phrase--author {
+            display: block;
+            font-size: 16px;
+            font-weight: normal;
+            color: #000;
+            font-family: 'Freight';
+            letter-spacing: 2px;
+            margin-top: 10px;
+        }
+        }
+
+        .section-textTwo--redCross {
+        width: 40%;
+        margin: 0 auto;
+
+        .section-textTwo--redCross--title {
+            color: #aea8a7;
+            text-transform: uppercase;
+            font-size: 44px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        .section-textTwo--redCross--content {
+            line-height: 2;
+
+            span{
+            background: #ffce44;
+            }
+        }
+
+        .section-textTwo--redCross--info {
+            font-weight: bold;
+            line-height: 1.5;
+
+            p {
+            display: inline-block;
+            width: 50%;
+            vertical-align: middle; 
+            }
+
+            .section-textTwo--redCross--img{
+            display: inline-block;
+            width: 50%;
+            vertical-align: middle;
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+            }
+        }
+        }
+    }
+
+    .section-instagram {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+
+        .section-instagram--link {
+        font-size: 40px;
+        text-align: right;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        a {
+            color: #aea8a7;
+        }
+        }
+
+        .section-instagram--photos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .box-banner {
+            margin: 20px 8px 40px;
+        }
+        }
+
+        p {
+        font-size: 80px;
+        font-weight: bold;
+        color: #ffce44;
+        text-align: center;
+        letter-spacing: 5px;
+        }
+    }
+
+    }
+}

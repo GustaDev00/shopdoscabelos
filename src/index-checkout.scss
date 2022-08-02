@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+@import './assets/stylesheets/breakpoint';
+@import './assets/stylesheets/fonts';
+
+@import url("https://fonts.googleapis.com/css?family=Alegreya:400,700,900|Merriweather:300,400,400i,700,900|Montserrat:400,700|Open+Sans:300,400,700,800|Raleway:200,300,400,500,600,700,800,900");
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    padding: 0 40px !important;
+
+    @include breakpoint("mobile") {
+        padding: 0 !important;
+    }
+
+    @include breakpoint("tablet") {
+        padding: 0 10px !important;
+    }
+}
+
+.container-cart {
+    width: 100%;
+    float: none;
+    margin: 0;
+    background: #fff;
+}
+
+.stock-info {
+    width: 100%;
+    left: 0;
+
+    span {
+        display: block;
+        text-align: center;
+        padding: 5px 0;
+        font-weight: 600;
+        background: #EFEFEF;
+
+        @media screen and (max-width: 375px) {
+            font-size: 10px;
+        }
+    }
+}
+
+#vtexIdContainer {
+    position: fixed !important;
+
+    .vtexIdUI-close {
+        right: 10px;
+        top: 10px;
+    }
+}
+
+.vtex-cartman,
+#neoassist-widget-frame-1 {
+    display: none !important;
+}

@@ -1,0 +1,325 @@
+@import "../../assets/stylesheets/breakpoint";
+@import "../../assets/stylesheets/fonts";
+
+#payment-data {
+    padding: 10px;
+
+    .accordion-group {
+        border: 0;
+
+        .accordion-heading {
+            position: relative;
+
+            span {
+                padding: 0;
+                font-family: "Montserrat", sans-serif;
+                font-size: 15px;
+                font-weight: 700;
+                letter-spacing: 2px;
+                background: transparent !important;
+            }
+        }
+
+        .accordion-body {
+            border: 1px solid #eee;
+
+            @include breakpoint("mobile") {
+                padding: 0;
+            }
+
+            .accordion-inner {
+                .notification {
+                    font-family: "Montserrat", sans-serif !important;
+                }
+
+                .box-step {
+                    .card-ready-for-typing {
+                        .holder-document {
+                            label {
+                                @include breakpoint("desktop") {
+                                    display: inline-block;
+                                }
+                            }
+                        }
+                    }
+
+                    .box-info {
+                        font-size: 12px;
+                        font-family: "Montserrat", sans-serif;
+                        color: #000;
+                    }
+
+                    .box-step-content {
+                        #show-gift-card-group {
+                            &::before {
+                                content: "";
+                                display: inline-block;
+                                background: url(/arquivos/ticket.png) no-repeat;
+                                background-size: contain;
+                                width: 34px;
+                                height: 34px;
+                                margin-top: -5px;
+                                position: absolute;
+                                margin-left: -45px;
+                            }
+                        }
+
+                        .form-step {
+                            p.link-gift-card {
+                                padding: 0;
+
+                                a {
+                                    width: 100%;
+                                    padding: 10px 60px;
+                                }
+                            }
+
+                            .payment-group {
+                                margin-top: 0;
+
+                                @include breakpoint("desktop") {
+                                    float: left;
+                                    width: 30%;
+                                }
+
+                                @include breakpoint("mobile") {
+                                    float: none;
+                                }
+
+                                @include breakpoint("tablet") {
+                                    float: none;
+                                    margin: 0 auto 10px;
+                                }
+
+                                .payment-group-list-btn {
+                                    width: 100% !important;
+
+                                    a {
+                                        padding-right: 0;
+                                        margin: 0;
+
+                                        span {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+
+                                #payment-group-creditDirectSalePaymentGroup,
+                                #payment-group-debitDirectSalePaymentGroup {
+                                    display: none !important;
+                                }
+
+                                #payment-group-payMeePaymentGroup {
+                                    .payment-group-item-text {
+                                        background-position: left;
+                                        padding-right: 10px;
+                                        background-image: url(/arquivos/paymee-setas.png);
+                                        background-position-x: 0;
+                                        text-align: left;
+                                        padding-left: 50px;
+                                        color: #4d4d4d;
+
+                                        @media screen and (max-width: 1080px) {
+                                            text-align-last: left;
+                                            padding-left: 50px;
+                                        }
+                                    }
+                                }
+
+                                #payment-group-AmeDigitalPaymentGroup {
+                                    .payment-group-item-text {
+                                        background-position: left;
+                                        text-align: left;
+                                        padding-left: 48px;
+
+                                        @media screen and (max-width: 1080px) {
+                                            text-align-last: left;
+                                            padding-left: 50px;
+                                        }
+                                    }
+                                }
+
+                                #payment-group-instantPaymentPaymentGroup {
+                                    span {
+                                        background-position: left;
+                                        padding-left: 50px;
+                                    }
+                                }
+
+                                #payment-group-picPayPaymentGroup {
+                                    .payment-group-item-text {
+                                        background-image: url(/arquivos/picpayLogoDesk.png);
+                                        background-position: left;
+                                        padding-left: 64px;
+                                    }
+                                }
+
+                                #payment-group-creditCardPaymentGroup {
+                                    .payment-group-item-text {
+                                        &::before {
+                                            content: "";
+                                            position: absolute;
+                                            top: 7px;
+                                            left: 0px;
+                                            background: url(/arquivos/credit-card.png)
+                                                no-repeat;
+                                            background-size: contain;
+                                            width: 37px;
+                                            height: 29px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .steps-view {
+                                float: left;
+                                width: 100%;
+                                background: #fff;
+
+                                @include breakpoint("mobile") {
+                                    width: 100%;
+                                    padding: 0 15px;
+                                }
+
+                                @include breakpoint("desktop") {
+                                    width: 70%;
+                                    padding: 10px 30px;
+                                }
+
+                                #payment-giftcard {
+                                    display: none;
+
+                                    &.x-active {
+                                        display: block;
+                                    }
+                                }
+
+                                .box-payment-option {
+                                    &.box-payment-ame {
+                                        background: url("/arquivos/amedigital-banner.png")
+                                            center no-repeat;
+                                        background-size: contain;
+                                        width: 100%;
+                                        height: 650px;
+
+                                        @media all and (max-width: 700px) {
+                                            max-height: 400px;
+                                        }
+
+                                        @media all and (max-width: 375px) {
+                                            max-height: 350px;
+                                        }
+
+                                        .payment-ame-bg {
+                                            display: none;
+                                        }
+                                    }
+
+                                    &.box-payment-giftcard {
+                                        h3 {
+                                            display: block;
+                                            color: #000;
+                                            font-size: 15px;
+                                        }
+
+                                        p, li {
+                                            color: #000;
+                                        }
+
+                                        ol {
+                                            margin-left: 1.2em;
+                                            
+                                            li {
+                                                line-height: 25px;
+                                            }
+                                        }
+                                        
+                                        ul {
+                                            margin-left: 1.2em;
+
+                                            li {
+                                                margin-bottom: 15px;
+                                            }
+
+                                            span {
+                                                font-weight: bold;
+                                            }
+                                        }
+
+                                        @include breakpoint("mobile") {
+                                            p:nth-child(5) {
+                                                font-weight: bold;
+                                            }
+                                        }
+                                    }
+
+                                    &.box-payment-pix {
+                                        background: url("/arquivos/pix-desktop.png")
+                                            center no-repeat;
+                                        width: 100%;
+                                        height: 432px;
+                                        padding-left: 20px;
+                                        margin: 0 auto;
+                                        @media all and(min-width:770px) {
+                                            margin-top: -45px;
+                                        }
+                                        @media all and(max-width:470px) {
+                                            background-size: 100%;
+                                            height: 350px;
+                                        }
+                                        @media all and(max-width:400px) {
+                                            background-size: 100%;
+                                            height: 280px;
+                                        }
+
+                                        .payment-pix-title,
+                                        .payment-pix-description,
+                                        .payment-pix-mobile,
+                                        .payment-pix-pc {
+                                            display: none;
+                                        }
+                                    }
+
+                                    &.box-payment-picpay {
+                                        background: url(/arquivos/PixpayDesktop.png)
+                                            center no-repeat;
+                                        width: 100%;
+                                        background-size: 100%;
+                                        height: 462px;
+                                        margin-top: -11px;
+
+                                        @include breakpoint("tablet") {
+                                            height: 699px;
+                                            margin-top: 0px;
+                                        }
+
+                                        .payment-picpay-title,
+                                        .payment-picpay-description,
+                                        .payment-picpay-info,
+                                        .payment-picpay-info-mobile,
+                                        .payment-picpay-help {
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.VTEX-PIX__modal-outer-container {
+    animation-name: openPix;
+}
+
+@keyframes openPix {
+    from {
+        opacity: 0.99;
+    }
+    to {
+      opacity: 1;
+  }
+}

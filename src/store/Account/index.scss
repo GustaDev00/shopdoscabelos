@@ -1,0 +1,646 @@
+@keyframes auth {
+    from {
+        opacity: 0.99;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+    
+iframe.w-100 {
+    animation-name: auth;
+    height: 100vh;
+}    
+
+body.x-account {
+
+    .x-general {
+        width: 100%;
+        height: 100%;
+        float: left;
+
+        .x-main {
+            padding-top: 40px;
+            float: none;
+            margin: 0 auto;
+            max-width: 1300px;
+
+            @media screen and (max-width: 767px){
+                padding-top: 45px;
+            }
+
+            main:not(.vtex-account__order-details) {
+                button {
+                    color: #fff;
+                    padding: 5px 30px;
+                    border-color: #000;
+                    border-radius: 0;
+                    background-color: #000;
+
+                    span {
+                        color: #fff;
+                    }
+
+                    svg {
+                        fill: #fff;
+                    }
+                }
+            }
+
+            .vtex-address-form__postalCode {
+                a {
+                    color: #000;
+                    display: block;
+                    font-size: 11px;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                    text-transform: uppercase;
+                }
+            }
+
+            .x-say-hello {
+                padding: 10px 0;
+                margin-top: 20px;
+                font-size: 25px;
+                font-weight: bold;
+
+                a {
+                    color: #000;
+                    display: inline-block;
+                    font-size: 14px;
+                    font-weight: lighter;
+                    margin-left: 5px;
+                    vertical-align: middle;
+                }
+
+                @media (max-width: 1023px) {
+                    margin-top: 0;
+                    padding-left: 20px;
+                }
+            }
+
+            .x-account-nav {
+                width: 100%;
+                display: flex !important;
+                flex-wrap: nowrap;
+                margin-top: 3%;
+                justify-content: space-between;
+                background-color: #000;
+
+                ul {
+                    width: calc(100% - 150px);
+
+                    li {
+                        display: inline-block;
+
+                        a {
+                            color: #fff;
+                            padding: 15px 20px;
+                            display: block;
+                            text-transform: uppercase;
+
+                            &:hover,
+                            &.active {
+                                color: #000;
+                                font-weight: bold;
+                                background-color: #fff;
+                            }
+                        }
+
+                        @media (max-width: 1024px) {
+                            display: block;
+                        }
+                    }
+
+                    @media (max-width: 1024px) {
+                        width: 100%;
+                    }
+                }
+
+                span {
+                    color: #fff;
+                    width: 150px;
+                    cursor: pointer;
+                    padding: 15px 20px;
+                    text-align: right;
+                    background-size: 21px;
+                    text-transform: uppercase;
+                    background-image: url(/arquivos/return-ico.png);
+                    background-repeat: no-repeat;
+                    background-position: 34px 11px;
+
+                    @media (max-width: 1024px) {
+                        display: none;
+                    }
+                }
+            }
+
+            .vtex-account__menu {
+                width: 0;
+                padding: 0;
+                visibility: hidden;
+
+                a.b--action-primary {
+                    border-color: #f7cc45;
+                }
+            }
+
+            .vtex-account__page>header {
+                display: block;
+
+                .vtex-pageHeader__title {
+                    font-family: 'Gotham';
+                }
+
+                .vtex-pageHeader__children {
+                    .vtex-button {
+                        background: #000;
+                        border: #000;
+                        padding: 5px 30px;
+                        border-radius: 0;
+
+                        span{
+                            color: #fff;
+                            font-weight: 500;
+                            font-family: 'Fabriga';
+                        }
+                    }
+                }
+            }
+
+            .vtex-account__page {
+                width: 100%;
+                max-width: 1250px;
+
+                .myo-order-card {
+                    border-color: #ccc;
+                    border-radius: 5px;
+
+                    .myo-order-header {
+                        background-color: #000;
+
+                        div,
+                        span {
+                            color: #fff;
+                        }
+
+                        .bg-danger,
+                        .bg-success,
+                        .bg-warning {
+                            padding: 5px 25px;
+                            font-weight: bold;
+                            border-radius: 0;
+                            text-transform: uppercase;
+                            background-color: #fff;
+
+                            span {
+                                color: #000;
+                            }
+                        }
+                    }
+
+                    .bg-base {
+                        .tedRequest {
+                            .bg-transparent {
+                                margin: 0 auto;
+                                text-align: right;
+                                background-color: black;
+                                color: white;
+                                text-transform: uppercase;
+                                font-weight: 800;
+                                padding: 7px 39px;
+                                margin-bottom: 5px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+
+                    .myo-order-product {
+                        span {
+                            color: #000;
+                            text-transform: uppercase;
+                        }
+
+                        a {
+                            color: #000;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    .myo-invoice-btn,
+                    .myo-reorder-btn {
+                        color: #000;
+                        margin: 0 auto;
+                        display: flex;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        justify-content: center;
+
+                        svg {
+                            fill: #000;
+                            display: none;
+                        }
+                    }
+
+                    .myo-details-btn {
+                        color: #454543;
+                        border: 1px solid #ccc;
+                        background-color: #efecec;
+                    }
+                }
+
+                .myo-collapsed-order {
+                    border-radius: 5px;
+                    background-color: #000;
+
+                    div,
+                    span {
+                        color: #fff;
+                    }
+
+                    .bg-danger,
+                    .bg-success,
+                    .bg-warning {
+                        width: 180px;
+                        padding: 5px 25px;
+                        font-weight: bold;
+                        border-radius: 0;
+                        text-transform: uppercase;
+                        background-color: #fff;
+
+                        span {
+                            color: #000;
+                        }
+                    }
+                }
+
+                //CUSTOMIZAÇÃO YAMI//
+
+                .vtex-account__order-details {
+                    time {
+
+                        .bg-danger,
+                        .bg-success,
+                        .bg-warning {
+                            padding: 10px;
+                            margin-left: 10px;
+                            font-weight: bold;
+                            border-radius: 0;
+                            text-transform: uppercase;
+                            background-color: #000;
+
+                            span {
+                                color: #fff;
+                            }
+                        }
+
+                        .custom-id {
+                            color: #000;
+                            font-size: 20px;
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                        }
+                    }
+
+                    .center {
+                        .fl {
+                            @media screen and (max-width:760px) {
+                                width: 100%;
+                            }
+
+                            .fl {
+                                .ba {
+                                    overflow-x: hidden;
+
+                                    div {
+                                        .dib {
+                                            .dib {
+                                                @media screen and (max-width:760px) {
+                                                    display: block;
+                                                }
+                                            }
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .fl:first-child {
+                        width: 27%;
+
+                        @media screen and (max-width:760px) {
+                            width: 100%;
+                        }
+                    }
+
+                    .fl:nth-child(2) {
+                        display: flex;
+                        position: relative;
+
+                        @media screen and (max-width:760px) {
+                            width: 100%;
+                        }
+
+                        ul {
+                            display: flex;
+                            position: absolute;
+                            top: 40px;
+                        
+                            @media screen and (max-width:760px) {
+                                display: block;
+                                margin: 0 auto;
+                                position: relative;
+                                right: 0;
+                                left: 0;
+                                top: 20px;
+                            }
+
+                            li {
+                                overflow: visible !important;
+                                
+                                @media screen and (max-width:760px) {
+                                    display: block;
+                                }
+
+                                &:first-of-type{
+                                    a{
+                                        margin: 0%;
+                                    }
+                                }
+                                
+                                &.db.dib-ns.mr7-ns.mb5.mb0-ns{
+                                    margin-top: 5.9px;
+                                }
+                                a {
+                                    background-color: black;
+                                    color: white;
+                                    padding: 8px 20px;
+                                    text-transform: uppercase;
+                                    text-align: center;
+                                    font-weight: 900;
+                                    font-size: 13px;
+                                    text-decoration: none;
+
+                                    @media screen and (max-width:760px) {
+                                        margin: 0 auto;
+                                        display: block;
+                                    }
+
+                                    svg {
+                                        display: none;
+                                    }
+
+                                    .dib {
+                                        margin: 0 auto;
+                                        margin-left: 0 !important;
+
+                                        span {
+                                            margin: 0 auto;
+                                            color: white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                a,
+                span {
+                    color: #000;
+                }
+
+                svg {
+                    fill: #000;
+                }
+
+                article {
+                    section {
+                        border: 0;
+                        background-color: #f4f4f4;
+                    }
+
+                    a,
+                    span {
+                        text-transform: uppercase;
+                    }
+                }
+
+                .myo-progress-bar {
+                    @media (min-width: 1024px) {
+                        .myo-progress-bar__title-font {
+                            font-size: 18px;
+                            letter-spacing: normal;
+                        }
+
+                        &.w-100 {
+                            border: 1px solid #000;
+
+                            .myo-progress-bar__mobile-text+.flex.justify-center {
+                                > {
+                                    div:nth-child(odd) {
+                                        color: transparent;
+                                        width: 7%;
+                                        border: 0;
+                                        position: relative;
+                                        background-color: transparent;
+
+                                        .myo-progress-bar__ma-inner-circle {
+                                            display: none;
+                                        }
+
+                                        &.bg-muted-3 {
+                                            opacity: .3;
+                                        }
+
+                                        &:before {
+                                            top: -200%;
+                                            left: calc(50% - 40%);
+                                            width: 80%;
+                                            height: 0;
+                                            content: "";
+                                            position: absolute;
+                                            padding-bottom: 80%;
+                                            background-size: contain;
+                                            background-repeat: no-repeat;
+                                            background-position: center;
+                                        }
+                                    }
+
+                                    div:nth-child(1) {
+                                        &:before {
+                                            background-image: url('/arquivos/SACOLA.png');
+                                        }
+                                    }
+
+                                    div:nth-child(3) {
+                                        &:before {
+                                            background-image: url('/arquivos/DINHEIRO.png');
+                                        }
+                                    }
+
+                                    div:nth-child(5) {
+                                        &:before {
+                                            background-image: url('/arquivos/CAIXA.png');
+                                        }
+                                    }
+
+                                    div:nth-child(7) {
+                                        &:before {
+                                            background-image: url('/arquivos/ENTREGA.png');
+                                        }
+                                    }
+
+                                    div:nth-child(9) {
+                                        &:before {
+                                            background-image: url('/arquivos/PRESENTE.png');
+                                        }
+                                    }
+
+                                    div:nth-child(even) {
+                                        width: 15%;
+                                    }
+                                }
+                            }
+
+                            @media (min-width: 1024px) {
+                                height: 240px;
+                            }
+                        }
+
+                        .myo-progress-bar__text {
+                            color: #000;
+                            display: block;
+                            margin-top: 20px;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                        }
+
+                        .myo-progress-bar__line.b--success {
+                            border-color: #000;
+                        }
+                    }
+
+                    @media (max-width: 1023px) {
+                        .myo-progress-bar__circle.bg-success {
+                            background-color: #000;
+                        }
+
+                        .myo-progress-bar__line.b--success {
+                            border-color: #000;
+                        }
+
+                        .myo-progress-bar__ma-inner-circle.c-success {
+                            color: #000;
+                            background-color: #000;
+                        }
+                    }
+                }
+
+                .bg-muted-1.c-on-muted-1 {
+                    font-weight: bold;
+                    background-color: transparent;
+                }
+
+                .f6.link.no-underline.c-link.hover-c-link {
+                    margin: 10px auto;
+                    display: inline-block;
+                    padding: 10px;
+                    text-transform: uppercase;
+                    background-color: #000;
+
+                    span {
+                        color: #fff;
+                    }
+
+                    +p>span {
+                        font-weight: bold;
+                    }
+                }
+
+                .pt1 a.f6.link.no-underline.c-link[rel="noopener"] {
+                    display: inline-block;
+                    margin-top: 10px;
+                    padding: 10px;
+                    font-family: 'Gotham';
+                    text-transform: uppercase;
+                    background-color: #000;
+                    color: #fff;
+                }
+            }
+
+            .vtex-account__page-body {
+                .t-heading-3 {
+                    span {
+                        font-family: 'Gotham';
+                    }
+                }
+            }
+
+            @media (min-width: 1024px) {
+                margin: -50px auto 0 auto;
+            }
+        }
+    }
+}
+
+// CUSTOMIZATION FOR "MY AUTHENTICATION" IFRAME
+.bg-base {
+    background: #fff;
+    overflow: hidden;
+    margin-top: 0;
+
+    header {
+        .vtex-pageHeader__container {
+            .vtex-pageHeader__title {
+                font-family: 'Gotham';
+            }
+
+            .vtex-pageHeader-link__container {
+                div {
+                    padding: .25rem 1rem;
+                }
+
+                .vtex-button {
+                    .vtex__icon-arrow-back {
+                        color: #000;
+                    }
+    
+                    span {
+                        color: #000;
+                        font-size: 0;
+                        font-family: 'Fabriga';
+
+                        &::after {
+                            content: "VOLTAR";
+                            font-size: .875rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .vtex-account__page-body {
+        .vtex_my-authentication_box_container {
+            div {
+                font-family: 'Fabriga';
+            }
+            
+            button {
+                background: #000;
+                padding: 5px 30px;
+                border-radius: 0;
+
+                .vtex-button__label {
+                    color: #fff;
+                    font-size: .875rem;
+                }
+            }
+        }
+    }
+}

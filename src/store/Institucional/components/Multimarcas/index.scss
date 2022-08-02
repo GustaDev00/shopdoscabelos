@@ -1,0 +1,237 @@
+body.x-multimarcas {
+    .x-general {
+        .x-main {
+            .x-conteudo-group {
+                align-self: flex-start;
+                margin-right: 3%;
+                margin-top: 45px;
+
+                .form-group {
+                    .title-page {
+                        padding-left: 20px;
+                        font-size: 20px;
+                        font-weight: bold;
+
+                        @media all and (max-width: 1720px) {
+                            font-size: 17px;
+                        }
+                    }
+                    .subtitle-page {
+                        padding-left: 20px;
+                        margin-top: 20px;
+                        font-family: "Gotham-Book";
+                        font-size: 14px;
+                        @media all and (max-width: 1720px) {
+                            font-size: 13px;
+                        }
+                    }
+                    #multimarcas-form {
+                        margin-top: 42px;
+                        background: #f4f5f6;
+                        padding: 22px 33px 40px 35px;
+                        .nome {
+                            #nome {
+                                width: 100%;
+                                display: block;
+                                margin-top: 5px;
+                                height: 35px;
+                                border-radius: 3px;
+                                border: 1px solid #bebebe;
+                                padding: 0px 10px;
+                            }
+                        }
+                        .estado {
+                            margin-top: 17px;
+                            #estado {
+                                display: block;
+                                width: 100%;
+                                height: 35px;
+                                border-radius: 3px;
+                                margin-top: 5px;
+                                border: 1px solid #bebebe;
+                                background: white;
+                                padding: 0px 8px;
+                            }
+                        }
+                        .cidade {
+                            margin-top: 17px;
+                            margin-bottom: 17px;
+
+                            #cidade {
+                                display: block;
+                                width: 100%;
+                                margin-top: 5px;
+                                height: 35px;
+                                border-radius: 3px;
+                                border: 1px solid #bebebe;
+                                background: white;
+                                padding: 0px 8px;
+                            }
+                        }
+                        .email {
+                            margin-top: 17px;
+                            #email {
+                                display: block;
+                                margin-top: 5px;
+                                width: 100%;
+                                border: 1px solid #bebebe;
+                                border-radius: 3px;
+                                height: 35px;
+                                padding: 0px 10px;
+                            }
+                        }
+                        .telefone {
+                            margin-top: 17px;
+                            #telefone {
+                                display: block;
+                                width: 100%;
+                                margin-top: 5px;
+                                height: 36px;
+                                border-radius: 3px;
+                                border: 1px solid #bebebe;
+                                padding: 0px 10px;
+                            }
+                        }
+                        .mensagem-box {
+                            margin-top: 17px;
+
+                            .mensagem {
+                                display: block;
+                                width: 100%;
+                                margin-top: 5px;
+                                height: 72px;
+                                border-radius: 3px;
+                                border: 1px solid #bebebe;
+                                resize: none;
+                                padding: 0px 10px;
+                            }
+                        }
+                        label {
+                            display: block;
+                            font-family: "Gotham-Book";
+                            font-size: 14px;
+                        }
+                        .input-line {
+                            display: inline-block;
+                            width: 33%;
+                            margin-right: 9%;
+                            vertical-align: top;
+                            @media all and (max-width: 1900px) {
+                                width: 53%;
+                            }
+                            @media all and (max-width: 1285px) {
+                                width: 100%;
+                                display: block;
+                            }
+
+                            .title {
+                                display: inline-block;
+                                margin-left: 10px;
+                                font-family: "Gotham-Book";
+                                font-size: 14px;
+                                vertical-align: middle;
+                            }
+                            > div {
+                                label {
+                                    display: inline-block;
+                                }
+                                display: inline-block;
+                                input[type="radio"] {
+                                    display: none;
+                                    &:checked + span {
+                                        background: #000000;
+                                    }
+                                }
+                                label span {
+                                    display: inline-block;
+                                    width: 20px;
+                                    height: 20px;
+                                    vertical-align: middle;
+                                    cursor: pointer;
+                                    border: 1px solid #bebebe;
+                                    text-align: center;
+                                    line-height: 25px;
+                                    border-radius: 5px;
+                                    background: #ffff;
+                                }
+                            }
+                            .box-radio {
+                                margin-top: 13px;
+                                height: 35px;
+                                .yes-form {
+                                    display: inline-block;
+                                    margin-right: 22px;
+                                }
+                                .no-form {
+                                    display: inline-block;
+                                }
+                            }
+                        }
+                        .input-line-two {
+                            display: inline-block;
+                            width: 58%;
+                            @media all and (max-width: 1900px) {
+                                width: 38%;
+                            }
+                            @media all and (max-width: 1285px) {
+                                width: 100%;
+                                display: block;
+                            }
+                            &.is-hidden {
+                                display: none;
+                            }
+                            #cnpj {
+                                display: block;
+                                width: 100%;
+                                margin-top: 5px;
+                                height: 35px;
+                                border-radius: 3px;
+                                border: 1px solid #bebebe;
+                                padding: 0px 10px;
+                            }
+                        }
+                        label.cnpj {
+                            display: inline-block;
+                        }
+                    }
+                    .botao-enviar {
+                        margin-top: 17px;
+                        display: block;
+                        width: 62%;
+                        background: #ffce44;
+                        font-family: "Gotham";
+                        font-size: 15px;
+                        font-weight: bold;
+                        border-radius: 16px;
+                        height: 51px;
+                        vertical-align: middle;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .x-image-group {
+                margin-top: 0 !important;
+                max-width: 37em;
+                @media all and (max-width: 1720px) {
+                    max-width: 27em;
+                }
+                
+            }
+            .imagem-container {
+                display: inline-block;
+                width: 41%;
+                @media all and (max-width: 1900px) {
+                    width: 39%;
+                }
+                img {
+                    width: 100%;
+                    max-height: 845px;
+                }
+            }
+        }
+
+        #NeoassistCentral {
+            display: none !important;
+        }
+    }
+}

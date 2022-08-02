@@ -1,0 +1,222 @@
+body.x-light-leather {
+    .x-main {
+        max-width: 1920px;
+        margin: 0 auto;
+        overflow-x: hidden;
+      
+        a img:hover{
+          transform: scale(1.01);
+        }
+      
+        // animações
+        .anime-left {
+          opacity: 0;
+          transform: translate3d(-100px, 0, 0);
+          transition: .3s;
+        }
+      
+        .anime-right {
+          opacity: 0;
+          transform: translate3d(100px, 0, 0);
+          transition: .3s;
+        }
+      
+        .anime-start{
+          opacity: 1;
+          transform: translate3d(0, 0, 0)
+        }
+        // animações
+      
+        .section-banner {
+          margin-bottom: 129.9px;
+      
+          .box-banner {
+      
+            img {
+              width: 100%;
+              height: auto;
+              transform: scale(1) !important;
+            }
+      
+          }
+      
+        }
+      
+        .whos-lightleather {
+      
+          .whos-lightleather--title {
+            text-align: center;
+            font-size: 67px;
+            // font-weight: bold;
+            margin-bottom: 80px;
+            font-family: 'Gotham Medium';
+      
+            span {
+              font-family: 'Gotham Thin';
+              font-weight: normal;
+            }
+          }
+      
+          .whos-lightleather--content {
+            font-family: 'Gotham Light';
+            width: 471px;
+            text-align: center;
+            font-size: 14px;
+            margin: 0 auto 84px;
+            line-height: 28px;
+          }
+      
+        }
+      
+        .section-features {
+          max-width: 12580px;
+          margin: 0 auto 80px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      
+      
+          .section-features--left {
+            width: 515px;
+      
+            .section-features--title {
+              font-size: 67px;
+              font-family: 'Gotham Medium';
+              margin-bottom: 90px;
+            }
+      
+            .section-features--list {
+              li {
+                font-family: 'Gotham Medium';
+                color: #c6c6c6;
+                font-size: 22px;
+                line-height: 130px;
+      
+                &::before {
+                  content: '';
+                  margin-right: 7px;
+                  display: inline-block;
+                  width: 8px;
+                  height: 8px;
+                  background: #c6c6c6;
+                }
+              }
+            }
+          }
+      
+          .section-features--right {
+            width: 713px;
+      
+            .box-banner {
+              img {
+                width: 100%;
+                height: auto;
+              }
+            }
+          }
+        }
+      
+        .section-video {
+          margin-bottom: 51px;
+      
+          .section-video--title {
+            font-size: 68px;
+            text-align: center;
+            font-family: 'Gotham Thin';
+            line-height: 86px;
+            margin-bottom: 80px;
+            letter-spacing: 12px;
+      
+            span {
+              letter-spacing: normal;
+              font-family: 'Gotham Medium';
+            }
+          }
+      
+          .section-video--content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+      
+            .section-video--image {
+              margin: 0 8px;
+              width: 30%;
+      
+              .box-banner {
+                img {
+                  width: 100%;
+                  height: auto;
+                }
+              }
+      
+              video {
+                object-fit: fill;
+              }
+            }
+      
+          }
+        }
+      
+        .section-bottom {
+          // display: flex;
+          // justify-content: center;
+          // align-items: center;
+      
+          .section-bottom--left {
+            width: 50%;
+            display: inline-block;
+            vertical-align: middle;
+      
+            .section-bottom--title {
+              float: right;
+              margin: 0 auto 100px;
+              max-width: 500px;
+      
+              h2 {
+                width: 260px;
+                font-size: 68px;
+                line-height: 136px;
+                font-family: 'Gotham Thin';
+                letter-spacing: 12px;
+              }
+      
+              p {
+                width: 503px;
+                font-size: 14px;
+                font-family: 'Gotham Light';
+                line-height: 28px;
+                padding: 0 15px;
+              }
+            }
+      
+            .section-bottom--leftImg {
+      
+              .box-banner {
+                text-align: left;
+      
+                img {
+                  width: 80%;
+                  height: auto;
+                }
+              }
+            }
+          }
+      
+          .section-bottom--right {
+            width: 50%;
+            display: inline-block;
+            vertical-align: middle;
+            margin-bottom: 15%;
+            
+            .box-banner {
+              text-align: center;
+      
+              img {
+                width: 100%;
+                height: auto;
+              }
+            }
+          }
+        }
+    }
+}

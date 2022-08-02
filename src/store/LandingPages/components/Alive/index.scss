@@ -1,0 +1,17 @@
+body.x-alive {
+    main {
+        display: flex;
+        justify-content: center;
+        background-color: #000;
+    }
+    #live {
+        margin-top: 15px;
+        margin-bottom: 80px;
+        display: block;
+        background: #000;
+        border: none;
+        min-height: 80vh;
+        width: 414px;
+        overflow: hidden;
+      }
+}

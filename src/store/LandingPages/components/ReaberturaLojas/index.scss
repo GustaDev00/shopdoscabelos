@@ -1,0 +1,289 @@
+body.x-reabertura-lojas {
+    .x-main {
+
+        .section-header {
+
+            margin-bottom: 100px;
+
+            .section-header--content {
+            img{
+                width: 100%;
+                height: auto;
+            }
+            }
+
+        }
+
+        .container {
+            min-width: 300px;
+            max-width: 1540px;
+            width: 95%;
+            margin: 0 auto;
+            padding: 0 10px;
+
+            .section-details {
+            font-family: 'Gotham';
+            margin-bottom: 100px;
+
+            h1 {
+                color: #EBCA52;
+                text-transform: uppercase;
+                text-align: left;
+                font-size: 32px;
+                font-weight: bold;
+                margin-bottom: 60px;
+            }
+
+            p {
+                font-size: 24px;
+                line-height: 45px;
+            }
+
+
+            }
+
+            .section-stores {
+            font-family: 'Gotham';
+            margin-bottom: 100px;
+
+            .section-stores-title {
+                margin-bottom: 60px;
+                .section-header--circle {
+                display: inline-block;
+                vertical-align: middle;
+                height: 88px;
+                width: 45px;
+                background: url('/arquivos/half-circle-yellow.png') center no-repeat;
+                }
+
+                p {
+                display: inline-block;
+                vertical-align: middle;
+                font-weight: bold;
+                font-size: 24px;
+                width: 90%;
+                margin-left: 10px;
+                line-height: 45px;
+                }
+            }
+
+            .stores-list{
+
+                .state{
+                margin: 20px 0;
+                cursor: pointer;
+                font-weight: bold;
+                text-transform: uppercase;
+                transition: all .3s ease-in-out;
+                border-bottom: 1.5px solid #000;
+                min-height: 40px;
+                padding: 0 20px;
+
+                &::before{
+                    content: '+';
+                    font-size: 24px;
+                    font-weight: bold;
+                    float: right;
+                    transition: all .3s ease-in-out;
+                }
+                
+                &.is-open{
+                    &::before{
+                    content: '+';
+                    font-size: 24px;
+                    font-weight: bold;
+                    float: right;
+                    transform: rotate(45deg);
+                    }
+
+                    ul{
+                    display: block;
+                    }
+                }
+                
+                ul{
+                    display: none;
+                    border-top: 1.5px solid #000;
+                    margin: 20px 0 0;
+
+                    li{
+
+                    margin: 12px 0;
+                    font-family: 'Gotham';
+                    font-weight: normal;
+                    text-transform: none;
+                    font-size: 16px;
+
+                    &.cidade{
+                        font-weight: bold;
+                    }
+
+                    &.dias-trabalho{
+                        margin-bottom: 20px;
+                    }
+                    }
+                }
+                
+
+                }
+            }
+            }
+
+            .section-scheduling {
+            margin-bottom: 100px;
+
+            .section-scheduling--title {
+                font-size: 32px;
+                color: #EBCA52;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-bottom: 60px;
+            }
+
+            .section-scheduling--circle {
+                display: inline-block;
+                vertical-align: middle;
+                height: 88px;
+                width: 45px;
+                background: url('/arquivos/half-circle-yellow.png') center no-repeat;
+            }
+
+            .section-scheduling--content {
+                display: inline-block;
+                vertical-align: middle;
+                font-weight: bold;
+                font-size: 24px;
+                width: 90%;
+                margin-left: 10px;
+
+                a {
+                display: block;
+                color: #EBCA52;
+                font-weight: bold;
+                font-size: 20px;
+                text-decoration: none;
+                margin-top: 20px;
+                }
+            }
+
+            }
+
+            .section-measures {
+            margin-bottom: 100px;
+
+            .section-measures--title {
+                font-size: 32px;
+                color: #EBCA52;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-bottom: 60px;
+            }
+
+            .section-measures--circle {
+                display: inline-block;
+                vertical-align: middle;
+                height: 88px;
+                width: 45px;
+                background: url('/arquivos/half-circle-yellow.png') center no-repeat;
+            }
+
+            .section-measures--description {
+                font-family: 'Gotham';
+                display: inline-block;
+                vertical-align: middle;
+                font-weight: bold;
+                font-size: 24px;
+                width: 90%;
+                margin-left: 10px;
+                line-height: 45px;
+            }
+
+            h2 {
+                color: #EBCA52;
+                text-transform: uppercase;
+                text-align: left;
+                font-size: 32px;
+                font-weight: bold;
+                margin: 100px 0 60px;
+            }
+
+            .section-measures--images {
+
+                text-align: center;
+
+                img{
+                width: 70%;
+                height: auto;
+                }
+
+            }
+            }
+
+            .section-visitus {
+            .section-visitus--title {
+                font-size: 32px;
+                color: #EBCA52;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-bottom: 60px;
+            }
+
+            .section-visitus--circle {
+                display: inline-block;
+                vertical-align: middle;
+                height: 88px;
+                width: 45px;
+                background: url('/arquivos/half-circle-yellow.png') center no-repeat;
+            }
+
+            .section-visitus--description {
+                font-family: 'Gotham';
+                display: inline-block;
+                vertical-align: middle;
+                font-weight: bold;
+                font-size: 24px;
+                width: 90%;
+                margin-left: 10px;
+                line-height: 45px;
+            }
+
+            h2 {
+                color: #EBCA52;
+                text-transform: uppercase;
+                text-align: left;
+                font-size: 32px;
+                font-weight: bold;
+                margin: 100px 0 60px;
+            }
+
+            .section-visitus--images {
+                margin: 0 auto 100px;
+                text-align: center;
+            }
+            }
+
+            .section-footer{
+            .section-footer--content{
+                p{
+                font-size: 24px;
+                margin-bottom: 16px;
+                font-family: 'Gotham';
+                line-height: 45px;
+                font-weight: bold;
+
+                &:last-of-type{
+                    margin-bottom: 70px;
+                }
+                }
+
+                span{
+                color: #EBCA52;
+                font-weight: bold;
+                font-size: 32px;
+                }
+            }
+            }
+        }
+
+    }
+}

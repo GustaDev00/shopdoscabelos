@@ -1,0 +1,119 @@
+body.x-institucional {
+    .x-general {
+        .x-main {
+            margin: 0 auto;
+            display: flex;
+            margin-bottom: 40px;
+
+            .x-menu-group {
+                align-self: flex-start;
+                margin-left: 8%;
+                margin-right: 3%;
+                width: 15%;
+                margin-top: 45px;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    min-height: 400px;
+
+                    li {
+                        &:first-of-type {
+                            margin-bottom: 30px;
+                            padding: 0;
+
+                            a {
+                                font-family: "Gotham";
+                                font-size: 22px;
+                                font-weight: bold;
+                                color: #000;
+                                margin-bottom: 18px;
+                                margin-top: 0px;
+                                text-transform: uppercase;
+                                @media all and (max-width: 1875px) {
+                                    font-size: 17px;
+                                }
+                            }
+                        }
+
+                        padding: 10px 0;
+
+                        a {
+                            font-family: "Gotham-Book";
+                            font-size: 19px;
+                            color: #000;
+                            margin-top: 51px;
+                            padding: 0;
+                            text-transform: initial;
+
+                            @media all and (max-width: 1875px) {
+                                font-size: 15px;
+                            }
+
+                            &.x-active {
+                                border-bottom: 1px solid #ffce44;
+                                width: max-content;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .x-conteudo-group {
+                align-self: flex-start;
+                margin-right: 3%;
+                width: 35%;
+                margin-top: 45px;
+
+                .x-title {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+
+                .x-text-group {
+                    p {
+                        margin-top: 20px;
+                        font-family: "Gotham-Book";
+                        font-size: 14px;
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+
+            .x-conteudo-group-2c {
+                margin-right: 3%;
+                width: 68%;
+                margin-top: 45px;
+            }
+
+            .x-image-group {
+                margin-top: 45px;
+            }
+        }
+    }
+}
+
+// Sweetalert
+.swal2-container.swal2-center.swal2-backdrop-show {
+    .swal2-popup.swal2-modal.swal2-icon-error.swal2-show {
+        font-family: "Gotham";
+        border-radius: 0;
+        .swal2-actions {
+            button {
+                background: black;
+                border-radius: 0;
+            }
+        }
+    }
+    .swal2-popup.swal2-modal.swal2-icon-success.swal2-show {
+        font-family: "Gotham";
+        border-radius: 0;
+        .swal2-actions {
+            button {
+                background: black;
+                border-radius: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+body.x-diadospais-2022-final {
+    main {
+        overflow: hidden;
+        min-height: 100vh;
+
+        .congratulation {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            h3 {
+                text-align: center;
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            p {
+                margin: 2rem 0;
+            }
+        }
+
+        .video {
+            display: flex;
+            justify-content: center;
+
+            &__img {
+                max-width: 65.43rem;
+                width: 85%;
+            }
+        }
+
+        .text-banner {
+            display: flex;
+            justify-content: center;
+            margin: 1rem 0 2rem;
+
+            &__description {
+                max-width: 65.43rem;
+                text-align: center;
+            }
+        }
+
+        .dedication {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .products {
+            @media screen and(min-width:768px) {
+                width: 50%;
+            }
+
+            flex-wrap: wrap;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin: 1rem auto 0;
+        }
+
+        .collection {
+            margin-top: 10rem;
+
+            &__img {
+                max-height: 27.125rem;
+                min-width: 100%;
+                width: 100%;
+            }
+        }
+    }
+}

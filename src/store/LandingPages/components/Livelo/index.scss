@@ -1,0 +1,77 @@
+body.x-livelo {
+
+    .x-newslleter {
+        margin-top: -2px !important;
+    }
+
+    .livelo__wrapper {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        .livelo__banner {
+            width: 42%;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .livelo__info {
+            width: 58%;
+            height: 100%;
+            padding: 5%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            svg {
+                width: 140px;
+                height: 140px;
+                margin-bottom: 40px;
+            }
+
+            p {
+                color: #707070;
+                margin-bottom: 20px;
+                font-size: 18px;
+                line-height: 1.4;
+                max-width: 350px;
+
+                span {
+                    white-space: pre;
+                }
+
+                strong {
+                    font-weight: bolder;
+                }
+                .voucher {
+                    color: #e50091;
+                    display: block;
+                }
+            }
+
+            .livelo__cta {
+                font-size: 16px;
+                font-weight: bold;
+                min-height: 42px;
+                min-width: 28px;
+                padding: 14px 28px;
+                color: #fff;
+                background-color: #000;
+                margin-top: 20px;
+                cursor: pointer;
+            }
+
+            .livelo__regulation {
+                font-size: 12px;
+                text-decoration: underline;
+                color: #000;
+                margin-top: 40px;
+                cursor: pointer;
+            }
+        }
+    }
+}

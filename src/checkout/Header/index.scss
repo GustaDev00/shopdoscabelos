@@ -1,0 +1,149 @@
+@import '../../assets/stylesheets/breakpoint';
+
+header.x-header {
+    width: 100%;
+    height: 55px;
+    padding: 15px;
+    background: #fff;
+    text-align: center;
+    
+    @include breakpoint("desktop") {
+      height: 70px;
+      margin: 0 auto;
+      padding: 30px 0;
+    }
+  
+    @include breakpoint("mobile") {
+      width: auto;
+      height: 50px;
+      padding: 10px 0 0;
+      margin: 0 10px;
+      border-bottom: 1px solid #eee;
+    }
+  
+    @include breakpoint("tablet") {
+      height: 50px;
+      padding: 10px 0 0;
+    }
+  
+    .x-logo {
+      float: left;
+      margin: 0;
+      text-indent: -9999px;
+  
+      a {
+        display: block;
+        overflow: hidden;
+        background: url(/arquivos/new-logo.png) no-repeat;
+        background-size: cover;
+        height: 55px;
+        width: 245px;
+        margin-left: -20px;
+        margin-top: -5px;
+        position: relative;
+        z-index: 2;
+        filter: invert(1);
+  
+        @include breakpoint("mobile") {
+          height: 40px;
+          width: 150px;
+          margin-left: -10px;
+          background-size: contain;
+        }
+  
+        @include breakpoint("tablet") {
+          height: 40px;
+          width: 150px;
+          margin-left: -10px;
+          background-size: contain;
+        }
+      }
+    }
+  
+    .x-checkout-icon {
+      display: block;
+      float: right;
+      margin-top: 10px;
+
+      &::before {
+        content: '';
+        width: 16px;
+        height: 16px;
+        background: url(/arquivos/padlock.png) no-repeat;
+        background-size: cover;
+        display: inline-block;
+        margin-right: 7px;
+      }
+
+      &::after {
+        content: 'SITE SEGURO';
+        font-size: 12.5px;
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+  
+      @include breakpoint("desktop") {
+        margin-top: 10px;
+      }
+    }
+}
+
+#cart-title {
+    padding: 0px 0 20px 0;
+    position: relative;
+    margin-top: -40px;
+    border-bottom: 1px solid #bbbaba;
+    color: #000;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Montserrat",sans-serif;
+    font-size: 0px;
+    font-weight: 900;
+
+    &::before {
+        content: "minha sacola";
+        font-size: 15px;
+        position: absolute;
+        left: 0;
+        right: 0;
+
+        @include breakpoint("mobile") {
+            font-size: 14px;
+            letter-spacing: 0px;
+        }
+    }
+
+    @include breakpoint("mobile") {
+        min-width: 115px;
+        padding: 10px 0 10px 0;
+        margin: 0;
+        border-top: 0;
+        border-bottom: 0;
+        white-space: nowrap;
+      }
+
+      @include breakpoint("tablet") {
+        padding: 10px 0 10px 0;
+        border-top: 1px solid #bbbaba;
+        border-bottom: 0;
+        margin: 0px 15px;
+      }
+}
+
+@media all and (-ms-high-contrast: none) {
+    #cart-title {
+      padding: 0px 0 60px 0;
+      margin-top: -30px;
+    }
+
+    /* IE10 */
+
+    *::-ms-backdrop,
+    #cart-title {
+      padding: 0px 0 60px 0;
+      margin-top: -30px;
+    }
+
+    /* IE11 */
+}

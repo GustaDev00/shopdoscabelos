@@ -1,0 +1,423 @@
+body.x-flow {
+    
+    .x-main {
+
+        .x-new_heading{
+            .x-header__item.x-header__nav._menu{
+                margin-bottom: 0;
+                padding-bottom: 0;
+                li{
+                    padding-bottom: 0;
+                }
+            }
+            .x-search-results{
+                display: none;
+            }
+            ._hover{
+                ul{ 
+                    li{
+                    padding-right: 0!important;
+                    padding-left: 0!important;
+                    padding-top: 0!important;
+                    padding-bottom:0!important;
+                    }
+                }
+            }
+        }
+
+        .x-header.x-fixed{
+            .x-header__wrapper{
+                .x-header__pre-content{
+                    .x-header__item.x-header__logo.no_fix{
+                        top:12px;
+                    }
+                    .x-header__item.x-header__nav._utils{
+                        top: 16px;
+                        left:0;
+                    }
+                }
+                .x-header__content{
+                    .x-header__item.x-header__nav._menu{
+                        .x-header__link{
+                            ._hover{
+                                top: 100%!important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        img{
+            max-width: 100%;
+        }
+        .banner{
+            img{
+                min-width: 100%;
+            }
+        }
+        .main{
+            .linha-um{
+                padding-top: 150px;
+                .container{
+                    display: flex;
+                    .flow-text{
+                        padding-top: 120px;
+                        img{
+                            max-width: 45%;
+                        }
+                        .paragrafo-um{
+                            font-size: 10px;
+                            font-family: "gotham";
+                            text-align: justify;
+                            padding-top: 55px;
+                            padding-right: 116px;
+                            padding-left: 116px;
+                            letter-spacing: 1px;
+                            line-height: 22px;
+                            font-weight: 500;                            
+                        }
+                        .botoes{
+                            padding-top: 55px;
+                            display: block;
+                            margin: 0 auto;
+                            .col-md-6{
+                                max-width: 185px;
+                                display: inline-block;
+                                padding-right: 7px;
+                                padding-left: 7px;
+                                a{                              
+                                    text-decoration: none;  
+                                    p{
+                                        background-color: #312883;
+                                        color: white;
+                                        font-family: 'Gotham';
+                                        font-weight: 900;
+                                        font-size: 12px;
+                                        padding: 11px;
+                                    }
+                                }
+                                a:hover{
+                                    border: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .linha-dois{
+                margin-top: 250px;
+                padding-right: 150px;
+                background-color: #ececec;
+                padding-bottom: 25px;                    
+                .container{
+                    display: flex;
+                    .col-md-2{
+                        display: grid;
+                        align-content: flex-end;
+                        justify-content: flex-end;
+                        padding-right: 0;
+                        a{
+                            padding: 10px 0;
+
+                            .color-01{
+                                width: 22px;
+                                height: 22px;
+                                background-color: #a9786a;
+                                border-radius: 50%;
+                            }
+                        }
+                        a{
+                            padding: 10px 0;
+
+                            .color-02{
+                                width: 22px;
+                                height: 22px;
+                                background-color: #c3a897;
+                                border-radius: 50%;
+                            }
+                        }
+                        a{
+                            padding: 10px 0;
+
+                            .color-03{
+                                width: 22px;
+                                height: 22px;
+                                background-color: #a9a991;
+                                border-radius: 50%;
+                            }
+                        }
+                        a{
+                            padding: 10px 0;
+
+                            .color-04{
+                                width: 22px;
+                                height: 22px;
+                                background-color: #232a3c;
+                                border-radius: 50%;
+                            }
+                        }
+                        a{
+                            padding: 10px 0;
+
+                            .color-05{
+                                width: 22px;
+                                height: 22px;
+                                background-color: #000000;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                    .flow-img{
+                        margin-top: -85px;
+                    }
+                    .flow-text{
+                        text-align: center;
+                        position: relative;
+                        right: -30px;
+                        padding-top: 131px;
+                        h2{
+                            font-family: 'Gotham';
+                            font-weight: 300;
+                            letter-spacing: 5px;
+                            font-size: 23px;
+                        }
+                        p{
+                            font-size: 12px;
+                            font-family: 'Gotham';
+                            padding: 35px 15px;
+                            line-height: 20px;                                
+                        }
+                    }
+                }
+            }
+            .linha-tres{
+                padding-top: 80px;
+                display: block;
+                .container{
+                    display: flex;
+                    justify-content: center;
+                    .col-md-2{
+                        flex: 0 0 22%;
+                        max-width: 100%;
+                        padding-right: 0;
+                    }
+                }
+                .button.cores{
+                    max-width: 27%;
+                    text-align: center;
+                    margin: 0 auto;
+                    background-color: #312883;
+                    padding: 5px;
+                    margin-top: 50px;
+                    a{
+                        color: white;
+                        font-family: 'Gotham';
+                        font-weight: 900;
+                        font-size: 11px;
+                    }
+                }
+                
+            }
+
+            .linha-quatro{
+                margin-top: 250px;
+                padding-left: 150px;
+                background-color: #ececec;
+                padding-bottom: 25px;
+                .container{
+                    display: flex;
+                    
+                    .flow-text{
+                        text-align: center;
+                        position: relative;
+                        left: -30px;
+                        padding-top: 131px;
+                        h2{
+                            font-family: 'Gotham';
+                            font-weight: 300;
+                            letter-spacing: 5px;
+                            font-size: 23px;
+                        }
+                        p{
+                            font-size: 12px;
+                            font-family: 'Gotham';
+                            padding: 35px 15px;
+                            line-height: 20px;                                
+                        }
+                    }
+                    .flow-img{
+                        margin-top: -85px;
+                    }
+                    .col-md-2{
+                        display: grid;
+                        align-content: flex-end;
+                        justify-content: flex-start;
+                        padding-left: 0;
+                        a{
+                            padding: 10px 0;
+
+                            .color-07{
+                                width: 22px;
+                                height: 22px;
+                                background-color: #bbbab8;
+                                border-radius: 50%;
+                            }
+                        }
+                        a{
+                            padding: 10px 0;
+
+                            .color-08{
+                                width: 22px;
+                                height: 22px;
+                                background-color: #666748;
+                                border-radius: 50%;
+                            }
+                        }
+                        a{
+                            padding: 10px 0;
+
+                            .color-09{
+                                width: 22px;
+                                height: 22px;
+                                background-color: #3b4753;
+                                border-radius: 50%;
+                            }
+                        }
+                        a{
+                            padding: 10px 0;
+
+                            .color-10{
+                                width: 22px;
+                                height: 22px;
+                                background-color: #2e2e2c;
+                                border-radius: 50%;
+                            }
+                        }
+                        
+                    }
+                    
+                    
+                }
+            }
+
+            .linha-cinco{
+                padding-top: 80px;
+                display: block;
+                .container{
+                    display: flex;
+                    justify-content: center;
+                    .col-md-2{
+                        flex: 0 0 22%;
+                        max-width: 100%;
+                        padding-right: 0;
+                    }
+                }
+                .button.cores{
+                    max-width: 27%;
+                    text-align: center;
+                    margin: 0 auto;
+                    background-color: #312883;
+                    padding: 5px;
+                    margin-top: 50px;
+                    a{
+                        color: white;
+                        font-family: 'Gotham';
+                        font-weight: 900;
+                        font-size: 11px;
+                    }
+                }
+            }
+
+            .row.linha-seis{
+                padding-top: 100px;
+                display: block;
+                h1{
+                    font-size: 24px;
+                    display: block;
+                    margin: 0 auto;
+                    font-family: 'Gotham';
+                    font-weight: 500;
+                    letter-spacing: 2px;
+                    padding-bottom: 53px;
+                    text-align: center;
+                }
+                .container.grid-img{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    padding-bottom: 80px;
+                    
+                    .img-um{
+                        display: block;
+                        margin: 0 auto;
+                        margin-top: 10%;
+                        img{
+                            height: auto;
+                            width: 425px;
+                        }
+                        p{
+                            font-family: 'Gotham';
+                            font-size: 12px;
+                            text-align: center;
+                            padding: 25px 30px 0 30px;
+                            width: 425px;
+                        }
+                    }
+                    .img-dois{
+                        display: block;
+                        margin: 0 auto;
+                        p{
+                            font-family: 'Gotham';
+                            font-size: 12px;
+                            text-align: center;
+                            padding: 25px 30px 0 30px;
+                        }
+                    }
+                    .img-tres{
+                        display: block;
+                        margin: 0 auto;
+                        margin-right: -9%;
+                        margin-top: 10%;
+                       
+                        img{
+                            height: auto;
+                            width: 450.83px;
+                        }
+                            
+                        p{
+                            font-family: 'Gotham';
+                            font-size: 12px;
+                            text-align: center;
+                            padding: 25px 30px 0 30px;
+                            width: 450.83px;
+
+                        }
+                    }
+                    .img-quatro{
+                        display: block;
+                        margin: 0 auto;
+                        margin-right: 0;
+                        margin-top: -25%;
+                        img{
+                            height: auto;
+                            width: 450.83px;
+                            right: 0;
+                            position: relative;      
+                            }
+                        p{
+                            font-family: 'Gotham';
+                            font-size: 12px;
+                            text-align: center;
+                            padding: 25px 30px 0 30px;
+                            width: 450.83px;
+                            right: 0;
+                            position: relative;
+                        }
+                    }
+
+                }
+                
+            }
+        }
+    }
+}

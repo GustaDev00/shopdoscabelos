@@ -1,0 +1,135 @@
+@import '../../../assets/stylesheets/breakpoint';
+
+.packages-container{
+  width: 350px !important;
+  margin: 0 auto;
+  padding: 16px 0;
+  .package-card{
+    position: relative;
+    //width: 288px !important;
+    min-height: 232px;
+    overflow: hidden;
+    padding: 16px 14px;
+    box-shadow: 0px 0px 16px #e5e5ea99;
+    border: 1px solid #3a3a3c;
+    border-radius: 4px;
+    margin: 0 10px;
+    &__title{
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 0.21px;
+      color: #1C1C1E;
+      margin-bottom: 5px;
+      justify-content: center;
+      display: flex;
+      margin-bottom: 15px;
+    }
+    &__title img{
+      display: inline;
+      margin-right: 12px;
+    }
+    &__images{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      image{
+        display: flex;
+        justify-content: center;
+      }
+      img{
+        max-width: 80px;
+      }
+    }
+    &__prazo{
+      display: flex;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: normal;
+      letter-spacing: 0.22px;
+      color: #3a3a3c;
+      margin-top: 18px;
+    }
+    .remove{
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  }
+}
+.split-container{
+  margin: 0 auto;
+
+  @include breakpoint("desktop") {
+    position: relative;
+    top: -70px;
+    width: 350px !important;
+    float: left;
+    margin-left: 30px;
+  }
+}
+
+.slick-slider {
+  .slick-arrow {
+    position: absolute;
+    font-size: 0px;
+    cursor: pointer;
+    &.slick-prev {
+      left: -20px;
+      top: 40%;
+      width: 21px;
+      height: 21px;
+      background-image: url("/arquivos/slick-arrow-transparent.png");
+      background-size: 100% 100%;
+      background-color: transparent;
+    }
+
+    &.slick-next {
+      right: -20px;
+      top: 40%;
+      width: 21px;
+      height: 21px;
+      background-image: url("/arquivos/slick-arrow-transparent.png");
+      background-size: 100% 100%;
+      transform: rotate(180deg);
+      background-color: transparent;
+    }
+  }
+
+  .slick-list.draggable {
+    .box-banner {
+      width: 100%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .slick-dots {
+    text-align: center;
+    margin-top: 20px;
+    li {
+      display: inline-block;
+      margin-right: 9px;
+      button {
+        font-size: 0;
+        width: 11px;
+        height: 11px;
+        border: 1px solid #707070;
+        border-radius: 50%;
+        background: #707070;
+      }
+      &.slick-active {
+        button {
+          background: white;
+        }
+      }
+    }
+  }
+}
+
+.srp-packages{
+  display: none;
+}

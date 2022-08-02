@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+@import './assets/stylesheets/reset';
+@import './assets/stylesheets/fonts';
+@import './assets/stylesheets/review';
+@import './assets/stylesheets/resp-sharing';
+@import './assets/stylesheets/slick-store';
+
+html {
+    
+    body {
+        font-family: 'Gotham';
+        margin-top: 109px;
+    
+
+    &.x-fale-conosco {
+            
+        #neoassist-widget-frame-2 {
+            display: none !important;
+        }
+    }
+
+    &:not(.x-fale-conosco) {
+
+        #neoassist-widget-frame-1 {
+            display: none !important;
+        }
+    }
+
+
+&.x-home-homolog{
+    &.x-fale-conosco {
+            
+        #neoassist-widget-frame-2 {
+            display: block !important;
+        }
+    }
+
+    &:not(.x-fale-conosco) {
+
+        #neoassist-widget-frame-1 {
+            display: block !important;
+        }
+    }
+}
+        * {
+            transition: linear 0.2s;
+        }
+    
+        .x-hide {
+            display: none;
+        }
+    
+        &.no-scrolling {
+            overflow: hidden;
+        }
+
+      
+    }
+
+    #vtexIdUI-global-loader {
+        z-index: 9999 !important;
+    }
+
+    #vtexIdContainer {
+        position: fixed !important;
+        z-index: 9999 !important;
+    }
+
+    #ajaxBusy {
+        p {
+            display: none;
+        }
+    }
+
+    @keyframes animateWishlist {
+        0% {
+            transform: scale(0.8);
+        }
+        25% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(0.8);
+        }
+        75% {
+            transform: scale(1);
+        }
+        100% {
+          transform: scale(0.8);
+        }
+    }
+}

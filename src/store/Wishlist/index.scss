@@ -1,0 +1,147 @@
+.x-wishlist {
+    .x-general .x-main .x-group-data {
+        padding: 0 0 30px;
+        padding-bottom: 50px;
+    }
+
+    .x-wishlist-container {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+
+        .x-no-itens {
+            width: 100%;
+            text-align: center;
+            margin-top: 50px;
+            padding-left: auto;
+            display: none;
+
+            &.x-active {
+                display: block;
+            }
+
+            p {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+
+            a {
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 14px;
+                text-transform: uppercase;
+                color: #fff;
+                background-color: #000;
+            }
+        }
+
+
+        .x-shelfs {
+            width: 100%;
+            padding: 0 3%;
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                li {
+                    width: 26%;
+                    margin: 0 3.6%;
+                    position: relative;
+
+                    .x-wishlist-delete {
+                        position: absolute;
+                        right: 15px;
+                        top: 15px;
+                        text-indent: -999em;
+                        overflow: hidden;
+                        display: block;
+                        z-index: 8;
+                        cursor: pointer;
+                        width: 25px;
+                        height: 25px;
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                        background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FtYWRhXzEiIGRhdGEtbmFtZT0iQ2FtYWRhIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDMwIDMwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6I2ZmY2U0NDt9PC9zdHlsZT48L2RlZnM+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0yNS4zMSwxMC4zYTUuNTIsNS41MiwwLDAsMC0zLjYtNC4yMyw0Ljk0LDQuOTQsMCwwLDAtNC4wNS4yMSw2LjE3LDYuMTcsMCwwLDAtMi41LDIuNDZMMTUsOWExNy43NiwxNy43NiwwLDAsMC0xLjE4LTEuNTNBNSw1LDAsMCwwLDguMzgsNmE1LjQ0LDUuNDQsMCwwLDAtMy42NSw0LjFjLS4xLjM5LS4xNC43OS0uMjEsMS4xOHYuOWEuNTMuNTMsMCwwLDEsMCwuMTIsNy4xOCw3LjE4LDAsMCwwLDEuMjYsMy40MSwxNS42MywxNS42MywwLDAsMCwyLjYzLDNjMiwxLjgsNC4wOSwzLjU3LDYuMTQsNS4zNmEuNjEuNjEsMCwwLDAsLjg4LDBDMTcuMjUsMjIuNTIsMTksMjEsMjAuODEsMTkuNDNhMTkuMTIsMTkuMTIsMCwwLDAsMy40MS0zLjcyQTYuNzYsNi43NiwwLDAsMCwyNS4zMSwxMC4zWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwKSIvPjwvc3ZnPg==");
+
+                        &:hover {
+                            animation: animateWishlist 1.2s infinite;
+                        }
+                    }
+
+                    a {
+                        display: block;
+                        color: #000;
+                        text-align: center;
+
+                        img {
+                            max-width: 100%;
+                            height: 100%;
+                        }
+
+                        .x-infos {
+                            width: 100%;
+                            float: left;
+                            text-align: left;
+                            margin-top: 20px;
+
+                            h2 {
+                                font-size: 15px;
+                                text-transform: uppercase;
+                                width: 100%;
+                                overflow: hidden;
+                                line-height: normal;
+                                text-overflow: ellipsis;
+                                display: block;
+                            }
+
+                            .x-price {
+                                display: block;
+                                margin-top: 10px;
+                                font-weight: 900;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    .x-loading-wish {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#fff, .9);
+        z-index: 8000;
+
+        p {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            height: 0;
+            margin: auto 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+
+            strong {
+                display: block;
+            }
+
+            span {
+                font-size: 12px;
+            }
+        }
+    }
+
+    &.x-active {
+        .x-loading-wish {
+            display: none;
+        }
+    }
+}

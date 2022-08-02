@@ -1,0 +1,202 @@
+body.x-roupas {
+    .x-main {
+      max-width: 1920px;
+      margin: 0 auto;
+      
+      .banner-full {
+        .box-banner {
+          a {
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+        ul.slick-dots {
+          display: none;
+          text-align: center;
+          margin-top: 20px;
+          li {
+            display: inline-block;
+            margin-right: 9px;
+            button {
+              font-size: 0;
+              width: 11px;
+              height: 11px;
+              border: 1px solid #707070;
+              border-radius: 50%;
+              background: #707070;
+            }
+            &.slick-active {
+              button {
+                background: white;
+              }
+            }
+          }
+        }
+      }
+      .section-four-banners {
+        margin-top: 67px;
+        width: 100%;
+        .title-banners {
+          h1 {
+            font-size: 22px;
+            font-family: "Gotham";
+            font-weight: bolder;
+            text-align: center;
+          }
+        }
+        .group-banners {
+          margin-top: 68px;
+          display: flex;
+          justify-content: space-between;
+          .banner-four {
+            flex-direction: column;
+            margin-right: 13px;
+            width: 25%;
+            .box-banner {
+              width: 100%;
+  
+              img,
+              video {
+                max-height: 670px;
+              }
+            }
+            &:last-child {
+              margin-right: 0px;
+            }
+            a {
+              width: 100%;
+              img {
+                width: 100%;
+                height: auto;
+              }
+            }
+            .titulo-desc {
+              margin-top: 19px;
+              font-size: 22px;
+              font-family: "Gotham";
+              font-weight: bolder;
+              text-align: center;
+              color: black;
+            } 
+            .conteudo-desc {
+              text-align: center;
+              margin-top: 12px;
+              font-size: 15px;
+              font-family: "Gotham Light";
+              padding-left: 0 24px 0 24px;
+            }
+          }
+        }
+      }
+      .info-products {
+        margin-top: 68px;
+  
+        width: 100%;
+        .info-one {
+          display: inline-block;
+          vertical-align: middle;
+          padding: 0 90px 0 100px;
+          width: 40%;
+          .title-informativo {
+            font-family: "Gotham";
+            font-size: 22px;
+            font-weight: bold;
+            text-align: start;
+          }
+          .content-info {
+            margin-top: 37px;
+            font-family: "Gotham Light";
+            line-height: 30px;
+          }
+        }
+        .info-two {
+          width: 60%;
+          display: inline-block;
+          vertical-align: middle;
+          .box-banner {
+            a {
+              img {
+                width: 100%;
+                height: auto;
+              }
+            }
+          }
+        }
+      }
+      .info-products-two {
+        margin-top: 100px;
+        .info-one {
+          .title-section {
+            font-size: "Gotham";
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+          }
+          .content-info {
+            font-family: "Gotham Light";
+            margin: 37px auto 0;
+            line-height: 30px;
+            text-align: center;
+            max-width: 1200px;
+            font-size: 14px;
+          }
+        }
+        .info-two {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 76px;
+          .box-banner {
+            flex-direction: column;
+            padding-right: 15px;
+            &:last-of-type {
+              padding-right: 0px;
+            }
+            a {
+              img {
+                width: 100%;
+                height: auto;
+              }
+            }
+          }
+        }
+      }
+  
+      .last-section {
+        margin-top: 100px;
+        display: flex;
+        .box-banner {
+          width: 59%;
+          a {
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+        .section-text {
+          width: 40%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 0 190px 0 100px;
+          .title-section {
+            width: 100%;
+            font-size: 22px;
+            font-family: "Gotham";
+            font-weight: bold;
+          }
+          .content-section {
+            width: 100%;
+            margin-top: 37px;
+            font-family: "Gotham Light";
+            line-height: 30px;
+            font-size: 15px;
+            text-align: start;
+          }
+        }
+      }
+    }
+}

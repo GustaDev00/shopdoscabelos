@@ -1,0 +1,96 @@
+body.x-mia {
+
+    .x-main {
+        max-width: 1920px;
+        margin: 0 auto;
+        margin-top: 110px;
+
+        .block-one {
+            margin: 150px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            p {
+                margin: 0 120px;
+                min-width: 343px;
+                width: 343px;
+                font-size: 16px;
+                line-height: 50px;
+            }
+    
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    
+        .block-two {
+            &__banners {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 120px;
+    
+                p {
+                    margin: 29px 0;
+                    font-size: 16px;
+                }
+            }
+    
+            &__cta {
+                display: block;
+                margin: 0 auto;
+                margin-top: 70px;
+                background: #0000;
+                border: 1px solid #000;
+                padding: 18px 28px;
+                cursor: pointer;
+                font-size: 10px;
+                text-transform: uppercase;
+                color: #000;
+            }
+        }
+    
+        .block-three {
+            margin: 150px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .box-banner {
+                width: 50%;
+                margin-top: -5px;
+
+                img {
+                    max-width: 100%;
+                    min-width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        .block-four {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 120px;
+
+            .box-banner {
+                &:first-child {
+                    padding-right: 23px;
+                }
+            }
+        }
+    
+        .block-five {
+            margin-top: 150px;
+
+            img {
+                max-width: 100%;
+                min-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,231 @@
+@import "../../../../assets/stylesheets/fonts";
+
+body.x-post-it {
+    .x-main {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+    .post-it-box {
+        position: relative;
+        margin-top: 18px;
+        .img-one,
+        .img-two {
+            margin-top: -6px;
+            .box-banner {
+                width: 100%;
+                max-width: 1360px;
+                margin: 0 auto;
+                a img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        .text-box {
+            position: absolute;
+            left: 50%;
+            top: 26%;
+            transform: translate(-50%);
+            display: inline-block;
+            background: #ffcd1c;
+            .text-post-it {
+                padding: 86px 55px;
+                p {
+                    font-family: "Gotham";
+                    line-height: 25px;
+                    font-size: 16px;
+                    color: #000000;
+                }
+            }
+        }
+        .information-text {
+            margin-top: 121px;
+            .text-one {
+                display: block;
+                width: max-content;
+                margin: 0 auto;
+                padding-left: 22px;
+                padding-right: 22px;
+                font-family: "Gotham";
+                font-weight: bold;
+                font-size: 26px;
+                background: #41def3;
+            }
+            .text-two {
+                width: 465px;
+                position: relative;
+                font-family: "Gotham";
+                margin: 22px auto 0;
+                display: flex;
+                align-items: center;
+                height: 30px;
+                padding-left: 22px;
+                padding-right: 22px;
+                font-weight: bold;
+                font-size: 46px;
+                background: #41def3;
+                .tex-intern {
+                    position: absolute;
+                    top: -20px;
+                }
+            }
+        }
+    }
+    .line {
+        display: block;
+        width: 1226px;
+        height: 2px;
+        background-color: #707070;
+        margin-top: 80px;
+        margin: 80px auto 0;
+    }
+    .feminine {
+        .title-section {
+            h3 {
+                font-family: "Gotham";
+                font-weight: bold;
+                font-size: 212px;
+                text-align: center;
+                text-transform: lowercase;
+                color: #262626;
+            }
+        }
+        .box-images-one {
+            display: flex;
+            flex: column;
+            justify-content: center;
+            .box-banner {
+                margin-top: -86px;
+                &:nth-child(2) {
+                    margin-left: 60px;
+                    margin-right: 60px;
+                }
+            }
+        }
+        .box-images-two {
+            display: flex;
+            flex: column;
+            justify-content: center;
+            .box-banner {
+                margin-top: 41px;
+                &:nth-child(2) {
+                    margin-left: 60px;
+                    margin-right: 60px;
+                }
+            }
+        }
+        .text-section {
+            max-width: 641px;
+            margin: 113px auto;
+            p {
+                font-family: "Gotham-Book";
+                font-size: 16px;
+                line-height: 35px;
+                text-align: center;
+                color: #373737;
+            }
+        }
+        .final-images {
+            .images {
+                margin-top: 106px;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 58px;
+            }
+            .cta-feminine {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid black;
+                width: 345px;
+                height: 72px;
+                margin: 0 auto;
+                font-family: "Gotham";
+                font-size: 20px;
+                font-weight: bolder;
+                color: #333333;
+            }
+        }
+    }
+    .masculine {
+        .title-section {
+            h3 {
+                font-family: "Gotham";
+                font-weight: bold;
+                font-size: 212px;
+                text-align: center;
+                text-transform: lowercase;
+                color: #262626;
+            }
+        }
+        .box-images-one {
+            display: flex;
+            flex: column;
+            justify-content: center;
+            .box-banner {
+                margin: -86px 20px 0 -25px;
+            }
+        }
+        .box-images-two {
+            display: flex;
+            flex: column;
+            justify-content: center;
+            .box-banner {
+                margin-top: 62px;
+            }
+        }
+        .text-section {
+            margin: 113px auto;
+            max-width: 641px;
+            p {
+                font-family: "Gotham-Book";
+                font-size: 16px;
+                line-height: 35px;
+                text-align: center;
+                color: #373737;
+            }
+        }
+        .final-images {
+            .images {
+                margin-top: 106px;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 58px;
+            }
+            .cta-masculine {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid black;
+                width: 345px;
+                height: 72px;
+                margin: 0 auto;
+                font-family: "Gotham";
+                font-size: 20px;
+                font-weight: bolder;
+                color: #333333;
+            }
+        }
+    }
+    .last-box {
+        .title-section {
+            font-size: 40px;
+            font-family: "Gotham";
+            font-weight: bold;
+            text-align: center;
+            margin-top: 70px;
+        }
+        .text-section {
+            font-family: "Gotham-Book";
+            font-size: 16px;
+            line-height: 35px;
+            text-align: center;
+            color: #373737;
+            margin-top: 43px;
+        }
+        .last-video {
+            max-width: 1100px;
+            margin: 48px auto;
+        }
+    }
+}

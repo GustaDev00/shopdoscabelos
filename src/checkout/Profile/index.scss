@@ -1,0 +1,529 @@
+@import '../../assets/stylesheets/breakpoint';
+@import '../../assets/stylesheets/fonts';
+
+#client-profile-data {
+    .client-pre-email {
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      border-top: 0;
+      padding-bottom: 50px;
+      font-family: 'Montserrat', sans-serif !important;
+
+      .link-cart {
+        small {
+          a {
+            position: absolute;
+            top: 450px;
+            left: 0;
+            width: 90%;
+            height: 40px;
+            margin-left: 5%;
+            padding: 5px 10px 6px 10px;
+            border: 1px solid #000;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 10px;
+            font-family: 'Merriweather', serif;
+            font-weight: 500;
+            color: #000;
+
+            @include breakpoint("mobile") {
+              top: 400px;
+              width: 80%;
+              margin: 0 10%;
+              padding: 10px 10px 5px 10px;
+            }
+
+            @include breakpoint("tablet") {
+              top: 400px;
+              width: 60%;
+              padding: 10px 10px 5px 10px;
+              margin: 0 20%;
+              padding: 10px;
+            }
+
+            @include breakpoint("desktop") {
+              top: 390px;
+              width: 25%;
+              margin: 0 37.5%;
+              padding: 10px;
+            }
+          }
+        }
+      }
+
+      .pre-email {
+        @include breakpoint("desktop") {
+          padding: 0 10%;
+        }
+
+        h3 {
+          padding: 0 2%;
+
+          @include breakpoint("mobile") {
+            margin-top: 5px !important;
+          }
+
+          @include breakpoint("tablet") {
+            margin-top: 5px !important;
+          }
+
+          label {
+            margin-top: 0;
+
+            @include breakpoint("desktop") {
+              margin-top: 0;
+              text-transform: none;
+              font-weight: 500;
+              font-family: 'Montserrat', sans-serif;
+            }
+
+            span {
+              font-size: 16px;
+              font-weight: 700;
+
+              @include breakpoint("mobile") {
+                font-size: 13px;
+              }
+
+              @include breakpoint("tablet") {
+                font-size: 13px;
+              }
+
+              @include breakpoint("desktop") {
+                display: block;
+                text-transform: uppercase;
+              }
+            }
+
+            small {
+              color: #000;
+              font-size: 12px;
+              font-weight: 500;
+              font-family: 'Alegreya', serif;
+              text-transform: uppercase;
+              padding: 0 !important;
+              margin-top: 5px;
+              display: block;
+
+              @include breakpoint("tablet") {
+                display: inline-block;
+              }
+
+              @include breakpoint("desktop") {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+
+        .client-email {
+          float: left;
+          width: 100%;
+
+          @include breakpoint("mobile") {
+            margin-right: 20px;
+            margin-bottom: 5px;
+            padding: 0 2%;
+          }
+
+          @include breakpoint("tablet") {
+            width: 100%;
+
+            margin-top: 20px;
+            margin-left: 0;
+          }
+
+          // client-email  breakpoint => END
+
+          @include breakpoint("desktop") {
+            width: 100%;
+
+            margin-top: 20px;
+            margin-left: 0;
+          }
+
+          // client-email  breakpoint => END
+
+          // #client-pre-email
+          #client-pre-email {
+            float: left;
+            width: 100%;
+            font-family: 'Merriweather', serif;
+
+            @include breakpoint("tablet") {
+              width: 60%;
+
+              margin-right: 5%;
+              margin-left: 5%;
+            }
+
+            @include breakpoint("desktop") {
+              width: 50%;
+              margin-right: 5%;
+              margin-left: 7.5%;
+              padding-left: 20px;
+              height: 40px;
+              font-size: 16px;
+            }
+          }
+
+          // #client-pre-email => END
+
+          #btn-client-pre-email {
+            float: left;
+            width: 100%;
+            position: relative;
+            background: #000;
+
+            &:before {
+              content: "";
+              display: inline-block;
+              margin-right: 30px;
+              margin-left: -30px;
+              width: 16px;
+              height: 16px;
+              background: url(/arquivos/padlock.png) no-repeat;
+              filter: invert(1);
+
+              @include breakpoint("tablet") {
+                margin-right: 20px;
+                margin-left: 0px;
+              }
+            }
+
+            @include breakpoint("tablet") {
+              width: 25%;
+              height: 53px !important;
+            }
+
+            @include breakpoint("desktop") {
+              width: 30%;
+
+              &:hover,
+              &:active {
+                background: #666;
+              }
+            }
+
+            span {
+              position: relative;
+              font-family: 'Merriweather', serif;
+              font-size: 14px;
+              font-weight: 700;
+
+              @include breakpoint("tablet") {
+                font-size: 15px;
+              }
+
+              &:before {
+                content: "";
+                position: absolute;
+                left: -20px;
+                top: 3px;
+
+                // @include sprite($locker);
+              }
+            }
+
+            //<span> => END
+          }
+
+          // #btn-client-pre-email => END
+
+          span.error {
+            @include breakpoint("mobile") {
+              margin-top: 10px;
+              margin-left: -75px;
+            }
+
+            @include breakpoint("tablet") {
+              position: absolute;
+              width: 80%;
+              top: 55px;
+              left: 0;
+
+              margin-left: 10%;
+            }
+
+            @include breakpoint("desktop") {
+              position: absolute;
+              width: 80%;
+              top: 55px;
+              left: 0;
+
+              margin-left: 10%;
+            }
+          }
+        }
+
+        // client-email => END
+      }
+
+      // .pre-email => END
+
+      .emailInfo {
+        width: 96%;
+        margin-left: 2%;
+        text-align: center;
+        background-color: #f2f2f2;
+        font-weight: 900;
+
+        @include breakpoint("tablet") {
+          width: 90%;
+          margin-top: 20px;
+          margin-left: 5%;
+          text-align: center;
+        }
+
+        // .emailInfo => END
+
+        @include breakpoint("desktop") {
+          width: 68%;
+          margin: 15px 16%;
+          text-align: center;
+        }
+
+        // .emailInfo  breakpoint => END
+
+        h3 {
+          font-weight: 500;
+          font-family: 'Montserrat', sans-serif !important;
+          font-size: 14px;
+          color: #000;
+        }
+
+        .unstyled {
+          display: inline-block;
+          text-align: left;
+
+          @include breakpoint("tablet") {
+            margin-left: -67px;
+          }
+
+          @include breakpoint("desktop") {
+            margin-left: -67px;
+          }
+
+          li {
+            @include breakpoint("tablet") {
+              line-height: 30px;
+            }
+
+            @include breakpoint("desktop") {
+              line-height: 30px;
+            }
+
+            span {
+              font-family: 'Montserrat', sans-serif !important;
+              font-size: 12px;
+              font-weight: normal;
+              color: #000;
+            }
+          }
+        }
+
+        .icon-lock {
+          display: none;
+        }
+
+        // .icon-lock => END
+      }
+    }
+
+    // .emailInfo => END
+
+    .accordion-group {
+      padding: 10px;
+      border: 0;
+
+      .accordion-heading {
+        position: relative;
+
+        span {
+          padding: 0px;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 15px;
+          font-weight: 700;
+          letter-spacing: 2px;
+          background: transparent !important;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 20px;
+          left: 10px;
+          // @include sprite($personal-data-icon);
+        }
+      }
+
+      .accordion-body {
+        border: 0;
+
+        @include breakpoint("desktop") {
+          border: 1px solid #eee;
+        }
+
+        .accordion-inner {
+          @include breakpoint("mobile") {
+            padding: 0;
+          }
+
+          @include breakpoint("tablet") {
+            padding: 0;
+          }
+
+          @include breakpoint("desktop") {
+          }
+
+          .box-step {
+            * {
+              font-family: "Open Sans", sans-serif !important;
+            }
+
+            * {
+              i {
+                font-family: "FontAwesome";
+
+                &:before {
+                  font-family: "FontAwesome";
+                }
+              }
+            }
+
+            .form-step {
+              font-weight: normal;
+              font-size: 12px;
+              color: #000;
+
+              .client-profile-email {
+                .link-logout-container {
+                  a {
+                    color: #a99d9d !important;
+                  }
+                }
+              }
+
+              .box-client-info {
+                @include breakpoint("mobile") {
+                  padding: 0 10px;
+                }
+
+                a {
+                  color: #000 !important;
+                }
+
+                .row-fluid {
+                  .box-client-info-pf {
+                    & * {
+                      box-sizing: content-box;
+                    }
+
+                    #client-email {
+                      @include breakpoint("mobile") {
+                        box-sizing: border-box;
+                        height: 40px;
+                      }
+
+                      @include breakpoint("tablet") {
+                        box-sizing: border-box;
+                        height: 40px;
+                      }
+                    }
+
+                    .client-email,
+                    .client-first-name,
+                    .client-last-name {
+                      @include breakpoint("desktop") {
+                      }
+                    }
+
+                    input,
+                    label {
+                      font-family: 'Montserrat', sans-serif !important;
+                    }
+
+                    #email-suggestion-address {
+                      color: #000;
+                      font-family: 'Montserrat', sans-serif !important;
+                    }
+                  }
+
+                  .box-client-info-pj {
+                    & * {
+                      box-sizing: content-box;
+                    }
+                  }
+                }
+
+                .newsletter {
+                  .newsletter-label {
+                    margin-left: 3px;
+                    line-height: 26px;
+                    font-weight: 900;
+
+                    input[type="checkbox"] {
+                      padding: 8px;
+                      border: 1px solid #ccc;
+                      -webkit-appearance: none;
+                      -moz-appearance: none;
+                      appearance: none;
+
+                      &:checked {
+                        background: #000;
+                        box-shadow: inset 0 0 0 2px #fff;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .btn-submit-wrapper {
+                #go-to-shipping,
+                #go-to-payment {
+                  position: relative;
+                  font-family: 'Merriweather', serif;
+                  font-size: 13px;
+                  font-weight: 900;
+                  letter-spacing: 0;
+
+                  &:before {
+                    content: "";
+                    position: absolute;
+                    top: 15px;
+                    width: 16px;
+                    height: 16px;
+                    background: url(/arquivos/padlock.png) no-repeat;
+                    filter: invert(1);
+                  }
+                }
+
+                #go-to-shipping {
+                  @include breakpoint("desktop") {
+                    box-sizing: border-box;
+                  }
+
+                  &:hover,
+                  &:active {
+                    background: #666;
+                  }
+
+                  &:before {
+                    left: 25px;
+                  }
+                }
+
+                #go-to-payment {
+                  &:before {
+                    left: 15px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+}

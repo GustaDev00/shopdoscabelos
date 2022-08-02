@@ -1,0 +1,62 @@
+body.x-fale-conosco {
+    .x-general {
+        .x-main {
+            margin: 0 auto;
+            display: block;
+            
+            .x-menu-group-faleCom {
+                margin: 7% 0 3% 8%;
+                width: 90%;
+                
+                h2 {
+                    font-size: 24px;
+                    font-weight: bold;
+                    margin-bottom: 30px;
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 90%;
+                        margin-top:30px;
+                        border-bottom: 2px solid #000000;
+                    }
+                }
+
+                p {
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-bottom: 50px;
+                }
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    li {
+                        padding: 10px 0;
+
+                        a {
+                            font-family: "Gotham-Book";
+                            font-size: 19px;
+                            color: #000;
+                            margin-top: 51px;
+                            padding: 0;
+                            text-transform: initial;
+                            transition: 0.6s;
+
+                            &:hover {
+                                background-color: #f7cc45;
+                                padding: 7px 14px;
+                            }
+
+                            @media all and (max-width: 1875px) {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

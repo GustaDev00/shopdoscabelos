@@ -1,0 +1,290 @@
+body.x-dia-dos-pais {
+  .x-main {
+    max-width: 1920px;
+    margin: 0 auto;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    
+    .landing-front__container img {
+      width: 99vw; 
+    }
+    
+    .motivacional {
+      margin: 3.5rem auto;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      
+      .motivacional__container {
+        width: 100%;
+        margin: 0 4rem;
+        
+        .categoria-container {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .categoria-right {
+            margin-right: 35px;
+          }
+
+          .categoria-left {
+            display: flex;
+            flex-direction: column;
+                          
+            .categoria-secondary {
+              display: flex;
+              margin-top: 35px;
+
+              div:not(:last-child) {
+                margin-right: 35px;
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    .estrofe {
+      text-align: center;
+      justify-content: center;
+      margin-bottom: 60px; }
+      .estrofe > .paragraph {
+        font-size: 30px;
+        font-family: "Gotham Medium";
+        margin-top: .8rem; }
+      .estrofe > .paragraph:first-child {
+        margin-top: 0; }
+    
+    .lp-btn-primary {
+      font: Gotham;
+      background-color: #FFCE44;
+      color: black;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: -.21px;
+      padding: 1rem 3rem; }
+    
+    .heading-secondary {
+      font-size: 30px;
+      letter-spacing: 28px;
+      color: #333333;
+      letter-spacing: 0.42px;
+      opacity: 1;
+      margin-bottom: 3.3rem; }
+
+    .campanha {
+      text-align: center;
+      justify-content: center;
+      margin: 6.2rem 0 7rem 0;
+    }
+
+    .carousel {
+    
+      .carousel__container {
+        margin: 0 45px;
+      }
+      .carousel__container .slick-prev,
+      .carousel__container .slick-next {
+        width: 42px;
+        height: 42px;
+        background: transparent;
+        position: absolute;
+        top: calc(50% - 3rem);
+        font-size: 0;
+        cursor: pointer;
+          &.slick-disabled {
+            display: none !important;
+          }
+      }
+      .carousel__container .slick-prev::before {
+        content: "";
+        width: 42px;
+        height: 42px;
+        background: url(/arquivos/arrow-left-slide-pais.png) no-repeat;
+        background-size: contain;
+        display: inline-block;
+      }
+      .carousel__container .slick-next::before {
+        content: "";
+        width: 42px;
+        height: 42px;
+        background: url(/arquivos/arrow-right-slide-pais.png) no-repeat;
+        background-size: contain;
+        display: inline-block;
+      }
+      .carousel__container .slick-prev {
+        left: 0;
+      }
+      .carousel__container .slick-next {
+        right: 0;
+      }
+      .slick-list {
+        width: 90%;
+        margin: 0 auto;
+      }
+      .carousel__group {
+        padding: 10px;
+      }
+
+      .carousel__group--container {
+        margin-bottom: 1.6rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: auto; }
+      .carousel__group--text {
+        margin-top: 30px;
+        text-align: center; }
+        .carousel__group--text h3 {
+          text-align: center;
+          font-size: 22px;
+          font-weight: 600;
+          margin: auto;
+          margin-bottom: 18px; }
+        .carousel__group--text .paragraph-container {
+          text-align: center; }
+        .carousel__group--text p {
+          font-size: 16px;
+          font-family: "Gotham Medium";;
+          font-weight: 500;
+          margin-top: 1.6rem;
+          margin: auto;
+          max-width: 668px;
+          line-height: 1.5;
+          color: #000000;
+        }
+    }
+    .shelf-products {
+      margin-top: 3.4rem;
+      text-align: center;
+
+      .box-buttons {
+        display: flex;
+        justify-content: center;
+        margin: 0 4rem;
+
+        button {
+          width: 243px;
+          height: 62px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid #444444;
+          color: #000000;
+          font-size: 24px;
+          cursor: pointer;
+          transition: 0.8s;
+
+          &:hover {
+            background-color: #F7cc45;
+            border: none;
+            transform: scale(1.05);
+          }
+
+          &:not(:last-child) {
+            margin-right: 4rem;
+          }
+        }
+      }
+      .x-product-list {
+        margin-top: 100px;
+      }
+
+      .categoria__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        gap: 50px;
+        margin: 4.8rem 4rem;
+
+        &.sapatos {
+          display: none;
+        }
+        &.acessorios {
+          display: none;
+        }
+        &.roupas {
+          display: none;
+        }
+
+        div {
+          display: flex;
+
+          .categoria-box {
+            display: flex;
+            flex-direction: column;
+
+            &:not(:last-child) {
+              margin-right: 50px;
+            }
+            .heading-tertiary {
+              font-family: "Gotham Medium";
+              margin-top: 4px;
+              font-size: 14px;
+            }
+            .paragraph {
+              margin-top: 3px;
+              font-size: 14px;
+            }
+          }
+        }
+        .btn-category {
+          
+          .btn-veja-mais {
+            width: 260px;
+            height: 58px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #444444;
+            cursor: pointer;
+            font-size: 22px;
+            color: #000000;
+            margin-top: 20px;
+            transition: 0.8s;
+
+              &:hover {
+                background-color: #F7cc45;
+                border: none;
+                transform: scale(1.05);
+              }
+          }
+        }
+      }
+    }
+
+    .faixa {
+      margin: 6rem 0 8rem 0;
+      text-align: center;
+    
+      .numeracao {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
+        a {
+          font-size: 24px;
+          border: 1px solid #BBBBBB;
+          background-color: white;
+          color: #444444;
+          padding: 1rem;
+          margin-left: 10px;
+          transition: 0.8s;
+          
+          &:hover {
+            background-color: #f7cc45;
+            color: #000000;
+          }
+
+          &:first-child {
+            margin-left: 0; 
+          }
+        }
+      }
+    }
+  }
+}

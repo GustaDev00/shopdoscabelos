@@ -1,0 +1,258 @@
+body.x-aniversario {
+    .x-main {
+
+        font-family: 'Gotham';
+        margin-bottom: 50px;
+
+        section {
+            max-width: 1360px;
+            padding: 0 100px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 25px;
+            color: #373737;
+        }
+
+        .main__banner {
+            img {
+                max-width: 100%;
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .main__text {
+            text-align: center;
+            width: 392px;
+            padding: 100px 0;
+
+            p {
+                padding: 10px 0;
+            }
+
+            h3 {
+                font-size: 22px;
+                font-weight: bold;
+                color: #333333;
+                margin-top: 70px;
+            }
+        }
+
+        .line__first {
+            width: 70%;
+            height: 11px;
+            background: #02E5D2;
+        }
+
+        .project {
+
+            &__title {
+                margin: 55px auto;
+                width: 304px;
+                height: 52px;
+                display: block;
+                background: url('/arquivos/icon-project81.png') no-repeat;
+            }
+
+            &__banner {
+                .box-banner {
+                    text-align: center;
+                }
+            }
+
+            &__text {
+                text-align: center;
+                display: block;
+                margin: 0 auto;
+                width: 573px;
+
+                p {
+                    padding: 50px 0;
+                }
+
+                h3 {
+                    font-size: 40px;
+                    font-weight: bold;
+                    color: #333333;
+                }
+            }
+
+
+        }
+
+        .slider {
+
+            &__images {
+
+                .slick-slide {
+                    max-width: 338px;
+
+                    img {
+                        padding: 0 5px;
+                    }
+                }
+
+                .slick-arrow {
+
+                    position: absolute;
+                    top: 45%;
+                    width: 30px;
+                    height: 35px;
+                    background-image: url('/arquivos/slick-arrow-transparent.png');
+                    background-size: 100% 100%;
+                    background-color: #0000;
+                    font-size: 0;
+                    cursor: pointer;
+
+                    &.slick-prev {
+                        left: -30px;
+                    }
+
+                    &.slick-next {
+                        right: -30px;
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+            &__cta {
+                text-align: center;
+                font-size: 15px;
+                font-weight: bold;
+                display: block;
+                margin: 70px auto;
+
+                a {
+                    color: #707070;
+                    padding: 12px 30px;
+                    border: 1px solid #707070;
+                    border-radius: 57px;
+                }
+            }
+        }
+
+        .benefits {
+
+            h2 {
+                text-align: left;
+                font-size: 40px;
+                font-weight: bold;
+                color: #333333;
+            }
+
+            &__list {
+
+                margin: 70px 0 100px;
+
+                li {
+                    text-align: left;
+                    color: #161615;
+                    display: flex;
+                    align-items: center;
+                    padding: 15px 0;
+
+                    &::before {
+                        content: '';
+                        display: inline-block;
+                        width: 38px;
+                        height: 51px;
+                        margin: 0 25px 0 60px;
+                        background: url('/arquivos/icon-check.png') no-repeat;
+                    }
+                }
+            }
+        }
+
+        .line__second {
+            position: relative;
+
+            span {
+                display: block;
+                width: 100%;
+                height: 15px;
+                background: #FFCE44;
+                z-index: 2;
+                position: absolute;
+                bottom: 10px;
+            }
+
+            h2 {
+                max-width: 1360px;
+                margin: 0 auto;
+                padding-left: 100px;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 303px;
+                    height: 81px;
+                    background: url('/arquivos/icon-icones.png') no-repeat;
+                    position: relative;
+                    bottom: 23px;
+                }
+            }
+        }
+
+        .icons {
+
+            &__images {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-gap: 15px;
+                width: 100%;
+                margin: 100px auto;
+
+                .box-banner {
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+
+            &__text {
+
+                h2 {
+                    text-align: left;
+                    font-size: 46px;
+                    font-weight: bold;
+
+                    span {
+                        color: #FFCE44;
+                        display: block;
+                    }
+                }
+
+                p {
+                    text-align: left;
+                    padding: 80px 0;
+                    width: 647px;
+                    line-height: 35px;
+                }
+            }
+        }
+
+        .video {
+
+            text-align: center;
+
+            h2 {
+                font-size: 40px;
+                font-weight: bold;
+                color: #333333;
+            }
+
+            p {
+                padding: 45px 0;
+                width: 444px;
+                margin: 0 auto;
+            }
+        }
+    }
+}

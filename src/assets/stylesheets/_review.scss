@@ -1,0 +1,111 @@
+.yv-box{
+    width: 100%;
+  
+    #yv-reviews{
+      .yv-title{
+        font-size: 0;
+        font-family: 'Gotham';
+        font-weight: bold;
+        text-transform: uppercase;
+  
+        &::after{
+          content: 'Avalia\00c7\00c3o do Produto';
+          font-size: 18px;
+        }
+      }
+  
+      .yv-bootstrap.yv-main{
+        .yv-row{
+          .yv-rounded{
+            background: #000 !important;
+            margin-bottom: 14px;
+  
+            strong {
+              color: #fff !important;
+            }
+          }
+  
+          div{
+            strong[itemprop="reviewer"]{
+              text-transform: uppercase !important; 
+              font-weight: bold !important;
+              word-wrap:  break-word !important;
+            }
+          }
+  
+          .fa-star {
+            &::before {
+              color: #000;
+            }
+          }
+  
+          .yv-row{
+            display: block;
+            
+            .yv-col-md-3{
+              display: none;
+            }
+          }
+  
+          .yv-btn-share-face{
+            display: none;
+          }
+        }
+      }
+    }
+  
+    div[title]{
+      display: none;
+    }
+  
+    #yv-writereview{
+      background: #F0F0F0 !important;
+      color: #000 !important;
+      font-weight: normal !important;
+    }
+  
+    .yv-paging {
+      color: #ccc !important;
+      font-weight: bold !important;
+      font-size: 18px !important;
+      font-family: 'Gotham' !important;
+      margin: 0 4px;
+  
+      &.yv-hasresults {
+        color: #000 !important;
+      }
+    }
+  
+}
+  
+#yv-show-reviews > div > div:nth-child(2) {
+    display: none;
+}
+  
+body > div.x-general > div.x-content > div.x-product-top-main > div.section-left > div.yv-box > div.yv-qa > p{
+    font-family: 'Gotham' !important;
+    font-weight: bold !important;
+    font-size: 18px !important;
+    margin-bottom: 14px !important;
+}
+  
+#yv-question-form > div.yv-clear > button{
+    background: #F0F0F0 !important;
+    color: #000 !important;
+    font-weight: normal !important;
+}
+  
+.yv-col-md-8{
+    padding-left: 90px;
+}
+
+#yv-review-quickreview {
+
+  .yv-bootstrap {
+    background-color: #fff !important;
+
+    .fa-star::before {
+      color: #f7cc45;
+    }
+  }
+}

@@ -1,0 +1,244 @@
+.blackfriday {
+        background: #000000;
+        font-family: "Gotham";
+        padding-top: 40px;
+
+        .container {
+            // background: #ff0000;
+
+            .header {
+                text-align-last: left;
+                margin-left: 5%;
+                margin-bottom: 80px;
+
+                img {
+                    width: 20%;
+                    height: auto;
+                }
+            }
+
+            .section-counter {
+                margin-bottom: 80px;
+                text-align: center;
+                color: #fff;
+
+                .sold-section,
+                .section-missing {
+                    margin-bottom: 100px;
+                    display: inline-block;
+                    width: 80%;
+
+                    span {
+                        font-size: 60px;
+                        display: inline-block;
+                        width: 10%;
+                    }
+
+                    p {
+                        font-size: 126px;
+                        font-weight: bold;
+                        text-align: center;
+                        color: #f7cc45;
+                        margin-bottom: 20px;
+                    }
+                    .sold-value{
+                        font-size: 230px!important;
+                    }
+                    .sold-value,
+                    .missing-value {
+                        color: #fff;
+                        font-size: 126px;
+
+                        animation-duration: 1.4s;
+                        @extend .animate__flipInX;
+
+                        &::before {
+                            content: "R$";
+                            display: inline-block;
+                            vertical-align: middle;
+                            font-size: 50px;
+                            margin-right: 16px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+
+            .section-footer {
+                position: relative;
+                margin-bottom: 5%;
+
+                .img-footer {
+                    text-align: center;
+
+                    img {
+                        width: 10%;
+                        height: auto;
+                    }
+                }
+
+                .meta {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    background: #f7cc45;
+                    color: #000000;
+                    padding: 15px;
+                    font-size: 40px;
+                    font-weight: bold;
+
+                    &::before {
+                        content: "DESAFIO/DIA R$";
+                        vertical-align: middle;
+                        font-size: 30px;
+                        margin-right: 16px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    .desafio-completo {
+        @extend .animate__pulse;
+        animation-iteration-count: infinite;
+        animation-duration: 1.4s;
+
+        .missing-value {
+            font-size: 80px !important;
+            background: #f7cc45;
+            padding: 15px 30px;
+            color: #000 !important;
+            font-weight: bold;
+            margin: 0 auto;
+
+            span {
+                font-size: 80px !important;
+                font-weight: bold;
+            }
+        }
+
+        p {
+            display: none;
+        }
+    }
+
+    iframe {
+        // display: none !important;
+    }
+
+    // ANIMAÇÃO
+    @-webkit-keyframes flipInX {
+        0% {
+            -webkit-transform: perspective(400px) rotateX(90deg);
+            transform: perspective(400px) rotateX(90deg);
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+            opacity: 0;
+        }
+
+        40% {
+            -webkit-transform: perspective(400px) rotateX(-20deg);
+            transform: perspective(400px) rotateX(-20deg);
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+        }
+
+        60% {
+            -webkit-transform: perspective(400px) rotateX(10deg);
+            transform: perspective(400px) rotateX(10deg);
+            opacity: 1;
+        }
+
+        80% {
+            -webkit-transform: perspective(400px) rotateX(-5deg);
+            transform: perspective(400px) rotateX(-5deg);
+        }
+
+        to {
+            -webkit-transform: perspective(400px);
+            transform: perspective(400px);
+        }
+    }
+
+    @keyframes flipInX {
+        0% {
+            -webkit-transform: perspective(400px) rotateX(90deg);
+            transform: perspective(400px) rotateX(90deg);
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+            opacity: 0;
+        }
+
+        40% {
+            -webkit-transform: perspective(400px) rotateX(-20deg);
+            transform: perspective(400px) rotateX(-20deg);
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+        }
+
+        60% {
+            -webkit-transform: perspective(400px) rotateX(10deg);
+            transform: perspective(400px) rotateX(10deg);
+            opacity: 1;
+        }
+
+        80% {
+            -webkit-transform: perspective(400px) rotateX(-5deg);
+            transform: perspective(400px) rotateX(-5deg);
+        }
+
+        to {
+            -webkit-transform: perspective(400px);
+            transform: perspective(400px);
+        }
+    }
+
+    .animate__flipInX {
+        -webkit-backface-visibility: visible !important;
+        backface-visibility: visible !important;
+        -webkit-animation-name: flipInX;
+        animation-name: flipInX;
+    }
+
+    @-webkit-keyframes pulse {
+        0% {
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+        }
+
+        50% {
+            -webkit-transform: scale3d(1.05, 1.05, 1.05);
+            transform: scale3d(1.05, 1.05, 1.05);
+        }
+
+        to {
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+        }
+    }
+
+    @keyframes pulse {
+        0% {
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+        }
+
+        50% {
+            -webkit-transform: scale3d(1.05, 1.05, 1.05);
+            transform: scale3d(1.05, 1.05, 1.05);
+        }
+
+        to {
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+        }
+    }
+
+    .animate__pulse {
+        -webkit-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+    }
+
